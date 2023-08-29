@@ -1,0 +1,58 @@
+@extends('tirdoweb.en.base_layout')
+        <!-- /HEADER -->
+
+        <!-- contents -->
+@section('content')
+<div class="container px-0">
+    <div class="col-12 special-page">
+        <div class="col-12 p-4">
+            <div class="row">
+                <div class="col-12 px-xs-0">
+                    <nav aria-label="breadcrumb" class="mb-0">
+                        <ol class="breadcrumb px-0">
+                            <li class="breadcrumb-item"><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+                            <li class="breadcrumb-item"><a href="{% url 'myproducts:all_products' language=current_language %}" class="link-no-underline">All_products<span></span></a></li>
+                            <li class="breadcrumb-item active" aria-current="page">TIRDO Products</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+<div class="row">
+
+                  <div class="col-md-9 bg-white py-3 page-content">
+                      <h4>TIRDO Products</h4>
+                      <div class="col-12 px-0 mb-2">
+
+                          <div class="news-title">
+                              <h2 class="article-h2">{{ $product->name }}</h2>
+                          </div>
+                          <div class="">
+                              <ul class="list-unstyled list-inline mb-1">
+
+                                  <li class="list-inline-item">
+                                      <i class="fa fa-folder-o text-danger"></i>
+                                      <div><small><i class="fa fa-calendar"></i> {{ $product->date }}</small></div>
+                                  </li>
+
+                              </ul>
+                          </div>
+                          <hr>
+                          <div class="news-img">
+                              <img  src="{{ asset($product->img) }}" alt="Article Image" class="w-100">
+                          </div>
+                          <div class="news-content">
+                              <p>{{ $product->desc|linebreaksbr }}</p>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <!-- {% include 'en/new_section.html' %} -->
+</div>
+        </div>
+    </div>
+
+</div>
+    <!-- /contents -->
+@endsection
