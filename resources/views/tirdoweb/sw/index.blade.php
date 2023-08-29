@@ -200,7 +200,7 @@
                                     <div>
                                         <p class="text-justify mb-2">
                                             <b><h6 class="article-h2">{{ $product->name }}</h6></b>
-                                            <i class="fa fa-calendar blue-icon"></i> {{ $product->date }}
+                                            {{-- <i class="fa fa-calendar blue-icon"></i> {{ $product->date }} --}}
                                             <p>{!! Str::limit($product->preview_desc, 20) !!}</p>
                                             <a href="{{ route('product.product_detail', ['language' => $current_language, $product->id]) }}" class="read ml-2">Soma zaidi<i class="fa fa-angle-right"></i></a>
                                         </p>
