@@ -5,39 +5,39 @@
 @section('content')
 <div class="container px-0">
     <div class="col-12 special-page">
-  
+
         <div class="col-12 px-xs-0">
           <nav aria-label="breadcrumb" class="mb-0">
             <ol class="breadcrumb px-0">
-              <li class="breadcrumb-item"><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
-  
+              <li class="breadcrumb-item"><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
+
               <li class="breadcrumb-item active" aria-current="page">Bidhaa za TIRDO</li>
             </ol>
           </nav>
         </div>
-  
+
         <div class="col-md-12 page-content">
         <h4>T-Products</h4>
-  
+
   <div class="row mt-4">
-                      
-      @foreach($resources_products as $product)            
+
+      @foreach($resources_products as $product)
         <div class="post-slide7 col-xs-6 col-sm-4 col-md-3 my-2">
           <div class="post-img">
-            <img src="{{ asset($product->img) }}" alt="" class="w-100">
+            <img src="{{ asset('storage/'.$product->img) }}" alt="" class="w-100">
           </div>
           <div class="post-review">
             <ul class="post-bar">
-              <li><i class="fa fa-calendar"></i>{{ $product->date }}</li>
+              <li><i class="fa fa-calendar"></i>{{ $product->created_at }}</li>
             </ul>
             <p class="post-description">
-            {{ Str::limit($product->preview_desc, 20) }}
+            {!! Str::limit($product->preview_desc, 20) !!}
             </p>
-            <a href="{{ route('myproducts.product_detail', ['language' => $current_language, 'product_id' => $product->id]) }}" class="read">Soma Zaidi<i class="fa fa-angle-right"></i></a>
+            <a href="{{ route('product.product_detail', ['language' => $current_language, 'product_id' => $product->id]) }}" class="read">Soma Zaidi<i class="fa fa-angle-right"></i></a>
           </div>
         </div>
         @endforeach
-                                          
+
   </div>
   <!-- <div class="row my-2">
 <div class="col-md-12">

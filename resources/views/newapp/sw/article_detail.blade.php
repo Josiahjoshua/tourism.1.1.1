@@ -10,8 +10,8 @@
                 <div class="col-12 px-xs-0">
                     <nav aria-label="breadcrumb" class="mb-0">
                         <ol class="breadcrumb px-0">
-                            <li class="breadcrumb-item"><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
-                            <li class="breadcrumb-item"><a href="{% url 'mynews:all_articles' language=current_language %}" class="link-no-underline">All_articles<span></span></a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('news.all_articles', ['language' => $current_language]) }}" class="link-no-underline">All_articles<span></span></a></li>
                             <li class="breadcrumb-item active" aria-current="page">Habari</li>
                         </ol>
                     </nav>
@@ -21,30 +21,30 @@
 <div class="row">
 
                   <div class="col-md-9 bg-white py-3 page-content">
-                      <h4>Habari</h4>
+                      <h4>Habari {{ $article->id }}</h4>
                     </div>
                     <div class="">
                         <ul class="list-unstyled list-inline mb-1">
 
                             <li class="list-inline-item">
                                 <i class="fa fa-folder-o text-danger"></i>
-                                <div><small><i class="fa fa-calendar"></i> {{ $article->date }}</small></div>
+                                <div><small><i class="fa fa-calendar"></i> {{ $article->id }}</small></div>
                             </li>
 
                         </ul>
                     </div>
                     <hr>
                     <div class="news-img">
-                        <img  src="{{ $article->img->url }}" alt="Article Image" class="w-100">
+                        <img  src="{{ $article->img }}" alt="Article Image" class="w-100">
                     </div>
                     <div class="news-content">
-                        <p>{{ $article->desc|linebreaksbr }}</p>
+                        <p>{!! $article->preview_desc !!} </p>
                     </div>
 
                 </div>
             </div>
 
-<!-- {% include 'en/new_section.html' %} -->
+{{-- @include('tirdoweb.sw.new_section') --}}
 </div>
   </div>
 </div>

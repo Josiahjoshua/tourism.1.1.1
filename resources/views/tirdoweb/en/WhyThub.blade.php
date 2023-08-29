@@ -4,6 +4,7 @@
         <!-- contents -->
 @section('content')
     
+
     <div class="container px-0">
         <div class="col-12 special-page">
             <div class="col-12 p-4">

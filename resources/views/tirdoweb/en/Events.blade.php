@@ -11,7 +11,7 @@
                     <div class="col-12 px-xs-0">
                         <nav aria-label="breadcrumb" class="mb-0">
                             <ol class="breadcrumb px-0">
-															<li class="breadcrumb-item "><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+															<li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                               <li class="breadcrumb-item list-inline-item font-weight-bold">ABOUT TIRDO</li><li class="breadcrumb-item list-inline-item active">Mission and Vision</li>
                             </ol>
                         </nav>
@@ -113,41 +113,49 @@
                             <!-- Tab panes -->
                             <div class="tab-content sidebar-tabing" id="nav-tabContent">
                                 <div class="tab-pane active" id="home" role="tabpanel">
-                                    {% for article in news_articles %}
+
+                                    @foreach ($news_articles as $article)
+
                                     <div class="media">
                                         <a href="{% url 'all_articles' %}">
-                                            <img class="d-flex mr-3" src="{{article.img.url}}"></a>
+                                            <img class="d-flex mr-3" src="{{ asset('static/'.$article->img)}}"></a>
                                         <div class="media-body">
                                             <div class="news-title">
                                                 <h2 class="title-small pt-0 mt-0">
-                                                    <a href="">{{article.name}}</a>
+                                                    <a href="">{{$article->name}}</a>
                                                 </h2>
                                             </div>
-                                            <small class="text-muted">{{ article.date }}</small>
+                                            <small class="text-muted">{{ $article->date }}</small>
                                         </div>
                                     </div>
-                                    {% endfor %}
+
+                                    @endforeach
+
                                     <div class="row justify-content-end mt-2">
-                                        <a href="" class=""> <i>Tazama Zote <i class="far fa-arrow-alt-circle-right"></i></i></a>
+
+                                        <a href="{{ route('product.all_products', ['language' => $current_language, $product->id]) }}" class=""> <i>Tazama Zote <i class="far fa-arrow-alt-circle-right"></i></i></a>
                                     </div>
                                 </div>
 
 
                                 <div class="tab-pane" id="profile" role="tabpanel">
-                                    {% for product in news_products %}
+                                    @foreach ($resources_products as $product)
+
                                     <div class="media">
-                                        <a href="{% url 'all_products' %}">
-                                            <img class="d-flex mr-3" src="{{product.img.url}}"></a>
+                                        <a href="{{ route('product.product_detail', ['language' => $current_language, $product->id]) }}">
+                                            <img class="d-flex mr-3" src="{{$product->img}}"></a>
                                         <div class="media-body">
                                             <div class="news-title">
                                                 <h2 class="title-small pt-0 mt-0">
-                                                    <a href="">{{product.name}}</a>
+                                                    <a href="">{{$product->name}}</a>
                                                 </h2>
                                             </div>
-                                            <small class="text-muted">{{ product.date }}</small>
+                                            <small class="text-muted">{{ $product->date }}</small>
                                         </div>
                                     </div>
-                                    {% endfor %}
+
+                                    @endforeach
+
                                 </div>
                             </div>
                         </aside>

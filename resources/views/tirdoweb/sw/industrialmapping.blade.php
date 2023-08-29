@@ -4,7 +4,7 @@
         <!-- contents -->
 @section('content')
         <!-- contents -->
-    
+
     <div class="container px-0">
         <div class="col-12 special-page">
             <div class="col-12 p-4">
@@ -22,7 +22,7 @@
                         <h5>
                             Faida za Ramani ya Viwanda
                         </h5>
-        
+
                             </br>
 
                                 <ul style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
@@ -31,14 +31,16 @@
                                     <li>Hutoa taarifa juu ya upatikanaji na uaminifu wa malighafi lakini pia ushirikiano unaohitajika wa sekta ya viwanda na sekta nyingine.
                                         kama vile Kilimo, Mifugo, misitu, uvuvi, nishati, madini, maji, miundombinu na soko la ajira.</li>
                                     <li>Wezesha Utambulisho wa fursa za uwekezaji zinazopatikana nchini katika mikoa tofauti.</li>
-                                </ul>                                
+                                </ul>
                           </p>
 
 
                         </div>
                     </div>
 
-                    {{-- {% include 'en/new_section.html' %} --}}
+                    
+                    @include('tirdoweb.sw.newsection')
+
                 </div>
             </div>
         </div>

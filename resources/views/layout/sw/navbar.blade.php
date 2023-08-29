@@ -169,7 +169,7 @@
                             </ul>
                         </li>
                         <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
-                                data-toggle='dropdown'>COMSATS Center</a>
+                                data-toggle='dropdown'>Kituo cha COMSATS</a>
                             <ul class='dropdown-menu'>
                                 <li><a class='dropdown-item' href="{{ route('background', ['language' => $current_language]) }}">Historia</a></li>
                                 <li><a class='dropdown-item' href="{{ route('centreobjectives', ['language' => $current_language]) }}">Malengo ya Kituo</a></li>
@@ -200,8 +200,10 @@
                             <li class="nav-item dropdown-submenu">
                                 <a class='dropdown-item dropdown-toggle' data-toggle='dropdown' href='#'>Makampuni chini T-hub</a>
                                 <ul class='dropdown-menu'>
-                                    <li><a class='dropdown-item' href="{{ route('innovasie', ['language' => $current_language]) }}">Innovasive</a></li>
+                                    <li><a class='dropdown-item' href="{{ route('innovasie', ['language' => $current_language]) }}">Innovasie</a></li>
                                     <li><a class='dropdown-item' href="{{ route('awamupay', ['language' => $current_language]) }}">AwamuPay</a></li>
+                                    {{-- <li><a class='dropdown-item' href="{{ route('albetus', ['language' => $current_language]) }}">Albetus Technologies</a></li> --}}
+                                    <li><a class='dropdown-item' href="{{ route('bivatekafrica', ['language' => $current_language]) }}">Bivatek Africa</a></li>
                                 </ul>
                             </li>
                         </ul>

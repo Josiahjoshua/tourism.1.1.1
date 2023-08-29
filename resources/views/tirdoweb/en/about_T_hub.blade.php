@@ -12,7 +12,7 @@
                     <div class="col-12 px-xs-0">
                         <nav aria-label="breadcrumb" class="mb-0">
                             <ol class="breadcrumb px-0">
-															<li class="breadcrumb-item "><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+															<li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                               <li class="breadcrumb-item list-inline-item font-weight-bold">TIRDO T-Hub</li><li class="breadcrumb-item list-inline-item active">About T-Hub</li>
                             </ol>
                         </nav>
@@ -36,7 +36,9 @@
 
                         </div>
                     </div>
-                    {{-- {% include 'en/new_section.html' %} --}}
+
+                    @include('tirdoweb.en.newsection')
+
                 </div>
             </div>
         </div>

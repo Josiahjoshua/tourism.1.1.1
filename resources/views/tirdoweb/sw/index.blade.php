@@ -99,7 +99,7 @@
                                 kwa Sheria ya Bunge Na. 5 ya 1979 na ilianza kufanya kazi tarehe 1 Aprili 1979.
                               </br>
                               Jukumu lake ni kusaidia sekta ya viwanda ya Tanzania kwa kutoa utaalamu wa kiufundi na huduma za usaidizi ili kuboresha msingi wao wa teknolojia. Aidha,
-                               TIRDO inafanya utafiti uliotumika...<a href="#" class="">Soma zaidi</a>
+                               TIRDO inafanya utafiti uliotumika...<a href="{{ route('aboutus', ['language' => $current_language]) }}" class="">Soma zaidi</a>
                               </p>
                               <!-- <a href="aboutus" class="link-no-underline">Read more</a> -->
                             </div>
@@ -201,7 +201,7 @@
                                             <b><h6 class="article-h2">{{ $product->name }}</h6></b>
                                             <i class="fa fa-calendar blue-icon"></i> {{ $product->date }}
                                             <p>{!! Str::limit($product->preview_desc, 20) !!}</p>
-                                            <a href="#">Soma zaidi</a>
+                                            <a href="{{ route('product.product_detail', ['language' => $current_language, $product->id]) }}" class="read ml-2">Soma zaidi<i class="fa fa-angle-right"></i></a>
                                         </p>
                                     </div>
                                 </div>
@@ -229,8 +229,8 @@
                                             </p>
                                             <p><i class="fa fa-calendar"></i> {{ $article->date }}</p>
                                             <p>{!! Str::limit($article->preview_desc, 20)  !!}
-                                             {{-- <a href="{{ route('mynews.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}">Soma zaidi</a>  --}}
                                             </p>
+                                            <a href="{{ route('news.article_detail', ['language' => $current_language, $article->id]) }}" class="read ml-2">Soma zaidi<i class="fa fa-angle-right"></i></a>
                                         </div>
                                     </div>
                                 </div>

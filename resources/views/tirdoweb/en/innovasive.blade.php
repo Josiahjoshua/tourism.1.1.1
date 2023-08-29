@@ -11,7 +11,7 @@
                     <div class="col-12 px-xs-0">
                         <nav aria-label="breadcrumb" class="mb-0">
                             <ol class="breadcrumb px-0">
-															<li class="breadcrumb-item "><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+															<li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                               <li class="breadcrumb-item list-inline-item font-weight-bold">Company under T-Hub</li>
                               <li class="breadcrumb-item list-inline-item active">Innovasie</li>
                             </ol>
@@ -29,12 +29,12 @@
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                                 Innovasie is a dynamic and innovative technology solutions company based in Dar es Salaam, Tanzania. Established in 2019
                                 with a registration number 139372131, our company was founded with a core vision of solving some of Africa's most prominent
-                                problems through the power of technology and creativity.  
+                                problems through the power of technology and creativity.
 
                             </br>
                             Our mission is to make a positive impact in the world by offering cutting-edge services and products that drive growth, efficiency,
                             and success for businesses and organizations in Africa and Beyond.
-                            </p> 
+                            </p>
 <br>
                             <h5>
                                 Management team:
@@ -43,7 +43,7 @@
                                 <div style="flex: 1;">
                                 <ul>
                                     <li>
-                                        Shilton Anaeli Ulomi, Managing Director, Business & Strategy Lead 
+                                        Shilton Anaeli Ulomi, Managing Director, Business & Strategy Lead
                                     </li>
                                     <li>
                                         Justine John Shumbi, Director Operations, Creative and Marketing Lead
@@ -52,7 +52,7 @@
                                         Gideon Kiangu, Director Technology, Cyber security & IT Management
                                     </li>
                                     <li>
-                                        Halilu Bazicha. Director Technology, Product Management & Agile 
+                                        Halilu Bazicha. Director Technology, Product Management & Agile
                                     </li>
                                 </ul>
                             </div>
@@ -60,8 +60,8 @@
                                     <img src="/uploads/innovasie/shirton.JPG" alt="Picha" style="width: 100%;">
                                 </div>
                             </div>
-                
-                                
+
+
                             <br>
                             <h5>
                                 Our Services:
@@ -70,18 +70,18 @@
                                 <h5>
                                     1.	Technology Solutions
                                 </h5>
-                                Our team of talented professionals combines their expertise in technology, software development, 
-                                and industry knowledge to deliver high-quality solutions that match the unique requirements of our clients. 
+                                Our team of talented professionals combines their expertise in technology, software development,
+                                and industry knowledge to deliver high-quality solutions that match the unique requirements of our clients.
                                 Our technology services include:
                                 <ul>
                                     <li>
-                                        	Custom Software Development: 
+                                        	Custom Software Development:
                                     </li>
                                     <li>
                                         	Enteprise solutions
                                     </li>
                                     <li>
-                                        	Game Development: 
+                                        	Game Development:
                                     </li>
                                     <li>
                                         	Software Maintenance
@@ -99,8 +99,8 @@
                             </p>
                             <p>
                                 <h5>2.	Industrial cybersecurity or ICS (Industrial Control Systems) </h5>
-                                We focus on protecting the critical systems and infrastructure used in various industries 
-                                from cyber threats and attacks. These industries can include manufacturing, energy, transport, 
+                                We focus on protecting the critical systems and infrastructure used in various industries
+                                from cyber threats and attacks. These industries can include manufacturing, energy, transport,
                                 healthcare, utilities, and more. Our cybersecurity services include:
                                 <ul>
                                     <li>	Threat Detection and Prevention: </li>
@@ -134,20 +134,20 @@
                             <br>
                             <br>
                                 <h6>C.	SmartSMS</h6>
-                                enables organizations to send timely and personalized messages to customers, clients, and stakeholders, fostering stronger relationships and 
+                                enables organizations to send timely and personalized messages to customers, clients, and stakeholders, fostering stronger relationships and
                                 driving efficient communication.
-                        
+
                             </p>
                             <p>
                                 <h5>5.	Organisations we have worked with:</h5>
-                                TIRDO, TANTRADE, Vodacom Tanzania, Smartlab, Centric, GIZ, 
+                                TIRDO, TANTRADE, Vodacom Tanzania, Smartlab, Centric, GIZ,
                             </p>
                             <p>
                                 <h5>6.	Contact Us: </h5>
-                                If you are looking for a trusted technology solutions partner, Innovasie is here to assist you. Contact us today to explore how our services and 
+                                If you are looking for a trusted technology solutions partner, Innovasie is here to assist you. Contact us today to explore how our services and
                                 products can empower your business to thrive in the digital era.
                             </br>
-                            Website: <a href="#">www.innovasie.co.tz</a> 
+                            Website: <a href="https://www.innovasie.co.tz">www.innovasie.co.tz</a>
                             <br>
                             Email: <a href="#">shilton@innovasie.co.tz </a>
                             <br>
@@ -161,11 +161,12 @@
                             <img src="/uploads/innovasie/innovasie.png" alt="Innovasie" style="max-width: 100%;">
                         </div>
                     </div>
-                            {% include 'sw/new_section.html' %}
+                            @include('tirdoweb.en.newsection')
+
                         </div>
                     </div>
                 </div>
-        
+
             </div>
-        
+
 @endsection

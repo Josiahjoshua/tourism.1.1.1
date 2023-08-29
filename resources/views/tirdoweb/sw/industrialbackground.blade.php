@@ -11,7 +11,7 @@
                 <div class="col-12 px-xs-0">
                     <nav aria-label="breadcrumb" class="mb-0">
                         <ol class="breadcrumb px-0">
-                                                        <li class="breadcrumb-item "><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+                                                        <li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                           <li class="breadcrumb-item list-inline-item font-weight-bold">Kituo cha Habari za Viwanda</li><li class="breadcrumb-item list-inline-item active">Historia</li>
                         </ol>
                     </nav>
@@ -22,10 +22,10 @@
 
                 <div class="col-md-9 bg-white py-3 page-content">
                     <h4>Historia</h4>
-    
+
                     <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                         <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                
+
                             Serikali ya awamu ya tano imeanza mchakato wa uanzishaji wa viwanda kwa kasi ili kuhakikisha ukuaji wa haraka wa uchumi shirikishi na wakati huo huo kuhakikisha maendeleo ya watu.
                             Hii inaendana na Dira ya Maendeleo ya Tanzania, 2025; Ilani ya Chama Cha Mapinduzi (CCM), 2015-2020; na Mpango wa Maendeleo wa Miaka Mitano, 2016/17-2020/21.
                             Kwa ajili ya uendelevu wa viwanda vinavyoanzishwa pamoja na vilivyopo, kuna haja ya miundombinu yenye nguvu ya Utafiti na Maendeleo (R&D).</br></br>
@@ -57,7 +57,9 @@
                     </div>
                 </div>
 
-                {{-- {% include 'en/new_section.html' %} --}}
+              
+                @include('tirdoweb.sw.newsection')
+
                 </div>
             </div>
         </div>

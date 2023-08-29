@@ -4,7 +4,7 @@
         <!-- contents -->
 @section('content')
         <!-- contents -->
-    
+
     <div class="container px-0">
         <div class="col-12 special-page">
             <div class="col-12 p-4">
@@ -21,22 +21,23 @@
                             <h5>
                                 Faida za Uzalishaji wa Mafuta muhimu
                             </h5>
-            
+
                                 </br>
-    
+
                                     <ul style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                                         <li>Miradi inatarajia kufungua uwezo katika kuongeza thamani na kutoa fursa za ajira.</li> <br>
                                         <li>Imarisha ushirikishwaji wa ujasiriamali katika sekta ya viwanda ili kuongeza kipato cha wajasiriamali.</li>
                                         <li>Kushawishi mabadiliko ya kiteknolojia na uvamizi kwa fursa za uwekezaji ambapo nchini Tanzania
                                             hakuna Essential huge Industry ya mafuta muhimu ambayo tunakaribisha wawekezaji kuwekeza kwa TIRDO</li>
-                                </ul>                                
+                                </ul>
                           </p>
 
 
                         </div>
                     </div>
 
-                    {{-- {% include 'en/new_section.html' %} --}}
+                    @include('tirdoweb.sw.newsection')
+
                 </div>
             </div>
         </div>

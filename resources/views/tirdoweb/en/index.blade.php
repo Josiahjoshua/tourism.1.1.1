@@ -97,7 +97,7 @@
                                   by an Act of Parliament No. 5 of 1979 and it became operational on 1st April 1979.
                               </br>
                               Its mandate is to assist the industrial sector of Tanzania by providing technical expertise and support services to upgrade their technology base. Additionally,
-                               TIRDO carries out applied research...<a href="{% url 'aboutus' current_language %}" class="">Read more</a>
+                               TIRDO carries out applied research...<a href="{{ route('aboutus', ['language' => $current_language]) }}" class="">Read more</a>
                               </p>
                               <!-- <a href="aboutus" class="link-no-underline">Read more</a> -->
                             </div>
@@ -199,7 +199,7 @@
                                             <b><h6 class="article-h2">{{ $product->name }}</h6></b>
                                             <i class="fa fa-calendar blue-icon"></i> {{ $product->date }}
                                             <p>{!! Str::limit($product->preview_desc, 20) !!}</p>
-                                            <a href="#">Read More</a>
+                                            <a href="{{ route('product.product_detail', ['language' => $current_language, $product->id]) }}">Read More</a>
                                         </p>
                                     </div>
                                 </div>
@@ -226,7 +226,7 @@
                                             </p>
                                             <p><i class="fa fa-calendar"></i> {{ $article->date }}</p>
                                             <p>{!! Str::limit($article->preview_desc, 20) !!}
-                                                 <a href="{{ route('mynews.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}">Soma zaidi</a>
+                                                 <a href="{{ route('news.article_detail', ['language' => $current_language, $article->id]) }}">Soma zaidi</a>
                                             </p>
                                         </div>
                                     </div>

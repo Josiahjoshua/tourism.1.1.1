@@ -4,7 +4,7 @@
         <!-- contents -->
 @section('content')
         <!-- contents -->
-    
+
     <div class="container px-0">
         <div class="col-12 special-page">
             <div class="col-12 p-4">
@@ -12,7 +12,7 @@
                     <div class="col-12 px-xs-0">
                         <nav aria-label="breadcrumb" class="mb-0">
                             <ol class="breadcrumb px-0">
-															<li class="breadcrumb-item "><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+															<li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                               <li class="breadcrumb-item list-inline-item font-weight-bold">TIRDO</li><li class="breadcrumb-item list-inline-item active">Usalama wa Mtandao na Huduma za Maendeleo ya Programu</li>
                             </ol>
                         </nav>
@@ -24,7 +24,7 @@
                     <div class="col-md-9 bg-white py-3 page-content">
                         <h4>Usalama wa Mtandao na Huduma za Maendeleo ya Programu</h4>
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
-        
+
                           <p class="about_hub">
                             <h5>Kufungua Wakati Ujao Salama na Ubunifu</h5>
                             Katika mazingira ya kisasa ya kidijitali, kulinda mali za shirika lako na kuhakikisha uendelezaji usio na mshono wa maombi ya kisasa ni muhimu kwa
@@ -77,11 +77,12 @@
                             Je, uko tayari kukumbatia siku zijazo kwa kujiamini? Panga mashauriano na wataalamu wetu leo ​​ili kuchunguza jinsi TIRDO ya Usalama wa Mtandao na Programu
                             Huduma za maendeleo zinaweza kuinua biashara yako hadi urefu mpya. Kwa pamoja, tutafungua njia kuelekea kesho salama na yenye ubunifu.
                           </p>
-              
+
                         </div>
                     </div>
 
-                    {{-- {% include 'en/new_section.html' %} --}}
+                    @include('tirdoweb.sw.newsection')
+
                 </div>
             </div>
         </div>

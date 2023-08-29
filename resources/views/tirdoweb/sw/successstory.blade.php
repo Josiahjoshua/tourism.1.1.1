@@ -11,7 +11,7 @@
                     <div class="col-12 px-xs-0">
                         <nav aria-label="breadcrumb" class="mb-0">
                             <ol class="breadcrumb px-0">
-															<li class="breadcrumb-item "><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+															<li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                               <li class="breadcrumb-item list-inline-item font-weight-bold">Mafanikio ya TIRDO</li><li class="breadcrumb-item list-inline-item active">Hadithi ya mafanikio</li>
                             </ol>
                         </nav>
@@ -123,10 +123,11 @@
                                         kipengele cha nguvu, ufanisi wa motors na kupendekeza hatua za kurekebisha.
                                     </li>
                                 </Ul>
-                            </p>           
+                            </p>
                         </div>
                     </div>
-                    {{-- {% include 'en/new_section.html' %} --}}
+                    @include('tirdoweb.sw.newsection')
+
                 </div>
             </div>
         </div>

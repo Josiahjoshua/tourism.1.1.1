@@ -10,8 +10,8 @@
                 <div class="col-12 px-xs-0">
                     <nav aria-label="breadcrumb" class="mb-0">
                         <ol class="breadcrumb px-0">
-                            <li class="breadcrumb-item"><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
-                            <li class="breadcrumb-item"><a href="{% url 'myproducts:all_products' language=current_language %}" class="link-no-underline">All_products<span></span></a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('product.all_products', ['language' => $current_language]) }}" class="link-no-underline">All_products<span></span></a></li>
                             <li class="breadcrumb-item active" aria-current="page">Bidhaa za TIRDO</li>
                         </ol>
                     </nav>
@@ -39,10 +39,10 @@
                           </div>
                           <hr>
                           <div class="news-img">
-                              <img  src="{{ asset($product->img) }}" alt="Article Image" class="w-100">
+                              <img  src="{{ asset('storage/'.$product->img) }}" alt="Product Image" class="w-100">
                           </div>
                           <div class="news-content">
-                              <p>{{ $product->desc|linebreaksbr }}</p>
+                              <p>{{ $product->desc }}</p>
                           </div>
 
                       </div>

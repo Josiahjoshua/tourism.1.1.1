@@ -4,7 +4,7 @@
             <div class="col-lg-3 col-sm-6 px-3 no-padding-sm footer-content shadow-right">
 
                 <div class="col-12">
-                    <h5 class="footer-heading">Contact Us</h5>
+                    <h5 class="footer-heading">Wasiliana Nasi</h5>
                     <p class="py-0">Shirika la Utafiti na Maendeleo ya Viwanda Tanzania</p>
                     <p class="py-0">
                         Kimweri Avenue,<br>
@@ -73,7 +73,7 @@
 
 
                                 <div class="col-lg-4 no-padding-sm">
-                                    <h5 class="footer-heading">Quick Links</h5>
+                                    <h5 class="footer-heading">Viungo vya Haraka</h5>
                                     <ul class="list-inline text-left">
                                         <li class="list-inline-item pr-1 py-2"><a
                                                 href="https://mail.tirdo.or.tz">Government Mailing System</a>

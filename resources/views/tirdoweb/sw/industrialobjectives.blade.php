@@ -11,7 +11,7 @@
                 <div class="col-12 px-xs-0">
                     <nav aria-label="breadcrumb" class="mb-0">
                         <ol class="breadcrumb px-0">
-                                                        <li class="breadcrumb-item "><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+                                                        <li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                           <li class="breadcrumb-item list-inline-item font-weight-bold">Kituo cha Habari za Viwanda</li><li class="breadcrumb-item list-inline-item active">Malengo ya Msingi</li>
                         </ol>
                     </nav>
@@ -22,7 +22,7 @@
 
                 <div class="col-md-9 bg-white py-3 page-content">
                     <h4>Malengo Muhimu</h4>
-    
+
                     <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                       <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                              <strong style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
@@ -69,12 +69,14 @@
                                  kuwaleta wadau pamoja ili kujadili changamoto na fursa. </li><br>
                             <li>Ushauri wa Kiufundi: Timu ya wataalam wa mada itapatikana ili kutoa ushauri wa kiufundi na ushauri kwa wajasiriamali na viwanda vinavyotafuta mwongozo.</li>
                          </ul>
-  
+
                       </div>
 
                 </div>
 
-                {{-- {% include 'en/new_section.html' %} --}}
+                
+                @include('tirdoweb.sw.newsection')
+
                 </div>
             </div>
         </div>

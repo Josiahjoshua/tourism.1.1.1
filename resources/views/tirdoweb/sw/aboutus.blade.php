@@ -4,7 +4,7 @@
         <!-- contents -->
 @section('content')
         <!-- contents -->
-    
+
     <div class="container px-0">
         <div class="col-12 special-page">
             <div class="col-12 p-4">
@@ -13,10 +13,10 @@
 
                     <div class="col-md-9 bg-white py-3 page-content">
                         <h4>Karibu TIRDO</h4>
-        
+
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                
+
                                 Shirika la Utafiti na Maendeleo ya Viwanda Tanzania (TIRDO) ni shirika la utafiti na maendeleo la taaluma mbalimbali
                                 iliyoanzishwa kwa Sheria ya Bunge namba 5 ya mwaka 1979 na ilianza kufanya kazi tarehe 1 Aprili, 1979. Ni taasisi inayomilikiwa na Serikali chini ya Wizara ya Viwanda.
                                 Biashara na Uwekezaji.
@@ -33,13 +33,13 @@
                                 Majukumu mahususi ya shirika ni:-
                             </p>
                                 <ul style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                                    <li>Kufanya na kukuza utekelezaji wa utafiti uliotumika ulioundwa kuwezesha tathmini, ukuzaji na matumizi ya nyenzo za ndani katika michakato ya viwandani.</li> 			
-                                    <li>Utafiti katika mbinu na teknolojia za viwanda vya ndani na nje na kutathmini kufaa kwao kwa kupitishwa na kutumika katika uzalishaji wa viwanda.</li>				
+                                    <li>Kufanya na kukuza utekelezaji wa utafiti uliotumika ulioundwa kuwezesha tathmini, ukuzaji na matumizi ya nyenzo za ndani katika michakato ya viwandani.</li>
+                                    <li>Utafiti katika mbinu na teknolojia za viwanda vya ndani na nje na kutathmini kufaa kwao kwa kupitishwa na kutumika katika uzalishaji wa viwanda.</li>
                                     <li>Kuza na kutoa vifaa kwa ajili ya mafunzo kwa wafanyakazi kwa ajili ya kutekeleza utafiti wa kisayansi na viwanda uliotumika</li>
                                     <li>Kuendesha mfumo wa uhifadhi wa nyaraka ili kusambaza taarifa kuhusu utafiti uliotumika.</li>
                                     <li>Toa huduma za kiufundi kwa maendeleo ya viwanda.</li>
                                     <li>Kutoa uwezo wa kiufundi ili kupunguza uchafuzi wa viwanda.</li>
-                                </ul>                                
+                                </ul>
                           </p>
 
                           <h5>
@@ -48,7 +48,7 @@
                           <p>
                             "Taasisi ambayo hufanya utafiti wa hali ya juu, rafiki wa mazingira na unaoendeshwa na mahitaji, na matokeo yanayotokana na tasnia shindani".
                           </p>
-                    
+
                           <h5>
                             Misheni
                           </h5>
@@ -79,7 +79,8 @@
                         </div>
                     </div>
 
-                    {{-- {% include 'en/new_section.html' %} --}}
+                    @include('tirdoweb.sw.newsection')
+
                 </div>
             </div>
         </div>

@@ -48,7 +48,8 @@
                         </div>
                     </div>
 
-                    {{-- {% include 'en/new_section.html' %} --}}
+                    @include('tirdoweb.en.newsection')
+
                 </div>
             </div>
         </div>

@@ -86,6 +86,46 @@ public function awamupay($language) {
     return view($templatePath, $data);
 }
 
+// public function albetus($language) {
+//     $templateName = 'Albetus';
+//     $templatePath = $this->getTemplatePath($language, $templateName);
+
+//     $data = [
+//         'current_language' => $language,
+//         'resources_products' => ResourcesProduct::all(),
+//         'news_articles' => NewsArticle::all(),
+//     ];
+
+//     return view($templatePath, $data);
+// }
+
+public function bivatekafrica($language) {
+    $templateName = 'bivatekafrica';
+    $templatePath = $this->getTemplatePath($language, $templateName);
+
+    $data = [
+        'current_language' => $language,
+        'resources_products' => ResourcesProduct::all(),
+        'news_articles' => NewsArticle::all(),
+    ];
+
+    return view($templatePath, $data);
+}
+
+public function albetus($language) {
+    $templateName = 'albetus';
+    $templatePath = $this->getTemplatePath($language, $templateName);
+
+    $data = [
+        'current_language' => $language,
+        'resources_products' => ResourcesProduct::all(),
+        'news_articles' => NewsArticle::all(),
+    ];
+
+    return view($templatePath, $data);
+}
+
+
 public function background($language) {
     $templateName = 'background';
     $templatePath = $this->getTemplatePath($language, $templateName);
@@ -521,19 +561,6 @@ public function patrners($language) {
     return view($templatePath, $data);
 }
 
-public function publication($language) {
-    $templateName = 'publication';
-    $templatePath = $this->getTemplatePath($language, $templateName);
-    $publication_items = Publications::all();
-    $data = [
-        'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
-        'publication_items' => $publication_items
-    ];
-
-    return view($templatePath, $data);
-}
 
 public function research($language) {
     $templateName = 'research';
@@ -633,17 +660,6 @@ public function whythub($language) {
 //     return view($templatePath);
 // }
 
-public function all_articles($language) {
-    $templateName = 'all_articles';
-    $templatePath = $this->getTemplatePath($language, $templateName);
 
-    $data = [
-        'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
-    ];
-
-    return view($templatePath, $data);
-}
 
 }

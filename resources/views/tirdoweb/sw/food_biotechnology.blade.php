@@ -4,7 +4,7 @@
         <!-- contents -->
 @section('content')
         <!-- contents -->
-    
+
     <div class="container px-0">
         <div class="col-12 special-page">
             <div class="col-12 p-4">
@@ -12,7 +12,7 @@
                     <div class="col-12 px-xs-0">
                         <nav aria-label="breadcrumb" class="mb-0">
                             <ol class="breadcrumb px-0">
-															<li class="breadcrumb-item "><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+															<li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                               <li class="breadcrumb-item list-inline-item font-weight-bold">TIRDO</li><li class="breadcrumb-item list-inline-item active">Chakula na Bayoteknolojia</li>
                             </ol>
                         </nav>
@@ -24,11 +24,11 @@
                     <div class="col-md-9 bg-white py-3 page-content">
                         <div class="row">
                             <div class="col-md-4 col-xs-12">
-                              <div class="text-center img-frame custom-img-frame">                                    
+                              <div class="text-center img-frame custom-img-frame">
                                       <img src="/uploads/administration/Dr.purificator.png" alt="Departmental Head" class="img-fluid">
                               </div>
                             </div>
-          
+
                             <div class="col-md-8">
                               <div class="">
                                 <h5 class="title mb-2">Dr. Purificator Andrew</h5>
@@ -50,8 +50,8 @@
                                     <strong>
                                         Mgawanyo wa Chakula na Bayoteknolojia ulianzishwa kwa makusudi kwa;
                                     </strong>
-                                    
-                                    <ul style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">	
+
+                                    <ul style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                                         <li>Kufanya shughuli za utafiti zinazohusiana na chakula na teknolojia ya kibayoteknolojia</li>
                                         <li>Kutayarisha pendekezo la mradi kuhusu masuala ya chakula</li>
                                         <li>Kutoa huduma za uchanganuzi wa chakula kwa viwanda na umma kwa ujumla</li>
@@ -59,10 +59,10 @@
                                         <li>Zalisha mbegu kwa wakulima wa uyoga</li>
                                         <li>Kutoa mafunzo ya usindikaji wa kimsingi wa chakula, biolojia na uzalishaji wa uyoga kwa wenye viwanda,
                                         biashara ndogo na za kati SME, taasisi na umma kwa ujumla </li>
-                                       
+
                                     </ul>
-                            </p> 
-                        
+                            </p>
+
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                                 Idara ina maabara ya chakula ambayo ilianzishwa mwaka 1995 ili kuhudumia utafiti na miradi katika TIRDO.
                                     Maabara pia hubeba huduma za chakula na uchambuzi.
@@ -83,7 +83,7 @@
                                         <li>Ugunduzi wa Salmonella</li>
                                     </ul>
                             </p>
-                            
+
 
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                                 Vigezo vingine visivyoidhinishwa ambavyo maabara ina uwezo wa kufanya ikiwa ni pamoja na, kugundua Vibrio cholerae,
@@ -96,7 +96,7 @@
                                         <li> Uboreshaji wa mbinu za ukaushaji wa changarawe za muhogo kwa kutumia vikaushio vya jua vilivyoboreshwa ili kuzalisha HQCF</li>
                                         <li> Uboreshaji wa mashine ya kuchimba mawese na vigezo vya ubora wa mafuta ya mawese</li>
                                     </ul>
-                            </p>    
+                            </p>
                             <h4>Mashauri ambayo kitengo kinatoa</h4>
                                     <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                                         Kitengo cha Chakula na Bayoteknolojia kimekuwa kikitoa idadi ya huduma kwa wateja wake katika aina ya huduma za ushauri.
@@ -108,11 +108,12 @@
                                         <li>Mafunzo ya usindikaji wa chakula, ufungashaji wa chakula, usalama wa chakula, Mazoea Bora ya Utengenezaji, Mitindo Bora ya Usafi, Uchambuzi wa Hatari.
                                             Sehemu Muhimu ya Kudhibiti kwa maduka kama vile hoteli, vituo vya huduma za upishi, shule, viwanda, mashirika na SMEs.</li>
                                         </ul>
-                                </p>       
+                                </p>
                         </div>
                     </div>
 
-                    {{-- {% include 'en/new_section.html' %} --}}
+                    @include('tirdoweb.sw.newsection')
+
                 </div>
             </div>
         </div>

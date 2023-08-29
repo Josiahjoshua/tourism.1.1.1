@@ -23,13 +23,13 @@
 
 
               <div class="media">
-                  <a href="{% url 'mynews:article_detail' language=current_language article_id=article.id %}">
+                  <a href="{{ route('news.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}">
                       <img class="d-flex mr-3" src="{{$article->img}}" alt="Thumbnail">
                   </a>
                   <div class="media-body">
                       <div class="news-title">
                           <h2 class="title-small pt-0 mt-0">
-                              <a href="{% url 'mynews:article_detail' language=current_language article_id=article.id %}" class="link-no-underline">{{$article->name}}</a>
+                              <a href="{{ route('news.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}" class="link-no-underline">{{$article->name}}</a>
                           </h2>
                       </div>
                       <small class="text-muted"><i class="fa fa-calendar"></i> {{ $article->date }}</small>
@@ -38,7 +38,7 @@
               @endforeach
               <!-- Add a link for "Tazama Zote" -->
               <div class="row justify-content-center mt-2">
-                  <a href="{% url 'mynews:all_articles' language=current_language %}" class="link-no-underline"> <i>Tazama Zote <i class="far fa-arrow-alt-circle-right"></i></i></a>
+                  <a href="{{ route('news.all_articles', ['language' => $current_language]) }}" class="link-no-underline"> <i>Tazama Zote <i class="far fa-arrow-alt-circle-right"></i></i></a>
               </div>
           </div>
 
@@ -48,13 +48,13 @@
 
 
               <div class="media">
-                  <a href="{{ route('mynews.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}">
+                  <a href="{{ route('news.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}">
                       <img class="d-flex mr-3" src="{{$product->img}}" alt="Thumbnail">
                   </a>
                   <div class="media-body">
                       <div class="news-title">
                           <h2 class="title-small pt-0 mt-0">
-                              <a href="{% url 'myproducts:product_detail' language=current_language product_id=product.id %}" class="link-no-underline">{{$product->name}}</a>
+                              <a href="{{ route('product.product_detail', ['language' => $current_language, 'article_id' => $product->id]) }}" class="link-no-underline">{{$product->name}}</a>
                           </h2>
                       </div>
                       <small class="text-muted"><i class="fa fa-calendar"></i> {{ $product->date }}</small>
@@ -64,7 +64,7 @@
             @endforeach
 
               <div class="row justify-content-center mt-2">
-                  {{-- <a href="{% url 'myproducts:all_products' language=current_language %}" class="link-no-underline"> <i>Tazama Zote <i class="far fa-arrow-alt-circle-right"></i></i></a> --}}
+                  <a href="{{ route('product.all_products', ['language' => $current_language]) }}" class="link-no-underline"> <i>Tazama Zote <i class="far fa-arrow-alt-circle-right"></i></i></a>
               </div>
           </div>
 

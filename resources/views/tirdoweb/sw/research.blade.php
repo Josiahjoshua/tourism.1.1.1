@@ -11,7 +11,7 @@
                     <div class="col-12 px-xs-0">
                         <nav aria-label="breadcrumb" class="mb-0">
                             <ol class="breadcrumb px-0">
-															<li class="breadcrumb-item "><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+															<li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                               <li class="breadcrumb-item list-inline-item font-weight-bold">TIRDO</li><li class="breadcrumb-item list-inline-item active">Huduma za Utafiti </li>
                             </ol>
                         </nav>
@@ -23,7 +23,7 @@
                     <div class="col-md-9 bg-white py-3 page-content">
                         <h4>Huduma za Utafiti</h4>
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
-        
+
                           <p class="about_hub">
                             TIRDO hufanya utafiti uliotumika kwa ajili ya <strong>Matumizi ya Nyenzo za Ndani:</strong> hii inahusisha kufanya utafiti uliotumika unaozingatia tathmini,
                             maendeleo, na matumizi ya nyenzo za ndani ndani ya michakato ya viwanda. Hii inajumuisha uchunguzi wa kimfumo wa jinsi anuwai za ndani
@@ -48,13 +48,14 @@
                             Kwa kujihusisha na shughuli hizi za utafiti, TIRDO inalenga kuziba pengo kati ya maarifa ya kisayansi na matumizi ya viwandani.
                             Shirika linajitahidi kuimarisha viwanda vya ndani kwa kutumia uwezo wa nyenzo za ndani na kutathmini uwezekano wa kufanikiwa.
                             ya kupitisha mbinu na teknolojia za nje. Kupitia juhudi hizi, TIRDO inachangia ukuaji na maendeleo ya Tanzania
-                             sekta ya viwanda na uchumi.     
+                             sekta ya viwanda na uchumi.
                           </p>
-              
+
                         </div>
                     </div>
 
-                    {{-- {% include 'en/new_section.html' %} --}}
+                    @include('tirdoweb.sw.newsection')
+
                 </div>
             </div>
         </div>

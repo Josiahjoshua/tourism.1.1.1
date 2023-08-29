@@ -11,7 +11,7 @@
                     <div class="col-12 px-xs-0">
                         <nav aria-label="breadcrumb" class="mb-0">
                             <ol class="breadcrumb px-0">
-															<li class="breadcrumb-item "><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+															<li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                               <li class="breadcrumb-item list-inline-item font-weight-bold">TIRDO</li><li class="breadcrumb-item list-inline-item active">Nishati</li>
                             </ol>
                         </nav>
@@ -23,11 +23,11 @@
                     <div class="col-md-9 bg-white py-3 page-content">
                       <div class="row">
                         <div class="col-md-4 col-xs-12">
-                          <div class="text-center img-frame custom-img-frame">                                    
+                          <div class="text-center img-frame custom-img-frame">
                                   <img src="/uploads/administration/Eng.Hossen Iddi Kayumba.png" alt="Departmental Head" class="img-fluid">
                           </div>
                         </div>
-      
+
                         <div class="col-md-8">
                           <div class="">
                             <h5 class="title mb-2">Eng.Hossen Iddi Kayumba</h5>
@@ -39,13 +39,13 @@
                         </div>
                       </div>
                         <h4>MANDATE</h4>
-        
+
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                
+
                               Kuongeza upatikanaji wa nishati safi kwa Watanzania wote kwa kufanya utafiti na maendeleo
                               katika teknolojia ya nishati na kwa kutoa huduma za usimamizi wa nishati.
-        
+
                             </p>
                             <h4>HUDUMA ZETU</h4>
                             <P style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
@@ -79,21 +79,22 @@
                                   </ul>
                             </p>
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                                4) Washauri	
+                                4) Washauri
                               <ul style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                                 <li>Ukaguzi wa nishati</li>
                                  <li>Tathmini ya ubora wa rasilimali ya makaa ya mawe (RQA) inapohitajika.</li>
                                   </ul>
                             </p>
                             <p>
-                              <img src="/uploads/icon/energylab.png" style="padding:7px;float:left;"> 
+                              <img src="/uploads/icon/energylab.png" style="padding:7px;float:left;">
                               <img src="/uploads/icon/energy-coal.jpg" style="padding:7px;float:left;">
                               <img src="/uploads/icon/energy1.png" style="padding:7px;float:left;">
                           </p>
                         </div>
                     </div>
 
-                    {{-- {% include 'en/new_section.html' %} --}}
+                    @include('tirdoweb.sw.newsection')
+
                 </div>
             </div>
         </div>

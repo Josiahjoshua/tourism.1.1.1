@@ -102,7 +102,7 @@
                     <div class="collapse navbar-collapse col-12 px-0" id="middleNavbarMenu">
                         <ul class="navbar-nav mr-auto nav-bottom-header justify-content-center d-flex col-12">
                             <li class="nav-item active">
-                                <a class="nav-link" href="home">
+                                <a class="nav-link" href="{{ route('home', ['language' => $current_language]) }}">
                                     <span class="mt-0 pt-0"><i class="fa fa-home"></i> Home</span>
                                 </a>
                             </li>
@@ -203,7 +203,10 @@
                                     <a class='dropdown-item dropdown-toggle' data-toggle='dropdown' href='#'>Companies under T-hub</a>
                                     <ul class='dropdown-menu'>
                                         <li><a class='dropdown-item' href="{{ route('innovasie', ['language' => $current_language]) }}">Innovasie</a></li>
-                                        <li><a class='dropdown-item' href="{{ route('awamupay', ['language' => $current_language]) }}">Ammacom</a></li>
+                                        <li><a class='dropdown-item' href="{{ route('awamupay', ['language' => $current_language]) }}">Ammacom</a>
+                                        </li>
+                                        {{-- <li><a class='dropdown-item' href="{{ route('albetus', ['language' => $current_language]) }}">Albetus Technologies</a></li> --}}
+                                        <li><a class='dropdown-item' href="{{ route('bivatekafrica', ['language' => $current_language]) }}">Bivatek Africa</a></li>
                                     </ul>
                                 </li>
                             </ul>

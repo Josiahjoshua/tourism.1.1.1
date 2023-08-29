@@ -9,7 +9,7 @@
         <div class="col-12 p-4">
             <nav aria-label="breadcrumb" class="mb-0">
               <ol class="breadcrumb px-0">
-                    <li class="breadcrumb-item"><a href="/"><span class="fas fa-home"></span></a>
+                    <li class="breadcrumb-item"><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">Maswali yanayoulizwa mara kwa mara</li>
               </ol>
@@ -96,7 +96,9 @@
                     </div>
 
                 </div>
-                {{-- {% include 'en/new_section.html' %} --}}
+
+                @include('tirdoweb.sw.newsection')
+
                 </div>
             </div>
         </div>

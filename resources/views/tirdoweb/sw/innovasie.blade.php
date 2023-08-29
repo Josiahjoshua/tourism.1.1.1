@@ -4,7 +4,7 @@
         <!-- contents -->
 @section('content')
         <!-- contents -->
-    
+
     <div class="container px-0">
         <div class="col-12 special-page">
             <div class="col-12 p-4">
@@ -12,7 +12,7 @@
                     <div class="col-12 px-xs-0">
                         <nav aria-label="breadcrumb" class="mb-0">
                             <ol class="breadcrumb px-0">
-															<li class="breadcrumb-item "><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+															<li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                               <li class="breadcrumb-item list-inline-item font-weight-bold">Kampuni iliyo chini ya T-Hub</li>
                               <li class="breadcrumb-item list-inline-item active">Innovasie</li>
                             </ol>
@@ -136,7 +136,7 @@
                                 <h6>C. SmartSMS</h6>
                                 huwezesha mashirika kutuma ujumbe kwa wakati na wa kibinafsi kwa wateja, wateja, na washikadau, kukuza uhusiano wenye nguvu na
                                 kuendesha mawasiliano kwa ufanisi.
-                        
+
                             </p>
                             <p>
                                 <h5>5. Mashirika ambayo tumefanya kazi nayo: </ h5>
@@ -147,7 +147,7 @@
                                 Ikiwa unatafuta mshirika unayeaminika wa suluhisho za teknolojia, Innovasie yuko hapa kukusaidia. Wasiliana nasi leo ili kugundua jinsi huduma zetu na
                                 bidhaa zinaweza kuwezesha biashara yako kustawi katika enzi ya kidijitali.
                             </br>
-                            Tovuti: <a href="#">www.innovasie.co.tz</a> 
+                            Tovuti: <a href="https://www.innovasie.co.tz">www.innovasie.co.tz</a>
                             <br>
                             Barua pepe: <a href="#">shilton@innovasie.co.tz </a>
                             <br>
@@ -163,8 +163,8 @@
                     </div>
 
 
+                    @include('tirdoweb.sw.newsection')
 
-                    {{-- {% include 'en/new_section.html' %} --}}
                 </div>
             </div>
         </div>

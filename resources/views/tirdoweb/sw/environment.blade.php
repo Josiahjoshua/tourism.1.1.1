@@ -5,7 +5,7 @@
 @section('content')
         <!-- contents -->
 
-    
+
     <div class="container px-0">
         <div class="col-12 special-page">
             <div class="col-12 p-4">
@@ -13,7 +13,7 @@
                     <div class="col-12 px-xs-0">
                         <nav aria-label="breadcrumb" class="mb-0">
                             <ol class="breadcrumb px-0">
-															<li class="breadcrumb-item "><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+															<li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                               <li class="breadcrumb-item list-inline-item font-weight-bold">TIRDO</li><li class="breadcrumb-item list-inline-item active">Mazingira</li>
                             </ol>
                         </nav>
@@ -27,11 +27,11 @@
                             <!-- this is to add a picture of the department head -->
                             <div class="row">
                               <div class="col-md-4 col-xs-12">
-                                <div class="text-center img-frame custom-img-frame">                                    
+                                <div class="text-center img-frame custom-img-frame">
                                         <img src="/uploads/administration/Kunda_Sikazwe_-_HoD_Environment.png" alt="Departmental Head" class="img-fluid">
                                 </div>
                               </div>
-            
+
                               <div class="col-md-8">
                                 <div class="">
                                     <h5 class="title mb-2">Ms. Kunda Sikazwe</h5>
@@ -42,7 +42,7 @@
                                 </div>
                               </div>
                             </div>
-            
+
                           </div>
                           <h4>TEKNOLOJIA YA MAZINGIRA NA KITENGO CHA USALAMA KAZINI</h4>
                         <div class="col-12 px-0 mt-4 justify-content-center align-items-center">
@@ -50,12 +50,12 @@
                               Mgawanyiko wa Teknolojia ya Mazingira na Usalama Kazini hujihusisha katika masuala yanayohusu utafiti na maendeleo ya viwanda,
                               usimamizi wa mazingira na kuhakikisha usalama wa afya na usalama kazini wa sakafu ya kazi ya viwandani kwa ajili ya kuboresha uzalishaji na
                               ustawi wa wafanyakazi wa viwanda
-                        
-                            </p> 
-                          
+
+                            </p>
+
                             <h4>Tunachofanya bora zaidi </h4>
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                    
+
                                <strong>1.Utafiti na Maendeleo</strong><br>
                                Ni shughuli kuu ya mgawanyiko. Programu za utafiti zinazoshughulikiwa ni pamoja na:-</p>
                               <ul style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;text-decoration: none;" >
@@ -65,7 +65,7 @@
                                <li>Uzalishaji safi katika viwanda vya ngozi na nguo.</li>
                                </ul>
                             </p>
-                            
+
                             <strong style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">2.Ushauri na huduma za kiufundi kwa viwanda</strong><br>
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                               Jumuisha ushauri kwa tasnia kuhusu jinsi ya kusimamia rasilimali zao kwa uzalishaji bora huku kikihakikisha uchafuzi mdogo wa mazingira.<br>
@@ -73,7 +73,7 @@
                               Huduma za ufuatiliaji wa ubora wa mazingira ni pamoja na Ubora wa Hewa (Chembechembe za chuma na gesi), kiwango cha kelele, mwangaza wa mwanga, mtetemo wa ardhi, joto, maji machafu na ufuatiliaji wa ubora wa maji ya kunywa.<br>
                               Huduma zingine ni pamoja na tathmini ya Athari za Mazingira na Ukaguzi wa Mazingira.
                           </p>
-                            
+
                            <h4> Mafanikio</h4>
                         <ul style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                           <li>Ufuatiliaji wa ubora wa hewa wa ndani kwa chuma/chuma, usindikaji wa tumbaku, viwanda vya kutengeneza saruji na mgodi.</li>
@@ -86,7 +86,8 @@
                         </div>
                     </div>
 
-                    {{-- {% include 'en/new_section.html' %} --}}
+                    @include('tirdoweb.sw.newsection')
+
                 </div>
             </div>
         </div>
