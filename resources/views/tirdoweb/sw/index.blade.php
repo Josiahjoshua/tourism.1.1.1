@@ -192,6 +192,7 @@
                         <h5 class="my-xs-2 text-center text-xs-center section-title"> <b>Bidhaa ya Utafiti ya TIRDO</b> </h5>
 
                         <div class="row mt-4">
+
                             @foreach($resources_products as $product)
                             <div class="col-md-6 pb-3 mb-3">
                                 <img src="{{ asset('storage/'.$product->img) }}" class="w-100" alt="Thumbnail">
