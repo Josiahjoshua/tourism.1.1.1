@@ -186,7 +186,7 @@ Route::get('/{language}/home', [TirdoController::class, 'home'])
         ->name('news.all_articles');
 
     // View single news article
-    Route::get('newsapp/{language}/article_detail', [NewsController::class, 'articledetail'])
+    Route::get('newsapp/{language}/article_details/{article_id}', [NewsController::class, 'articledetail'])
         ->name('news.article_detail');
 
     // all resource product
@@ -194,7 +194,7 @@ Route::get('/{language}/home', [TirdoController::class, 'home'])
         ->name('product.all_products');
 
     // View single resource product
-    Route::get('newsapp/{language}/product_detail', [ResourcesController::class, 'productdetail'])
+    Route::get('resources/{language}/product_details/{product_id}', [ResourcesController::class, 'productdetail'])
                 ->name('product.product_detail');
 
 

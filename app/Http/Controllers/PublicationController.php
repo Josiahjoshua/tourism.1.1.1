@@ -27,13 +27,12 @@ class PublicationController extends Controller
     public function publications($language) {
         $templateName = 'all_publish';
         $templatePath = $this->getTemplatePath($language, $templateName);
-        $publications = Publications::all();
 
         $data = [
             'current_language' => $language,
             'resources_products' => ResourcesProduct::all(),
             'news_articles' => NewsArticle::all(),
-            'publications' => $publications
+            'publications' => Publications::all()
         ];
 
         return view($templatePath, $data);

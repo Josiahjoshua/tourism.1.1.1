@@ -32,7 +32,7 @@
 
                                   <li class="list-inline-item">
                                       <i class="fa fa-folder-o text-danger"></i>
-                                      <div><small><i class="fa fa-calendar"></i> {{ $product->date }}</small></div>
+                                      <div><small><i class="fa fa-calendar"></i> {{ $product->created_at }}</small></div>
                                   </li>
 
                               </ul>
@@ -42,7 +42,7 @@
                               <img  src="{{ asset('storage/'.$product->img) }}" alt="Product Image" class="w-100">
                           </div>
                           <div class="news-content">
-                              <p>{{ $product->desc }}</p>
+                              <p>{!! $product->preview_desc !!}</p>
                           </div>
 
                       </div>

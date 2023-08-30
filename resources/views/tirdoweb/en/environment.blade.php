@@ -74,13 +74,13 @@
                         </p>
 
                          <h4> Achievements</h4>
-                        <ul class="about_hub">
-                        <li>Indoor air quality monitoring for steel/ metal, tobacco processing, cement manufacturing industries and mine.</li>
-                        <li>Waste water monitoring for beverage, tobacco processing, steel/metal industries, breweries and mine.</li>
-                        <li>Noise level monitoring in in mines, cement, tobacco processing, steel/metal industries.</li>
-                        <li>Flue gas monitoring in mines, cement, tobacco processing, steel/metal industries.</li>
-                        <li>Particulate matter monitoring in mines, cement  factories, tobacco processing, steel/metal industries.</li>
-                        <li>Monitoring of biological and chemical quality of sludge from waste water works of some industries.</li>
+                         <ul class="about_hub">
+                            <li>Indoor air quality monitoring for steel/ metal, tobacco processing, cement manufacturing industries and mine.</li>
+                            <li>Waste water monitoring for beverage, tobacco processing, steel/metal industries, breweries and mine.</li>
+                            <li>Noise level monitoring in in mines, cement, tobacco processing, steel/metal industries.</li>
+                            <li>Flue gas monitoring in mines, cement, tobacco processing, steel/metal industries.</li>
+                            <li>Particulate matter monitoring in mines, cement  factories, tobacco processing, steel/metal industries.</li>
+                            <li>Monitoring of biological and chemical quality of sludge from waste water works of some industries.</li>
                         </ul>
                         </div>
                     </div>

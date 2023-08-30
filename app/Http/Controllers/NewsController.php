@@ -30,14 +30,14 @@ class NewsController extends Controller
         return view($templatePath, $data);
     }
 
-    public function articledetail(NewsArticle $article, $language) {
+    public function articledetail($language, $article_id) {
         $templateName = 'article_detail';
         $templatePath = $this->getTemplatePath($language, $templateName);
 
+        $article = NewsArticle::findOrFail($article_id);
+
         $data = [
             'current_language' => $language,
-            'resources_products' => ResourcesProduct::all(),
-            'news_articles' => NewsArticle::all(),
         ];
 
         return view($templatePath, compact('article'), $data, );

@@ -32,7 +32,7 @@
 
                                   <li class="list-inline-item">
                                       <i class="fa fa-folder-o text-danger"></i>
-                                      <div><small><i class="fa fa-calendar"></i> {{ $article->date }}</small></div>
+                                      <div><small><i class="fa fa-calendar"></i> {{ $article->created_at }}</small></div>
                                   </li>
 
                               </ul>

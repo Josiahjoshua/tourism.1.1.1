@@ -202,7 +202,7 @@
                                             <b><h6 class="article-h2">{{ $product->name }}</h6></b>
                                             {{-- <i class="fa fa-calendar blue-icon"></i> {{ $product->date }} --}}
                                             <p>{!! Str::limit($product->preview_desc, 20) !!}</p>
-                                            <a href="{{ route('product.product_detail', ['language' => $current_language, $product->id]) }}" class="read ml-2">Soma zaidi<i class="fa fa-angle-right"></i></a>
+                                            <a href="{{ route('product.product_detail', ['language' => $current_language, 'product_id' => $product->id]) }}" class="read ml-2">Soma zaidi<i class="fa fa-angle-right"></i></a>
                                         </p>
                                     </div>
                                 </div>
@@ -231,7 +231,7 @@
                                             <p><i class="fa fa-calendar"></i> {{ $article->date }}</p>
                                             <p>{!! Str::limit($article->preview_desc, 20)  !!}
                                             </p>
-                                            <a href="{{ route('news.article_detail', ['language' => $current_language, $article->id]) }}" class="read ml-2">Soma zaidi<i class="fa fa-angle-right"></i></a>
+                                            <a href="{{ route('news.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}" class="read ml-2">Soma zaidi<i class="fa fa-angle-right"></i></a>
                                         </div>
                                     </div>
                                 </div>

@@ -28,24 +28,24 @@ class ResourcesController extends Controller
 
         $data = [
             'current_language' => $language,
-            'resources_products' => ResourcesProduct::all(),
             'news_articles' => NewsArticle::all(),
+            'resources_products' => ResourcesProduct::all()
         ];
 
         return view($templatePath, $data);
     }
 
-    public function productdetail(ResourcesProduct $product, $language) {
+    public function productdetail($language, $product_id) {
         $templateName = 'product_detail';
         $templatePath = $this->getTemplatePath($language, $templateName);
 
+        $product = ResourcesProduct::findOrFail($product_id);
+
         $data = [
             'current_language' => $language,
-            'resources_products' => ResourcesProduct::all(),
-            'news_articles' => NewsArticle::all(),
         ];
 
-        return view($templatePath, compact('product'), $data, );
+        return view($templatePath, compact('product'), $data);
 
     }
 }
