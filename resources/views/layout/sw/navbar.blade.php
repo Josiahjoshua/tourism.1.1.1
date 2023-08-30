@@ -198,7 +198,7 @@
                             <li><a class='dropdown-item' href="{{ route('thubservices', ['language' => $current_language]) }}">T-Hub Huduma</a></li>
                             <li><a class='dropdown-item' href="{{ route('whythub', ['language' => $current_language]) }}">Kwanini T-Hub</a></li>
                             <li class="nav-item dropdown-submenu">
-                                <a class='dropdown-item dropdown-toggle' data-toggle='dropdown' href='#'>Makampuni chini T-hub</a>
+                                <a class='dropdown-item dropdown-toggle ml-2' data-toggle='dropdown' href='#'>Makampuni chini T-hub</a>
                                 <ul class='dropdown-menu'>
                                     <li><a class='dropdown-item' href="{{ route('innovasie', ['language' => $current_language]) }}">Innovasie</a></li>
                                     <li><a class='dropdown-item' href="{{ route('awamupay', ['language' => $current_language]) }}">AwamuPay</a></li>
