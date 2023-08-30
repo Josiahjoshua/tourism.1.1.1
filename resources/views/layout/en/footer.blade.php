@@ -30,7 +30,7 @@
             </div>
             <div class="col-12 mt-3">
                 <p class="m-0 text-white fs-6">Website Visitors</p>
-                <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=08790e8b62aa5726c545a00f8ab0acaba319fb16'></script>
+                <a href='https://www.free-counters.org/'>powered by Free-Counters</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=08790e8b62aa5726c545a00f8ab0acaba319fb16'></script>
                 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1056645/t/0"></script>
             </div>
         </div>

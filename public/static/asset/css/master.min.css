@@ -1292,7 +1292,7 @@ pre code {
     .col-lg-6 {
         flex: 0 0 50%;
         max-width: auto
-        
+
     }
 
     .col-lg-7 {
@@ -21093,7 +21093,7 @@ header .top-bottom .navbar .search .search-form .form-inline input.form-control:
 
 .tirdo-footer {
     font-size: 14px;
-    background: #2d4a84;
+    background: #1d2f6f;
     padding: 0
 }
 
@@ -21142,7 +21142,7 @@ header .top-bottom .navbar .search .search-form .form-inline input.form-control:
 }
 
 .tirdo-footer .credit {
-    background-color: #273f71;
+    background-color: #07164B;
     padding: 15px 0;
     color: #212121;
     font: 400 15px/30px
