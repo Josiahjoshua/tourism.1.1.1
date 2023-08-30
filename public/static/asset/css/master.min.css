@@ -18428,19 +18428,19 @@ table.dataTable.no-footer {
 
 .mx-6 {
     margin-left: 4.5rem !important;
-    margin-right: 4.5rem !important
+    margin-right: 4.5rem !important;
 }
 
 .bg-dark {
-    background: #006f8b !important
+    background: #006f8b !important;
 }
 
 .bg-dark-2 {
-    background: #333 !important
+    background: #333 !important;
 }
 
 .twitter {
-    color: #2196f3 !important
+    color: #2196f3 !important;
 }
 
 .facebook {
@@ -18745,7 +18745,7 @@ button.white-purple {
 button.white-purple:hover {
     color: #d79e12;
     background: #fff;
-    border-color: #006f8b
+    border-color: #006f8b;
 }
 
 .a-link.white-primary,
@@ -21133,7 +21133,7 @@ header .top-bottom .navbar .search .search-form .form-inline input.form-control:
 
 .tirdo-footer .footer-content .footer-media a {
     font: 400 19px/25px Verdana, Geneva, sans-serif;
-    padding: 0 10px
+    padding: 0 10px;
 }
 
 .tirdo-footer .footer-content .footer-media a .icon {
@@ -21145,14 +21145,14 @@ header .top-bottom .navbar .search .search-form .form-inline input.form-control:
     background-color: #005b72;
     padding: 15px 0;
     color: #212121;
-    font: 400 15px/30px
+    font: 400 15px/30px;
 }
 
 #sticky-social {
     right: 20px;
     position: fixed;
     top: 250px;
-    z-index: 99999999
+    z-index: 99999999;
 }
 
 #sticky-social a {
@@ -21161,7 +21161,7 @@ header .top-bottom .navbar .search .search-form .form-inline input.form-control:
     font: 16px Open Sans, sans-serif;
     position: relative;
     width: 40px;
-    transition: all .5s ease-in
+    transition: all .5s ease-in;
 }
 
 #sticky-social a,
@@ -25230,7 +25230,7 @@ div.contact form button.btn {
     color: #333;
     border: none;
     transition: all .9s ease;
-    border-right: 1px solid #006f8b
+    border-right: 1px solid #006f8b;
 }
 
 .nemc-news #myCarousel .carousel-inner {
