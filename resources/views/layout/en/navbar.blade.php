@@ -200,7 +200,7 @@
                                 <li><a class='dropdown-item' href="{{ route('thubservices', ['language' => $current_language]) }}">T-Hub Services</a></li>
                                 <li><a class='dropdown-item' href="{{ route('whythub', ['language' => $current_language]) }}">Why T-Hub</a></li>
                                 <li class="nav-item dropdown-submenu">
-                                    <a class='dropdown-item dropdown-toggle' data-toggle='dropdown' href='#'>Companies under T-hub</a>
+                                    <a class='dropdown-item dropdown-toggle ml-2' data-toggle='dropdown' href='#'>Companies under T-hub</a>
                                     <ul class='dropdown-menu'>
                                         <li><a class='dropdown-item' href="{{ route('innovasie', ['language' => $current_language]) }}">Innovasie</a></li>
                                         <li><a class='dropdown-item' href="{{ route('awamupay', ['language' => $current_language]) }}">Ammacom</a>
