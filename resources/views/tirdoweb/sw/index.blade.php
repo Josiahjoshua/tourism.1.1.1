@@ -99,7 +99,8 @@
                                 kwa Sheria ya Bunge Na. 5 ya 1979 na ilianza kufanya kazi tarehe 1 Aprili 1979.
                               </br>
                               Jukumu lake ni kusaidia sekta ya viwanda ya Tanzania kwa kutoa utaalamu wa kiufundi na huduma za usaidizi ili kuboresha msingi wao wa teknolojia. Aidha,
-                               TIRDO inafanya utafiti uliotumika...<a href="{{ route('aboutus', ['language' => $current_language]) }}" class="">Soma zaidi</a>
+                               TIRDO inafanya utafiti uliotumika...<a href="{{ route('aboutus', ['language' => $current_language]) }}
+                                " class="">Soma zaidi</a>
                               </p>
                               <!-- <a href="aboutus" class="link-no-underline">Read more</a> -->
                             </div>
@@ -231,7 +232,7 @@
                                             <p><i class="fa fa-calendar"></i> {{ $article->date }}</p>
                                             <p>{!! Str::limit($article->preview_desc, 20)  !!}
                                             </p>
-                                            <a href="{{ route('news.article_detail', ['language' => $current_language, $article->id]) }}" class="read ml-2">Soma zaidi<i class="fa fa-angle-right"></i></a>
+                                            <a href="{{ route('news.article_detail', ['language' => $current_language, $article->id]) }}" class="read ml-2">Som zaidi</a>
                                         </div>
                                     </div>
                                 </div>

@@ -10,8 +10,8 @@
                 <div class="col-12 px-xs-0">
                     <nav aria-label="breadcrumb" class="mb-0">
                         <ol class="breadcrumb px-0">
-                            <li class="breadcrumb-item"><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
-                            <li class="breadcrumb-item"><a href="{{ route('news.all_articles', ['language' => $current_language]) }}" class="link-no-underline">All_articles<span></span></a></li>
+                            <li class="breadcrumb-item"><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+                            <li class="breadcrumb-item"><a href="{% url 'mynews:all_articles' language=current_language %}" class="link-no-underline">Habari zote<span></span></a></li>
                             <li class="breadcrumb-item active" aria-current="page">Habari</li>
                         </ol>
                     </nav>
@@ -21,36 +21,42 @@
 <div class="row">
 
                   <div class="col-md-9 bg-white py-3 page-content">
-                      <h4>Habari {{ $article->id }}</h4>
-                    </div>
-                    <div class="">
-                        <ul class="list-unstyled list-inline mb-1">
+                      <h4>Habari</h4>
+                      <div class="col-12 px-0 mb-2">
 
-                            <li class="list-inline-item">
-                                <i class="fa fa-folder-o text-danger"></i>
-                                <div><small><i class="fa fa-calendar"></i> {{ $article->id }}</small></div>
-                            </li>
+                          <div class="news-title">
+                              <h2 class="article-h2">{{ $article->name }}</h2>
+                          </div>
+                          <div class="">
+                              <ul class="list-unstyled list-inline mb-1">
 
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="news-img">
-                        <img  src="{{ $article->img }}" alt="Article Image" class="w-100">
-                    </div>
-                    <div class="news-content">
-                        <p>{!! $article->preview_desc !!} </p>
-                    </div>
+                                  <li class="list-inline-item">
+                                      <i class="fa fa-folder-o text-danger"></i>
+                                      <div><small><i class="fa fa-calendar"></i> {{ $article->date }}</small></div>
+                                  </li>
 
-                </div>
-            </div>
+                              </ul>
+                          </div>
+                          <hr>
+                          <div class="news-img">
+                              <img  src="{{ $article->img }}" alt="Picha ya makala" class="w-100">
+                          </div>
+                          <div class="news-content">
+                              <p>{!! $article->desc !!}</p>
+                          </div>
 
-{{-- @include('tirdoweb.sw.new_section') --}}
+                      </div>
+                  </div>
+
+
+@include('tirdoweb.sw.newsection')
+
 </div>
-  </div>
-</div>
+        </div>
+    </div>
 
 </div>
 
 
-<!-- /contents -->
+    <!-- /contents -->
 @endsection

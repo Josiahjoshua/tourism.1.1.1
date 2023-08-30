@@ -42,7 +42,7 @@
                               <img  src="{{ asset($product->img) }}" alt="Article Image" class="w-100">
                           </div>
                           <div class="news-content">
-                              <p>{{ $product->desc|linebreaksbr }}</p>
+                              <p>{{ $product->desc }}</p>
                           </div>
 
                       </div>

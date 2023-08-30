@@ -1,4 +1,4 @@
-@extends('tirdoweb.en.base_layout')
+@extends('tirdoweb.sw.base_layout')
         <!-- /HEADER -->
 
         <!-- contents -->

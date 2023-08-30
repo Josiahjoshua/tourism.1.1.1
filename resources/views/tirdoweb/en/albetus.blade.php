@@ -37,8 +37,8 @@
                                 quality services and solutions tailored to the
                                 increasingly complex demands of organisations, in order
                                 to boost productivity of operations and to maximise
-                                value for our customers 
-                            </p> 
+                                value for our customers
+                            </p>
 <br>
                             <h5>
                             Company Values
@@ -52,13 +52,13 @@
                                 <div style="flex: 1;">
                                 <ul>
                                     <li>
-                                    Integrity 
+                                    Integrity
                                     </li>
                                         <p>We pride ourselves on honest,
                                         transparency and committed to doing
                                         what's best for its customers.</p>
                                     <li>
-                                    Responsiveness 
+                                    Responsiveness
                                     </li>
                                         <p>We beloeve, timely decisions lead to
                                         timely actions that lead to moving the
@@ -107,8 +107,8 @@
                             <p>improving people's ability to get their jobs done and
                                 quality of life through meaningful innovation
                             </p>
-                                
-                                
+
+
                             <br>
                             <h5>
                             Our Services:
@@ -121,21 +121,21 @@
                                     </li>
                                     Infrastructure planning, design,setup, implementation andmaintenance. Tailor-made servicelevel agreements
                                     <li>
-                                    2.	Preventative maintenance 
+                                    2.	Preventative maintenance
                                     </li>
                                     Proactive detection and preventionof potential issues and 24 /7Helpdesk services and remote support
 
                                     <li>
-                                    3.	Manage backup 
+                                    3.	Manage backup
                                     </li>
                                     Manage on-premise and cloudbased backup and exchange servers:
                                     <ul>
                                         <li>Host e-mail</li>
                                         <li>E-mail branding and signature management</li>
-                                        <li>E-mail archiving</li>   
+                                        <li>E-mail archiving</li>
                                     </ul>
                                     <li>
-                                    4.	Software as a servie 
+                                    4.	Software as a servie
                                     </li>
                                     We Offer all Subscription based
                                     software e.g: Microsoft
@@ -143,9 +143,9 @@
                                     Licencies. Anti-Virus software,
                                     Accounting Softwares, Autocad,
                                     Archicad etc)
-                                    
+
                             <p>
-                                <h5>Contact Us: </h5> 
+                                <h5>Contact Us: </h5>
                                 <br>
                                 Our team can be attributed as much to our dedication to
                                 customer satisfaction as our technical skills.
@@ -170,7 +170,7 @@
                  </div>
                 </div>
                 </div>
-        
+
             </div>
-        
+
 @endsection
