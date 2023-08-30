@@ -144,7 +144,7 @@
                                         </ul>
                                     </li>
                                     <li class='nav-item dropdown-submenu'>
-                                        <a class='dropdown-item dropdown-toggle' data-toggle='dropdown' href='#'>ICT and Technology Development</a>
+                                        <a class='dropdown-item dropdown-toggle mr-2' data-toggle='dropdown' href='#'>ICT and Technology Development</a>
                                         <ul class='dropdown-menu'>
                                             <li><a class='dropdown-item' href="{{ route('ict', ['language' => $current_language]) }}">ICT</a></li>
                                             <li><a class='dropdown-item' href="{{ route('instrumentation', ['language' => $current_language]) }}">Instrumentation</a></li>
@@ -234,7 +234,7 @@
                         <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
                             data-toggle='dropdown'>Documents</a>
                             <ul class='dropdown-menu'>
-                                <li><a class="dropdown-item" href="{{ route('publication', ['language' => $current_language]) }}">publications</a></li>
+                                <li><a class="dropdown-item" href="{{ route('publication', ['language' => $current_language]) }}">Publications</a></li>
                             </ul>
                         </li>
 

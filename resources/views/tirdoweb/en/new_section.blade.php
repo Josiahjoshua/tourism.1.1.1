@@ -35,6 +35,7 @@
                       <small class="text-muted"><i class="fa fa-calendar"></i> {{ $article->date }}</small>
                   </div>
               </div>
+
               @endforeach
               <!-- Add a link for "Tazama Zote" -->
               <div class="row justify-content-center mt-2">
@@ -64,7 +65,7 @@
             @endforeach
 
               <div class="row justify-content-center mt-2">
-                  <a href="{{ route('product.all_products', ['language' => $current_language]) }}" class="link-no-underline"> <i>Tazama Zote <i class="far fa-arrow-alt-circle-right"></i></i></a>
+                  <a href="{{ route('product.all_products', ['language' => $current_language]) }}" class="link-no-underline"> <i>See all <i class="far fa-arrow-alt-circle-right"></i></i></a>
               </div>
           </div>
 
