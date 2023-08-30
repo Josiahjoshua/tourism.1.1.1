@@ -22,7 +22,7 @@
                 <div class="row">
 
                     <div class="col-md-9 bg-white py-3 page-content">
-                        <img src="/uploads/icon/innovasi.png" alt="innovasive">
+                        <img src="{{asset('static/uploads/icon/bivatek.png')}}" alt="innovasive">
                         <p>Bivatek africa: "Kuwezesha Maendeleo Kupitia Masuluhisho ya Kibunifu"</p>
                         <div class="col-12 px-0 mt-4 justify-content-center align-items-center">
                             <h5>Kuhusu Sisi: </h5>
