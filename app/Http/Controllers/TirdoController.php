@@ -36,7 +36,7 @@ public function home($language = 'sw')
     return view($templatePath, $data);
 }
 public function AboutThub($language) {
-    $templateName = 'about_T_hub';
+    $templateName = 'about_t_hub';
     $templatePath = $this->getTemplatePath($language, $templateName);
 
     $data = [
