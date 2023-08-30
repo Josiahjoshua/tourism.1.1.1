@@ -32,7 +32,6 @@
                         </div>
                     </div>
 
-                    {{-- @include('tirdoweb.en.new_section') --}}
 
                 </div>
             </div>

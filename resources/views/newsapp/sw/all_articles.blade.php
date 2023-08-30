@@ -36,7 +36,7 @@
                           {!! Str::limit($article->preview_desc, 20) !!}
                         </p>
                         <div align='right'>
-                            <a href="{{ route('news.article_detail', ['language' => $current_language, $article->id]) }}" class="read ml-2">Soma zaidi<i class="fa fa-angle-right"></i></a>
+                            <a href="{{ route('news.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}" class="read ml-2">Soma zaidi<i class="fa fa-angle-right"></i></a>
                         </div>
                       </div>
                     </div>

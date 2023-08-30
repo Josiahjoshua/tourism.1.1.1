@@ -25,13 +25,13 @@
                         <img src="/uploads/icon/innovasi.png" alt="innovasive">
                         <p>Bivatek africa: "Kuwezesha Maendeleo Kupitia Masuluhisho ya Kibunifu"</p>
                         <div class="col-12 px-0 mt-4 justify-content-center align-items-center">
-                            <h5>Kuhusu Sisi: </ h5>
+                            <h5>Kuhusu Sisi: </h5>
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                             BIVATEK AFRICA ni kampuni ya ubunifu ya kuzalisha mawazo na utafiti yenye makao yake makuu Afrika Mashariki, hasa nchini Tanzania.
                             Ikiwa na eneo kuu la Msasani TIRDO Complex na kujitolea kwa ubora, BIVATEK AFRICA inataalam katika kuendeleza mageuzi.
                             ufumbuzi wa kiteknolojia wa kushughulikia changamoto mbalimbali katika sekta mbalimbali.
                             Dhamira ya kampuni inahusu kutumia nguvu za teknolojia ili kuleta mabadiliko chanya, kuongeza ufanisi, na kukuza maendeleo ya kiuchumi na kijamii.
-                            </ p>
+                            </p>
 <br>
 
                             <div style="display: flex; flex-direction: row-reverse;">

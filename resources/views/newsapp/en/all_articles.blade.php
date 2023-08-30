@@ -10,7 +10,7 @@
         <div class="col-12 px-xs-0">
           <nav aria-label="breadcrumb" class="mb-0">
             <ol class="breadcrumb px-0">
-              <li class="breadcrumb-item"><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
+              <li class="breadcrumb-item"><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
   
               <li class="breadcrumb-item active" aria-current="page">TIRDO Articles</li>
             </ol>
@@ -25,16 +25,16 @@
                 @foreach($news_articles as $article)             
                     <div class="post-slide7 col-xs-6 col-sm-4 col-md-3 my-2">
                       <div class="post-img">
-                        <img src="{{ $article->img->url }}" alt="" class="w-100">
+                        <img src="{{ $article->img }}" alt="" class="w-100">
                       </div>
                       <div class="post-review">
                         <ul class="post-bar">
-                          <li><i class="fa fa-calendar"></i>{{ $article->date }}</li>
+                          <li><i class="fa fa-calendar"></i>{{ $article->created_at }}</li>
                         </ul>
                         <p class="post-description">
                           {{ Str::limit($article->preview_desc, 20) }}
                         </p>
-                        <a href="{{ route('mynews.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}" class="read">Read More<i class="fa fa-angle-right"></i></a>
+                        <a href="{{ route('news.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}" class="read">Read More<i class="fa fa-angle-right"></i></a>
                       </div>
                     </div>
                   @endforeach

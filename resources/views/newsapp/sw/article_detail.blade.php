@@ -10,8 +10,8 @@
                 <div class="col-12 px-xs-0">
                     <nav aria-label="breadcrumb" class="mb-0">
                         <ol class="breadcrumb px-0">
-                            <li class="breadcrumb-item"><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
-                            <li class="breadcrumb-item"><a href="{% url 'mynews:all_articles' language=current_language %}" class="link-no-underline">Habari zote<span></span></a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('news.all_articles', ['language' => $current_language]) }}" class="link-no-underline">Habari zote<span></span></a></li>
                             <li class="breadcrumb-item active" aria-current="page">Habari</li>
                         </ol>
                     </nav>
@@ -32,7 +32,7 @@
 
                                   <li class="list-inline-item">
                                       <i class="fa fa-folder-o text-danger"></i>
-                                      <div><small><i class="fa fa-calendar"></i> {{ $article->date }}</small></div>
+                                      <div><small><i class="fa fa-calendar"></i> {{ $article->created_at }}</small></div>
                                   </li>
 
                               </ul>
@@ -42,7 +42,7 @@
                               <img  src="{{ $article->img }}" alt="Picha ya makala" class="w-100">
                           </div>
                           <div class="news-content">
-                              <p>{!! $article->desc !!}</p>
+                              <p>{!! $article->preview_desc !!}</p>
                           </div>
 
                       </div>

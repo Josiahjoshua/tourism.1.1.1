@@ -10,8 +10,8 @@
                 <div class="col-12 px-xs-0">
                     <nav aria-label="breadcrumb" class="mb-0">
                         <ol class="breadcrumb px-0">
-                            <li class="breadcrumb-item"><a href="{% url 'home' current_language %}"><span class="fas fa-home"></span></a></li>
-                            <li class="breadcrumb-item"><a href="{% url 'mynews:all_articles' language=current_language %}" class="link-no-underline">All_articles<span></span></a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('news.all_articles', ['language' => $current_language]) }}" class="link-no-underline">All_articles<span></span></a></li>
                             <li class="breadcrumb-item active" aria-current="page">News</li>
                         </ol>
                     </nav>
@@ -42,7 +42,7 @@
                               <img  src="{{ $article->img }}" alt="Article Image" class="w-100">
                           </div>
                           <div class="news-content">
-                              <p>{!! $article->desc !!}</p>
+                              <p>{!! $article->preview_desc !!}</p>
                           </div>
 
                       </div>

@@ -28,9 +28,9 @@
                                     <span class="icon"><i class="fas fa-file-pdf"></i></span>
                                     <span class="text text-dark">
                                         {{ $file->name }}<br>
-                                        {{-- <small class="text-muted"> --}}
-                                            {{-- {{ $file->date }} --}}
-                                        {{-- </small> --}}
+                                        <small class="text-muted">
+                                            {{ $file->created_at }}
+                                        </small>
                                     </span>
                                 </a>
                             </li>

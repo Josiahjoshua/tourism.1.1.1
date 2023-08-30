@@ -26,7 +26,7 @@
                               <a href="{{ route('news.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}" class="link-no-underline">{{$article->name}}</a>
                           </h2>
                       </div>
-                      <small class="text-muted"><i class="fa fa-calendar"></i> {{ $article->date }}</small>
+                      <small class="text-muted"><i class="fa fa-calendar"></i> {{ $article->created_at }}</small>
                   </div>
               </div>
               @endforeach
@@ -49,7 +49,7 @@
                               <a href="{{ route('product.product_detail', ['language' => $current_language, 'product_id' => $product->id]) }}" class="link-no-underline">{{$product->name}}</a>
                           </h2>
                       </div>
-                      {{-- <small class="text-muted"><i class="fa fa-calendar"></i> {{ $product->date }}</small> --}}
+                      <small class="text-muted"><i class="fa fa-calendar"></i> {{ $product->created_at }}</small>
                   </div>
               </div>
               @endforeach

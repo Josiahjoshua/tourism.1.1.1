@@ -29,7 +29,7 @@
                       </div>
                       <div class="post-review">
                         <ul class="post-bar">
-                          <li><i class="fa fa-calendar"></i>{{ $product->date }}</li>
+                          <li><i class="fa fa-calendar"></i>{{ $product->created_at }}</li>
                         </ul>
                         <p class="post-description">
                         {{ Str::limit($product->preview_desc, 20) }}

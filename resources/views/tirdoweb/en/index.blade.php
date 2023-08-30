@@ -197,9 +197,9 @@
                                     <div>
                                         <p class="text-justify mb-2">
                                             <b><h6 class="article-h2">{{ $product->name }}</h6></b>
-                                            {{-- <i class="fa fa-calendar blue-icon"></i> {{ $product->date }} --}}
+                                            <i class="fa fa-calendar blue-icon"></i> {{ $product->created_at }}
                                             <p>{!! Str::limit($product->preview_desc, 20) !!}</p>
-                                            <a href="{{ route('product.product_detail', ['language' => $current_language, $product->id]) }}">Read More</a>
+                                            <a href="{{ route('product.product_detail', ['language' => $current_language, 'product_id' => $product->id]) }}">Read More</a>
                                         </p>
                                     </div>
                                 </div>
@@ -224,10 +224,10 @@
                                             <p class="text-justify mb-2">
                                                 <b><h6 class="article-h2">{{ $article->name }}</h6></b>
                                             </p>
-                                            <p><i class="fa fa-calendar"></i> {{ $article->date }}</p>
+                                            <p><i class="fa fa-calendar"></i> {{ $article->created_at }}</p>
                                             <p>{!! Str::limit($article->preview_desc, 20)  !!}
                                             </p>
-                                            <a href="{{ route('news.article_detail', ['language' => $current_language, $article->id]) }}" class="read ml-2">Read more</a>
+                                            <a href="{{ route('news.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}" class="read ml-2">Read more</a>
                                         </div>
                                     </div>
                                 </div>

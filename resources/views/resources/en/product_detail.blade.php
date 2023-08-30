@@ -32,7 +32,7 @@
 
                                   <li class="list-inline-item">
                                       <i class="fa fa-folder-o text-danger"></i>
-                                      <div><small><i class="fa fa-calendar"></i> {{ $product->date }}</small></div>
+                                      <div><small><i class="fa fa-calendar"></i> {{ $product->created_at }}</small></div>
                                   </li>
 
                               </ul>
@@ -42,13 +42,14 @@
                               <img  src="{{ asset($product->img) }}" alt="Article Image" class="w-100">
                           </div>
                           <div class="news-content">
-                              <p>{{ $product->desc }}</p>
+                              <p>{{ $product->preview_desc }}</p>
                           </div>
 
                       </div>
                   </div>
 
-                  <!-- {% include 'en/new_section.html' %} -->
+                  @include('tirdoweb.en.newsection')
+
 </div>
         </div>
     </div>
