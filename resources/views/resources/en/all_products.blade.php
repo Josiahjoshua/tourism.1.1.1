@@ -34,7 +34,7 @@
                         <p class="post-description">
                         {{ Str::limit($product->preview_desc, 20) }}
                         </p>
-                        <a href="{{ route('myproducts.product_detail', ['language' => $current_language, 'product_id' => $product->id]) }}" class="read">Read more<i class="fa fa-angle-right"></i></a>
+                        <a href="{{ route('product.product_detail', ['language' => $current_language, 'product_id' => $product->id]) }}" class="read">Read more<i class="fa fa-angle-right"></i></a>
                       </div>
                     </div>
                     @endforeach

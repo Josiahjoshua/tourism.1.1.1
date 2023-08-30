@@ -43,6 +43,8 @@ class ResourcesController extends Controller
 
         $data = [
             'current_language' => $language,
+            'news_articles' => NewsArticle::all(),
+            'resources_products' => ResourcesProduct::all()
         ];
 
         return view($templatePath, compact('product'), $data);
