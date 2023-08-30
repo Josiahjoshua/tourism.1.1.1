@@ -88,7 +88,7 @@
                     <div class="category">MKURUGENZI WA
                         RASILIMALI NA UTAWALA (DHRA)</div>
                     <h6 class="sub_title">
-                        <p class="card-text fw-medium">Mr. Emilian Bundala</p>
+                        <p class="card-text fw-medium">Bwn. Emilian Bundala</p>
                         </a>
                     </h6>
                 </div>
@@ -106,9 +106,9 @@
                 </div>
 
                 <div class="post-content">
-                    <div class="category">AG. MKURUGENZI WA UHAMISHO WA TEHAMA NA TEKNOLOJIA (ADITT)</div>
+                    <div class="category">KAIMU MKURUGENZI WA TEHAMA NA UHAULISHAJI WA TEKNOLOJIA (DICTT)</div>
                     <h6 class="sub_title">
-                        <p class="card-text fw-medium">Dr. Masoud M. Masoud</p>
+                        <p class="card-text fw-medium">Dkt. Masoud M. Masoud</p>
                     </h6>
                 </div>
 
@@ -151,10 +151,10 @@
                     alt="Humphrey Ndosi - Ag">
                 </div>
 
-                <div class="post-content"><div class="category">AG. MKURUGENZI WA
-                    UTAFITI WA VIWANDA (ADIR)</div>
+                <div class="post-content"><div class="category">KAIMU MKURUGENZI WA
+                    UTAFITI WA VIWANDA (DIR)</div>
                     <h6 class="sub_title">
-                        <p class="card-text fw-medium">Mr. Humphrey Ndosi</p>
+                        <p class="card-text fw-medium">Bwn. Humphrey Ndosi</p>
                     </h6>
                 </div>
 
@@ -170,9 +170,9 @@
                     alt="Mr. DAVID J. KISIWA">
                 </div>
 
-                <div class="post-content"><div class="category">AG. MKURUGENZI WA FEDHA (ADF)</div>
+                <div class="post-content"><div class="category">KAIMU MKURUGENZI WA FEDHA (DF)</div>
                     <h6 class="sub_title">
-                        <p class="card-text fw-medium">Mr. David J. Kisiwa</p>
+                        <p class="card-text fw-medium">Bwn. David J. Kisiwa</p>
                     </h6>
                 </div>
 
@@ -188,7 +188,7 @@
 
                 <div class="post-content"><div class="category">MKUU WA HUDUMA ZA KISHERIA</div>
                     <h6 class="sub_title">
-                        <p class="card-text fw-medium">Ms. Sarah Wilbard</p>
+                        <p class="card-text fw-medium">Bi. Sarah Wilbard</p>
                     </h6>
                 </div>
 
@@ -218,7 +218,7 @@
 
                     <div class="post-content"><div class="category">MKUU WA UKAGUZI WA NDANI</div>
                         <h6 class="sub_title">
-                            <p class="card-text fw-medium">Ms. Anne Rehani</p>
+                            <p class="card-text fw-medium">Bi. Anne Rehani</p>
                         </h6>
                     </div>
 
@@ -234,7 +234,7 @@
 
                 <div class="post-content"><div class="category">MKUU WA HUDUMA ZA USHIRIKA</div>
                     <h6 class="sub_title">
-                        <p class="card-text fw-medium">Mr. David Nyenga Langa</p>
+                        <p class="card-text fw-medium">Bwn. David Nyenga Langa</p>
                     </h6>
                 </div>
 

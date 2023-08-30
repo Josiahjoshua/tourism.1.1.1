@@ -225,7 +225,7 @@
         <div class="post-content">
             <div class="category">Mkurugenzi wa Fedha - Ushirikiano wa Maendeleo ya Taifa (NDC)<br>(MJUMBE)</div>
             <h6 class="sub_title">
-                <p class="card-text fw-medium">Ms. Rhobi Daniel Satima</p>
+                <p class="card-text fw-medium">Bi. Rhobi Daniel Satima</p>
             </h6>
         </div>
 
