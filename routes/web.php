@@ -117,6 +117,12 @@ Route::get('/{language}/home', [TirdoController::class, 'home'])
     Route::get('/{language}/innovasie', [TirdoController::class, 'innovasie'])
     ->name('innovasie');
 
+    Route::get('/{language}/amanisolar', [TirdoController::class, 'amanisolar'])
+    ->name('amanisolar');
+
+    Route::get('/{language}/olas', [TirdoController::class, 'olas'])
+    ->name('olas');
+
     Route::get('/{language}/instrumentation', [TirdoController::class, 'instrumentation'])
     ->name('instrumentation');
 
