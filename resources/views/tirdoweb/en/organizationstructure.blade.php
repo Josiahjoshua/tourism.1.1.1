@@ -4,7 +4,7 @@
         <!-- contents -->
 @section('content')
 
-    <div class="container px-0">
+     <div class="container px-0">
         <div class="col-12 special-page">
             <div class="col-12 p-4">
                 <div class="row">
@@ -32,7 +32,8 @@
                         </div>
                     </div>
 
-                    @include('tirdoweb.en.new_section')
+                    {{-- @include('tirdoweb.en.new_section') --}}
+
                 </div>
             </div>
         </div>

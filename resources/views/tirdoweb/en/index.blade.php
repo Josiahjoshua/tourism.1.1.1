@@ -225,9 +225,9 @@
                                                 <b><h6 class="article-h2">{{ $article->name }}</h6></b>
                                             </p>
                                             <p><i class="fa fa-calendar"></i> {{ $article->date }}</p>
-                                            <p>{!! Str::limit($article->preview_desc, 20) !!}
-                                                 <a href="{{ route('news.article_detail', ['language' => $current_language, $article->id]) }}">Soma zaidi</a>
+                                            <p>{!! Str::limit($article->preview_desc, 20)  !!}
                                             </p>
+                                            <a href="{{ route('news.article_detail', ['language' => $current_language, $article->id]) }}" class="read ml-2">Read more</a>
                                         </div>
                                     </div>
                                 </div>

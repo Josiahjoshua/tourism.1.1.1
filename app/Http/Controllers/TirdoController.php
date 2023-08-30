@@ -446,6 +446,33 @@ public function innovasie($language) {
     return view($templatePath, $data);
 }
 
+
+public function amanisolar($language) {
+    $templateName = 'amani_solar';
+    $templatePath = $this->getTemplatePath($language, $templateName);
+
+    $data = [
+        'current_language' => $language,
+        'resources_products' => ResourcesProduct::all(),
+        'news_articles' => NewsArticle::all(),
+    ];
+
+    return view($templatePath, $data);
+}
+
+public function olas($language) {
+    $templateName = 'olas';
+    $templatePath = $this->getTemplatePath($language, $templateName);
+
+    $data = [
+        'current_language' => $language,
+        'resources_products' => ResourcesProduct::all(),
+        'news_articles' => NewsArticle::all(),
+    ];
+
+    return view($templatePath, $data);
+}
+
 public function instrumentation($language) {
     $templateName = 'instrumentation';
     $templatePath = $this->getTemplatePath($language, $templateName);

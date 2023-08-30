@@ -1,6 +1,3 @@
-@extends('tirdoweb.en.base_layout')
-
-@section('content')
 
 <div class="col-md-3 navigation-column">
   <aside class="col-12 sticky side-bar px-0 sm-hide">
@@ -35,10 +32,11 @@
                       <small class="text-muted"><i class="fa fa-calendar"></i> {{ $article->date }}</small>
                   </div>
               </div>
+
               @endforeach
               <!-- Add a link for "Tazama Zote" -->
               <div class="row justify-content-center mt-2">
-                  <a href="{{ route('news.all_articles', ['language' => $current_language]) }}" class="link-no-underline"> <i>Tazama Zote <i class="far fa-arrow-alt-circle-right"></i></i></a>
+                  <a href="{{ route('news.all_articles', ['language' => $current_language]) }}" class="link-no-underline"> <i>See all <i class="far fa-arrow-alt-circle-right"></i></i></a>
               </div>
           </div>
 
@@ -64,12 +62,10 @@
             @endforeach
 
               <div class="row justify-content-center mt-2">
-                  <a href="{{ route('product.all_products', ['language' => $current_language]) }}" class="link-no-underline"> <i>Tazama Zote <i class="far fa-arrow-alt-circle-right"></i></i></a>
+                  <a href="{{ route('product.all_products', ['language' => $current_language]) }}" class="link-no-underline"><i>See all <i class="far fa-arrow-alt-circle-right"></i></i></a>
               </div>
           </div>
 
       </div>
   </aside>
 </div>
-
-@endsection

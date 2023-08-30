@@ -39,16 +39,18 @@
                           </div>
                           <hr>
                           <div class="news-img">
-                              <img  src="{{ $article->img->url }}" alt="Article Image" class="w-100">
+                              <img  src="{{ $article->img }}" alt="Article Image" class="w-100">
                           </div>
                           <div class="news-content">
-                              <p>{{ $article->desc|linebreaksbr }}</p>
+                              <p>{!! $article->desc !!}</p>
                           </div>
 
                       </div>
                   </div>
 
-<!-- {% include 'en/new_section.html' %} -->
+
+@include('tirdoweb.en.newsection')
+
 </div>
         </div>
     </div>

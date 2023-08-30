@@ -144,7 +144,7 @@
                                         </ul>
                                     </li>
                                     <li class='nav-item dropdown-submenu'>
-                                        <a class='dropdown-item dropdown-toggle' data-toggle='dropdown' href='#'>ICT and Technology Development</a>
+                                        <a class='dropdown-item dropdown-toggle mr-2' data-toggle='dropdown' href='#'>ICT and Technology Development</a>
                                         <ul class='dropdown-menu'>
                                             <li><a class='dropdown-item' href="{{ route('ict', ['language' => $current_language]) }}">ICT</a></li>
                                             <li><a class='dropdown-item' href="{{ route('instrumentation', ['language' => $current_language]) }}">Instrumentation</a></li>
@@ -205,7 +205,7 @@
                                         <li><a class='dropdown-item' href="{{ route('innovasie', ['language' => $current_language]) }}">Innovasie</a></li>
                                         <li><a class='dropdown-item' href="{{ route('awamupay', ['language' => $current_language]) }}">Ammacom</a>
                                         </li>
-                                        {{-- <li><a class='dropdown-item' href="{{ route('albetus', ['language' => $current_language]) }}">Albetus Technologies</a></li> --}}
+                                        <li><a class='dropdown-item' href="{{ route('albetus', ['language' => $current_language]) }}">Albetus Technologies</a></li>
                                         <li><a class='dropdown-item' href="{{ route('bivatekafrica', ['language' => $current_language]) }}">Bivatek Africa</a></li>
                                     </ul>
                                 </li>
@@ -224,17 +224,17 @@
                         <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
                             data-toggle='dropdown'>e-Services</a>
                             <ul class='dropdown-menu'>
-                                <li><a class='dropdown-item' href='https://eoffice.gov.go.tz/users/login'>e-Office</a></li>
-                                <li><a class='dropdown-item' href='https://mail.tirdo.or.tz'>Staff Mail</a></li>
-                                <li><a class='dropdown-item' href='https://emrejesho.gov.go.tz/tenganisha_aina_za_walalamikaji?PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ&to_this_inst=415$PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ'>e-Mrejesho</a></li>
-                                <li><a class='dropdown-item' href='https://safari.gov.go.tz/index.php/user/auth/login'>e-Vibali</a></li>
+                                <li><a class='dropdown-item' href='https://eoffice.gov.go.tz/users/login' target="_blank">e-Office</a></li>
+                                <li><a class='dropdown-item' href='https://mail.tirdo.or.tz' target="_blank">Staff Mail</a></li>
+                                <li><a class='dropdown-item' href='https://emrejesho.gov.go.tz/tenganisha_aina_za_walalamikaji?PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ&to_this_inst=415$PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ' target="_blank">e-Mrejesho</a></li>
+                                <li><a class='dropdown-item' href='https://safari.gov.go.tz/index.php/user/auth/login' target="_blank">e-Vibali</a></li>
                             </ul>
                         </li>
 
                         <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
                             data-toggle='dropdown'>Documents</a>
                             <ul class='dropdown-menu'>
-                                <li><a class="dropdown-item" href="{{ route('publication', ['language' => $current_language]) }}">publications</a></li>
+                                <li><a class="dropdown-item" href="{{ route('publications', ['language' => $current_language]) }}">Publications</a></li>
                             </ul>
                         </li>
 

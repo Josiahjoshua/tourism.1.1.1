@@ -51,7 +51,7 @@
                           <p class="about_hub">
                                 This division will perform the following actvities:<br><br>
                                  <strong class="about_hub">
-                                    1. Research and developmen</strong><br>
+                                    1. Research and development</strong><br>
                                  <ul class="about_hub">
                                   <li>Cyber security and Forensics</li>
                                  <li>Sensor applications  </li>

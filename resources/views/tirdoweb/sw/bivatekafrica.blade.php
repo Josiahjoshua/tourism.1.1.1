@@ -33,11 +33,12 @@
                             Dhamira ya kampuni inahusu kutumia nguvu za teknolojia ili kuleta mabadiliko chanya, kuongeza ufanisi, na kukuza maendeleo ya kiuchumi na kijamii.
                             </ p>
 <br>
-                            <h5>
-                            Bidhaa na Huduma:
-                            </h5>
+
                             <div style="display: flex; flex-direction: row-reverse;">
                                 <div style="flex: 1;">
+                                    <h5>
+                                        Bidhaa na Huduma:
+                                        </h5>
                                 <ul>
                                     <li>
                                     BIVA CHUO:
@@ -67,7 +68,10 @@
                                 </ul>
                             </div>
                                 <div style="flex: 1;">
-                                    <img src="/uploads/innovasie/shirton.JPG" alt="Picha" style="width: 100%;">
+                                    <h5>
+                                        Meet the Founder:
+                                        </h5>
+                                        <img src="{{asset('static/uploads/bivatek/biva.png')}}" alt="Picha" style="width: 100%;">
                                 </div>
                             </div>
                             <br>

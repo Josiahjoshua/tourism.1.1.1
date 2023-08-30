@@ -99,7 +99,7 @@
 
                         </div>
                     </div>
-                    @include('tirdoweb.sw.newsection')
+                    @include('tirdoweb.en.newsection')
                 </div>
             </div>
         </div>
