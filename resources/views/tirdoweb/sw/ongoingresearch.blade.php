@@ -25,14 +25,14 @@
                     @foreach($resources_products as $product)
                     <div class="post-slide7 col-xs-6 col-sm-4 col-md-3 my-2">
                       <div class="post-img">
-                        <img src="{{ asset($product->img) }}" alt="" class="w-100">
+                        <img src="{{ asset('static/'.$product->img) }}" alt="" class="w-100">
                       </div>
                       <div class="post-review">
                         <ul class="post-bar">
                           <li><i class="fa fa-calendar"></i> {{ $product->date }}</li>
                         </ul>
                         <p class="post-description">
-                        {{ Str::limit($product->preview_desc, 20) }}
+                        {!! Str::limit($product->preview_desc, 20) !!}
                         </p>
                         <a href="{{ route('product.product_detail', ['language' => $current_language, 'product_id' => $product->id]) }}" class="read">Read more<i class="fa fa-angle-right"></i></a>
                       </div>

@@ -22,11 +22,11 @@
                 <div class="row">
 
                     <div class="col-md-9 bg-white py-3 page-content">
-                        <img src="/uploads/icon/innovasi.png" alt="innovasive">
+                        <img src="{{asset('static/uploads/icon/bivatek.png')}}" alt="innovasive">
                         <p>Bivatek africa: "Empowering Progress Through Innovative Solutions"</p>
                         <div class="col-12 px-0 mt-4 justify-content-center align-items-center">
                             <h5>About Us:</h5>
-                            <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                            <p style="text-align:justify;">
                             BIVATEK AFRICA is an innovative idea generation and research company based in East Africa, specifically in Tanzania.
                             With a prime location at the Msasani TIRDO Complex and a commitment to excellence, BIVATEK AFRICA specializes in developing transformative
                             technological solutions to address various challenges across different sectors.
@@ -171,7 +171,7 @@
                             </p>
                         </div>
                         <div class="col-12 mt-4 text-center">
-                            <img src="/uploads/innovasie/innovasie.png" alt="Innovasie" style="max-width: 100%;">
+                            {{-- <img src="/uploads/innovasie/innovasie.png" alt="Innovasie" style="max-width: 100%;"> --}}
                         </div>
                     </div>
                     @include('tirdoweb.en.newsection')

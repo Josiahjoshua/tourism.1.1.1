@@ -207,6 +207,8 @@
                                         </li>
                                         <li><a class='dropdown-item' href="{{ route('albetus', ['language' => $current_language]) }}">Albetus Technologies</a></li>
                                         <li><a class='dropdown-item' href="{{ route('bivatekafrica', ['language' => $current_language]) }}">Bivatek Africa</a></li>
+                                        <li><a class='dropdown-item' href="{{ route('amanisolar', ['language' => $current_language]) }}">Amani Solar</a></li>
+                                        <li><a class='dropdown-item' href="{{ route('olas', ['language' => $current_language]) }}">Olas</a></li>
                                     </ul>
                                 </li>
                             </ul>

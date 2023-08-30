@@ -39,7 +39,7 @@
                           </div>
                           <hr>
                           <div class="news-img">
-                              <img  src="{{ $article->img }}" alt="Picha ya makala" class="w-100">
+                              <img  src="{{ 'static/'.$article->img }}" alt="Picha ya makala" class="w-100">
                           </div>
                           <div class="news-content">
                               <p>{!! $article->preview_desc !!}</p>

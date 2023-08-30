@@ -15,7 +15,7 @@
                         <h4>Karibu TIRDO</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
-                            <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                            <p style="text-align:justify;">
 
                                 Shirika la Utafiti na Maendeleo ya Viwanda Tanzania (TIRDO) ni shirika la utafiti na maendeleo la taaluma mbalimbali
                                 iliyoanzishwa kwa Sheria ya Bunge namba 5 ya mwaka 1979 na ilianza kufanya kazi tarehe 1 Aprili, 1979. Ni taasisi inayomilikiwa na Serikali chini ya Wizara ya Viwanda.
