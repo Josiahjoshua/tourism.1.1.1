@@ -103,7 +103,7 @@
                     <ul class="navbar-nav mr-auto nav-bottom-header justify-content-center d-flex col-12">
                         <li class="nav-item active">
                            <a class="nav-link" href="{{route('home', ['language' => $current_language])}}">
-                                <span class="mt-0 pt-0"><i class="fa fa-home"></i>Nyumbani</span>
+                                <span class="mt-0 pt-0"><i class="fa fa-home"></i>Mwanzo</span>
                             </a>
                         </li>
 

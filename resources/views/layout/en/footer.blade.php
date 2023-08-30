@@ -167,7 +167,7 @@
                     <div class="row  pr-3">
                         <div class="col-md-8 text-left text-white-50 text-xs-center">
                             Designed and Developed by
-                            <a href="{% url 'home' current_language %}" target="_blank">TIRDO</a>
+                            <a href="{{ route('home', ['language' => $current_language]) }}" target="_blank">TIRDO</a>
                         </div>
                         <div class="col-md-4 text-right text-white-50 text-xs-center">
                             © 2023 TIRDO, All Rights Reserved.

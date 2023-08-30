@@ -18432,7 +18432,7 @@ table.dataTable.no-footer {
 }
 
 .bg-dark {
-    background: #273f71 !important
+    background: #006f8b !important
 }
 
 .bg-dark-2 {
@@ -18745,7 +18745,7 @@ button.white-purple {
 button.white-purple:hover {
     color: #d79e12;
     background: #fff;
-    border-color: #273f71
+    border-color: #006f8b
 }
 
 .a-link.white-primary,
@@ -18772,7 +18772,7 @@ button.white-primary:hover {
 
 .section-title {
     font-family: Verdana, Geneva, sans-serif;
-    color: #273f71;
+    color: #006f8b;
     font-size: 1.575rem;
     /* font-size: 1.875rem; */
     font-weight: 500 !important
@@ -18800,7 +18800,7 @@ button.white-primary:hover {
 }
 
 .title {
-    color: #002f51;
+    color: #006f8b;
     margin-bottom: 2rem;
     font-weight: 700
 }
@@ -20650,7 +20650,7 @@ header .top_nav li:not(:last-child) {
 
 header .top-list li a,
 header .top_nav li a {
-    color: #273f71;
+    color: #006f8b;
     display: inline-block;
     padding: 6px;
     font-weight: 900;
@@ -20773,7 +20773,7 @@ header .top_nav .top_menu:after {
 }
 
 header .top-middle {
-    background: rgba(45, 74, 132, .7);
+    background: rgba(0,111,139,.25);
     border-top: 2px solid #2d4a84
 }
 
@@ -20815,7 +20815,7 @@ header .top-middle .logo-container {
 }
 
 header .top-bottom .navbar {
-    background: #2d4a84 !important
+    background: #006f8b !important
 }
 
 header .top-bottom .navbar .navbar-nav>li {
@@ -21093,7 +21093,7 @@ header .top-bottom .navbar .search .search-form .form-inline input.form-control:
 
 .tirdo-footer {
     font-size: 14px;
-    background: #1d2f6f;
+    background: #006f8b;
     padding: 0
 }
 
@@ -21142,7 +21142,7 @@ header .top-bottom .navbar .search .search-form .form-inline input.form-control:
 }
 
 .tirdo-footer .credit {
-    background-color: #07164B;
+    background-color: #005b72;
     padding: 15px 0;
     color: #212121;
     font: 400 15px/30px
@@ -25159,13 +25159,13 @@ div.contact form button.btn {
     bottom: -60px;
     left: -25%;
     border: 15px solid transparent;
-    border-top-color: #273f71
+    border-top-color: #006f8b;
 }
 
 .news-tab nav div a.nav-item.nav-link:focus,
 .news-tab nav div a.nav-item.nav-link:hover {
     border: none;
-    background: #273f71;
+    background: #006f8b;
     color: #fff;
     border-radius: 0;
     transition: background .2s linear
@@ -25175,8 +25175,8 @@ div.contact form button.btn {
     background: #fdfdfd;
     line-height: 25px;
     border: 1px solid #ddd;
-    border-top: 5px solid #273f71;
-    border-bottom: 5px solid #273f71;
+    border-top: 5px solid #006f8b;
+    border-bottom: 5px solid #006f8b;
     padding: 30px 25px;
     height: auto;
     overflow-x: hidden;
@@ -25230,7 +25230,7 @@ div.contact form button.btn {
     color: #333;
     border: none;
     transition: all .9s ease;
-    border-right: 1px solid #273f71
+    border-right: 1px solid #006f8b
 }
 
 .nemc-news #myCarousel .carousel-inner {
