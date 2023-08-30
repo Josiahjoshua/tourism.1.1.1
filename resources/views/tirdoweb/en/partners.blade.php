@@ -4,7 +4,7 @@
         <!-- contents -->
 @section('content')
         <!-- contents -->
-    
+
     <div class="container px-0">
         <div class="col-12 special-page">
             <div class="col-12 p-4">
@@ -23,7 +23,7 @@
 
                     <div class="col-md-9 bg-white py-3 page-content">
                         <h4>OUR PARTNERS</h4>
-        
+
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <ul class="list-unstyled px-3 ">
                                 <li>
@@ -168,7 +168,7 @@
                                         <i class="fa fa-angle-double-right"></i>Wakala ya Usajili wa Biashara na Leseni (BRELA)
                                         </a>
                                     </li><br>
-                                    
+
                                     <li><a href="https://www.tz.undp.org/content/tanzania/en/home.html" target="_blank">
                                         <i class="fa fa-angle-double-right"></i>Kituo cha Uwekezaji Tanzania
                                         </a>
@@ -180,6 +180,7 @@
                             </ul>
                         </div>
                     </div>
+                    
                     @include('tirdoweb.en.newsection')
 
                 </div>

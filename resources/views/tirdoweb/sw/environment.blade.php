@@ -38,7 +38,7 @@
                                   <small><i>   </i></small>
                                 </div>
                                 <div class="col-12 px-0 my-2">
-                                  <p>Mkuu wa Sehemu ya Mazingira</p>
+                                  <p>Mkuu wa Kitengo cha Mazingira</p>
                                 </div>
                               </div>
                             </div>

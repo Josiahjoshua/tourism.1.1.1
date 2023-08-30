@@ -83,11 +83,11 @@
                             </h5>
                             <p>Kuwa kampuni inayoongoza katika teknolojia barani Afrika, inayotambuliwa kwa kujitolea kwetu katika uvumbuzi, athari za kijamii na ubora katika utafiti na maendeleo.
                             </p>
-                                
+
                             <br>
                             <h5>
                             Huduma za Kampuni:
-                            </ h5>
+                            </h5>
                             <p>
                                BIVATEK AFRICA inatoa huduma mbalimbali zinazolenga kuendesha uvumbuzi, kutatua changamoto, na kukuza ukuaji:
                                 <ul>
@@ -134,7 +134,7 @@
                                 </ul>
                             </p>
                             <p>
-                            <h5>Maadili: </ h5>
+                            <h5>Maadili: </h5>
                                 <ul>
                                     <li> Ubunifu: </li>
                                     Tunastawi kwa ubunifu na uvumbuzi, tukitafuta kila mara njia mpya za kutatua matatizo na kuboresha maisha.
@@ -174,7 +174,7 @@
                  </div>
                 </div>
                 </div>
-        
+
             </div>
-        
+
 @endsection

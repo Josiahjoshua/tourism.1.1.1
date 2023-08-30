@@ -48,7 +48,7 @@
 
 
                    <div class="row justify-content-center mt-2">
-                    <a href="{% url 'mypublish:all_publish' language=current_language %}" class="link-no-underline"> <i>Tazama Zote <i class="far fa-arrow-alt-circle-right"></i></i></a>
+                    <a href="{{ route('product.product_detail', ['language' => $current_language]) }}" class="link-no-underline"> <i>Tazama Zote <i class="far fa-arrow-alt-circle-right"></i></i></a>
                 </div>
                 </div>
 

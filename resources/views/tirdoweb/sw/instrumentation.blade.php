@@ -35,7 +35,7 @@
                             <small><i> </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Mkuu wa Sehemu ya Teknolojia ya Ala</p>
+                            <p>Mkuu wa Kitengo cha Teknolojia ya Ala</p>
                           </div>
                         </div>
                       </div>

@@ -189,7 +189,7 @@
 
                 <div class="row px-xs-3">
                     <div class="col-md-8 my-3">
-                        <h5 class="my-xs-2 text-center text-xs-center section-title"> <b>Bidhaa ya Utafiti ya TIRDO</b> </h5>
+                        <h5 class="my-xs-2 text-center text-xs-center section-title"> <b>Bidhaa za Utafiti za Tirdo</b> </h5>
 
                         <div class="row mt-4">
 

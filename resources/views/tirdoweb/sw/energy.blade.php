@@ -34,7 +34,7 @@
                             <small><i>   </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Mkuu wa Sehemu ya Nishati</p>
+                            <p>Mkuu wa Kitengo cha Nishati</p>
                           </div>
                         </div>
                       </div>
