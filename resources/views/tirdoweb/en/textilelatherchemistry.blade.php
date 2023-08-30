@@ -34,11 +34,11 @@
                             <small><i>   </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Head of textile and leather Section</p>
+                            <p>Head of Textile and Leather Section</p>
                           </div>
                         </div>
                       </div>
-                        <h4>TEXTILE AND LEATHER</h4>
+                        <h4 class="mt-3">TEXTILE AND LEATHER</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p class="about_hub">

@@ -35,11 +35,11 @@
                             <small><i> </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Mkuu wa Kitengo cha Teknolojia ya Ala</p>
+                            <p>Mkuu wa Kitengo cha Teklnolojia ya Electronics na Instrumentation</p>
                           </div>
                         </div>
                       </div>
-                        <h4>Teknolojia ya Ala</h4>
+                        <h4 class="mt-3">TEKNOLOJIA YA ELEACTRONICS NA INSTRUMENTATION</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p class="about_hub">
@@ -47,7 +47,7 @@
                                 <strong class="about_hub">
                                     Malengo</strong><br>
                                     Kutoa utaalam na huduma juu ya matumizi ya TEHAMA kwa Shirika na pia, kutoa kiufundi
-                                    ushauri na usaidizi kwa viwanda na wadau wengine kuhusu masuala ya ICT.
+                                    ushauri na usaidizi kwa viwanda na wadau wengine kuhusu masuala ya Tehama.
                           </p>
                           <p class="about_hub">
                                 Kitengo hiki kitafanya shughuli zifuatazo:<br><br>
@@ -66,7 +66,7 @@
                                 2. Ushauri</strong><br>
                              <ul class="about_hub">
                                 <li>Utafiti wa viwanda, Ubunifu na hifadhidata ya teknolojia</li>
-                                <li>Matumizi ya ICT katika shughuli za SME </li>
+                                <li>Matumizi ya Tehama katika shughuli za SME </li>
                                 <li>Matumizi ya kina ya kompyuta katika ufundishaji</li>
                                 <li>Lango la wazo</li>
 

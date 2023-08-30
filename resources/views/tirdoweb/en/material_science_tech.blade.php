@@ -3,7 +3,7 @@
 
         <!-- contents -->
 @section('content')
-    
+
     <div class="container px-0">
         <div class="col-12 special-page">
             <div class="col-12 p-4">
@@ -23,11 +23,11 @@
                     <div class="col-md-9 bg-white py-3 page-content">
                       <div class="row">
                         <div class="col-md-4 col-xs-12">
-                          <div class="text-center img-frame custom-img-frame">                                    
+                          <div class="text-center img-frame custom-img-frame">
                                   <img src="/uploads/administration/Eng.Liberatus Chizuzu.png" alt="Departmental Head" class="img-fluid">
                           </div>
                         </div>
-      
+
                         <div class="col-md-8">
                           <div class="">
                             <h5 class="title mb-2">Eng.Liberatus Chizuzu</h5>
@@ -38,14 +38,14 @@
                           </div>
                         </div>
                       </div>
-                        <h4>MATERIAL SCIENCE AND TECHNOLOGIES</h4>
-        
+                        <h4 class="mt-3">MATERIAL SCIENCE AND TECHNOLOGIES</h4>
+
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                                Charged with the responsibility of developing and specifying materials use based on cost and performance, 
+                                Charged with the responsibility of developing and specifying materials use based on cost and performance,
 		                       understand the limits of material and change in properties and create new materials with superior properties.
 		                       Materials dealt include metals, ceramics, polymers, biomaterials and composites.
-        
+
                             </p>
                             <h4>Research and Development</h4>
                             <P style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
@@ -65,13 +65,13 @@
                                   </ul>
                             </p>
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                                3)Inspection Services/ Consultancy<br>	
-                                The division is equipped with portable equipment and instruments for carrying out Non Destructive 
+                                3)Inspection Services/ Consultancy<br>
+                                The division is equipped with portable equipment and instruments for carrying out Non Destructive
                                     Testing activites. The existing capacities enable the division to undertake the following services<br>
                                 i).Destructive testing (DT)<br>
                                 Destructive testing (DT) is a test method conducted to find the exact point of failure of materials, components, or machines. During the process,
-                                 the tested item undergoes stress that eventually 
-                                deforms or destroys the material. Naturally, tested parts and materials cannot be reused in regular 
+                                 the tested item undergoes stress that eventually
+                                deforms or destroys the material. Naturally, tested parts and materials cannot be reused in regular
                                 operation after undergoing destructive testing procedures.<br>
                                 <h6>Services</h6>
                                 <ul>
@@ -82,12 +82,12 @@
 
 
                                 ii).Non Destructive Testing (NDT)<br>
-                                Non-destructive testing (NDT) comprises a vast array of analytical techniques that are applicable to a wide range of industries. 
-                                These techniques can identify and assess defects and examine the properties of all kinds of materials and structures without causing damage. 
-                                As NDT in no way alters the part or structure under inspection, it is an extremely useful technique that can lead to cost and time savings when 
+                                Non-destructive testing (NDT) comprises a vast array of analytical techniques that are applicable to a wide range of industries.
+                                These techniques can identify and assess defects and examine the properties of all kinds of materials and structures without causing damage.
+                                As NDT in no way alters the part or structure under inspection, it is an extremely useful technique that can lead to cost and time savings when
                                 applied to product evaluations, asset management and fault identification and repair.
- 
-                                NDT methods such as ultrasonic testing (UT), magnetic particle inspection (MPI), liquid penetrant testing (LPT), radiographic testing (RT), 
+
+                                NDT methods such as ultrasonic testing (UT), magnetic particle inspection (MPI), liquid penetrant testing (LPT), radiographic testing (RT),
                                 remote visual inspection and eddy current testing are now in standard use in civil, aeronautical, and systems engineering. <br>
 
                                 <h6>Services</h6>
@@ -95,16 +95,16 @@
                                      <ul style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                                         <li>Eddy Current Testing</li>
                                         <li>Eddy Current Inspection</li>
-                                        
+
                                         </ul>
-                            
+
                             </p>
                             <p>
-                              <img src="/uploads/icon/UT1.png" style="padding:7px;float:left;"> 
+                              <img src="/uploads/icon/UT1.png" style="padding:7px;float:left;">
                               <img src="/uploads/icon/UT2.png" style="padding:7px;float:left;">
                             </p>
-                           
-                                  
+
+
                         </div>
                     </div>
 

@@ -22,7 +22,7 @@
                 <div class="row">
 
                     <div class="col-md-9 bg-white py-3 page-content">
-                        <h4>T-Hub AT Tanzania Industrial Research and Development
+                        <h4>T-Hub at Tanzania Industrial Research and Development
                             Organization (TIRDO)</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">

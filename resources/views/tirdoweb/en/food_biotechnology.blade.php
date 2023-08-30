@@ -38,7 +38,7 @@
                               </div>
                             </div>
                           </div>
-                        <h4>FOOD AND BIOTECHNOLOGY DIVISION</h4>
+                        <h4 class="mt-3">FOOD AND BIOTECHNOLOGY DIVISION</h4>
                         <div class="col-12 px-0 mt-4 justify-content-center align-items-center">
                             <p class="about_hub">
                                 The Food and Biotechnology Division is under Industrial Research Department. It has three sections namely food processing,

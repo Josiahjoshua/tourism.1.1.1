@@ -31,15 +31,15 @@
 
                             <div class="col-md-8">
                               <div class="">
-                                <h5 class="title mb-2">Dr. Purificator Andrew</h5>
+                                <h5 class="title mb-2">Dkt. Purificator Andrew</h5>
                                 <small><i>   </i></small>
                               </div>
                               <div class="col-12 px-0 my-2">
-                                <p>Mkuu wa Kitengo cha Chakula na Bio-Teknolojia</p>
+                                <p>Mkuu wa Kitengo cha Chakula na Bayoteknolojia</p>
                               </div>
                             </div>
                           </div>
-                        <h4>MGAO WA CHAKULA NA BAYOTEKNOLOJIA</h4>
+                        <h4 class="mt-3">MGAO WA CHAKULA NA BAYOTEKNOLOJIA</h4>
                         <div class="col-12 px-0 mt-4 justify-content-center align-items-center">
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                                 Idara ya Chakula na Bayoteknolojia iko chini ya Idara ya Utafiti wa Viwanda. Ina sehemu tatu ambazo ni usindikaji wa chakula,

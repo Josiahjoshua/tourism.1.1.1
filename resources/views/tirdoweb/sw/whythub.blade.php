@@ -21,7 +21,7 @@
                 <div class="row">
 
                     <div class="col-md-9 bg-white py-3 page-content">
-                        <h4>KWANINI T-HUB</h4>
+                        <h4>Kwanini T-Hub</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">

@@ -38,7 +38,7 @@
                           </div>
                         </div>
                       </div>
-                        <h4>MANDATE</h4>
+                        <h4 class="mt-3">ENERGY</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p class="about_hub">

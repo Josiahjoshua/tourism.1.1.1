@@ -110,7 +110,7 @@
                     </div>
                   </div>
 
-                <div class="col-12 my-5 px-0">
+                <div class="col-12 my-3 px-0">
                     <h5 class="my-xs-2 text-center text-xs-center section-title mb-md-5"><b>Our Core Activities</b> </h5>
 
                     <div class="row core-home-section justify-content-center">
@@ -172,18 +172,6 @@
                     </div>
 
                 </div>
-
-
-
-
-
-
-
-
-
-               <br>
-
-
 
                 <div class="row px-xs-3">
                     <div class="col-md-8 my-3">

@@ -34,11 +34,11 @@
                             <small><i> </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Mkuu wa Kitengo cha Uhawilishaji Teknolojia na Mimea ya Majaribio</p>
+                            <p>Mkuu wa Kitengo cha Uhaulishaji wa Teknolojia</p>
                           </div>
                         </div>
                       </div>
-                        <h4>Idara ya Uhamisho wa Teknolojia na Mimea ya Majaribio</h4>
+                        <h4 class="mt-3">IDARA YA UHAULISHAJI WA TEKNOLOJIA</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p class="about_hub">

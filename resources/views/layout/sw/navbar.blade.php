@@ -146,8 +146,8 @@
                                     <a class='dropdown-item dropdown-toggle mr-2' data-toggle='dropdown' href='#'>Maendeleo ya TEHAMA na Teknolojia </a>
                                     <ul class='dropdown-menu'>
                                         <li><a class='dropdown-item' href="{{ route('ict', ['language' => $current_language]) }}">TEHAMA</a></li>
-                                        <li><a class='dropdown-item' href="{{ route('instrumentation', ['language' => $current_language]) }}">Teknolojia ya Ala</a></li>
-                                        <li><a class='dropdown-item' href="{{ route('technology', ['language' => $current_language]) }}">Uhalishaji Teknolojia</a></li>
+                                        <li><a class='dropdown-item' href="{{ route('instrumentation', ['language' => $current_language]) }}">Instrumentation</a></li>
+                                        <li><a class='dropdown-item' href="{{ route('technology', ['language' => $current_language]) }}">Uhaulishaji wa Teknolojia</a></li>
                                     </ul>
                                 </li>
                                 <li class='nav-item dropdown-submenu'>
@@ -181,8 +181,8 @@
                             <ul class='dropdown-menu'>
                                 <li><a class='dropdown-item' href="{{ route('research', ['language' => $current_language]) }}">Utafiti</a></li>
                                 <li><a class='dropdown-item' href="{{ route('feasibility', ['language' => $current_language]) }}">Upembuzi Yakinifu</a></li>
-                                <li><a class='dropdown-item' href="{{ route('industrialaudits', ['language' => $current_language]) }}">Ushauri na Huduma za Kiufundi</a></li>
-                                <li><a class='dropdown-item' href="{{ route('consultancysupport', ['language' => $current_language]) }}">Ukaguzi wa Kiufundi wa Kiwanda</a></li>
+                                <li><a class='dropdown-item' href="{{ route('consultancysupport', ['language' => $current_language]) }}">Ushauri na Huduma za Kiufundi</a></li>
+                                <li><a class='dropdown-item' href="{{ route('industrialaudits', ['language' => $current_language]) }}">Ukaguzi wa Kiufundi wa Kiwanda</a></li>
                                 <li><a class='dropdown-item' href="{{ route('lan', ['language' => $current_language]) }}">Ufungaji wa LAN na Usanidi</a></li>
                                 <li><a class='dropdown-item' href="{{ route('cyber', ['language' => $current_language]) }}">Usalama wa Mtandao na Maendeleo ya Programu</a></li>
                                 <li><a class='dropdown-item' href="#">Huduma za uchambuzi wa maabara <i class="fas fa-lock"></i></a></li>
@@ -198,7 +198,7 @@
                             <li><a class='dropdown-item' href="{{ route('thubservices', ['language' => $current_language]) }}">T-Hub Huduma</a></li>
                             <li><a class='dropdown-item' href="{{ route('whythub', ['language' => $current_language]) }}">Kwanini T-Hub</a></li>
                             <li class="nav-item dropdown-submenu">
-                                <a class='dropdown-item dropdown-toggle ml-2' data-toggle='dropdown' href='#'>Makampuni chini T-hub</a>
+                                <a class='dropdown-item dropdown-toggle mr-2' data-toggle='dropdown' href='#'>Makampuni chini T-hub</a>
                                 <ul class='dropdown-menu'>
                                     <li><a class='dropdown-item' href="{{ route('innovasie', ['language' => $current_language]) }}">Innovasie</a></li>
                                     <li><a class='dropdown-item' href="{{ route('awamupay', ['language' => $current_language]) }}">AwamuPay</a></li>

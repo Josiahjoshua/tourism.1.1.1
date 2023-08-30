@@ -39,7 +39,7 @@
                           </div>
                         </div>
                       </div>
-                        <h4>MATERIAL SCIENCE AND TECHNOLOGIES</h4>
+                        <h4 class="mt-3">SAYANSI YA NYENZO NA TEKNOLOJIA</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">

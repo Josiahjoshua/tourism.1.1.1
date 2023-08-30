@@ -21,7 +21,7 @@
                 <div class="row">
 
                     <div class="col-md-9 bg-white py-3 page-content">
-                        <h4>CONSULTANCY & TECHNICAL SERVICES</h4>
+                        <h4>Consultancy and Technical services</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p class="about_hub">

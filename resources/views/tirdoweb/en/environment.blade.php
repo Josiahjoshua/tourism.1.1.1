@@ -43,7 +43,7 @@
                             </div>
 
                           </div>
-                        <h4>ENVIRONMENTAL TECHNOLOGIES AND OCCUPATIONAL SAFETY DIVISION</h4>
+                        <h4 class="mt-3">ENVIRONMENTAL TECHNOLOGIES AND OCCUPATIONAL SAFETY DIVISION</h4>
                         <div class="col-12 px-0 mt-4 justify-content-center align-items-center">
                             <p class="about_hub">
                                 The division of Environmental Technologies and Occupational safety engage itself in matters pertaining to industrial research and development,

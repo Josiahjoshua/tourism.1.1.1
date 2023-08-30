@@ -108,7 +108,7 @@
                 </div>
 
                 <div class="post-content">
-                    <div class="category">AG. DIRECTOR OF ICT AND TECHNOLOGY TRANSFER (ADITT)</div>
+                    <div class="category">AG. DIRECTOR OF ICT AND TECHNOLOGY TRANSFER (DICTT)</div>
                     <h6 class="sub_title">
                         <p class="card-text fw-medium">Dr. Masoud M. Masoud</p>
                     </h6>
@@ -156,7 +156,7 @@
 
                 <div class="post-content">
                     <div class="category">AG. DIRECTOR OF
-                        INDUSTRIAL RESEARCH (ADIR)</div>
+                        INDUSTRIAL RESEARCH (DIR)</div>
                     <h6 class="sub_title">
                         <p class="card-text fw-medium">Mr. Humphrey Ndosi</p>
                     </h6>
@@ -177,7 +177,7 @@
                 <div class="post-content">
                     <div class="category">AG. DIRECTOR
                         OF
-                        FINANCE (ADF)</div>
+                        FINANCE (DF)</div>
                     <h6 class="sub_title">
                         <p class="card-text fw-medium">Mr. David J. Kisiwa</p>
                     </h6>

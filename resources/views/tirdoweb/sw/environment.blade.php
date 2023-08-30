@@ -34,7 +34,7 @@
 
                               <div class="col-md-8">
                                 <div class="">
-                                    <h5 class="title mb-2">Ms. Kunda Sikazwe</h5>
+                                    <h5 class="title mb-2">Bi. Kunda Sikazwe</h5>
                                   <small><i>   </i></small>
                                 </div>
                                 <div class="col-12 px-0 my-2">
@@ -44,7 +44,7 @@
                             </div>
 
                           </div>
-                          <h4>TEKNOLOJIA YA MAZINGIRA NA KITENGO CHA USALAMA KAZINI</h4>
+                          <h4 class="mt-3">TEKNOLOJIA YA MAZINGIRA NA KITENGO CHA USALAMA KAZINI</h4>
                         <div class="col-12 px-0 mt-4 justify-content-center align-items-center">
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                               Mgawanyiko wa Teknolojia ya Mazingira na Usalama Kazini hujihusisha katika masuala yanayohusu utafiti na maendeleo ya viwanda,

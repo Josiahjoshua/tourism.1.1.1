@@ -29,7 +29,7 @@
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
 
                                 Tarehe 10 Oktoba 2018, idhini ilitolewa ili kuanzisha Kituo cha COMSATS cha Hali ya Hewa na Uendelevu.
-                                (CCCS) nchini Tanzania katika TIRDO.
+                                (CCCS) nchini Tanzania katika TIRDO.<br><br>
                        Ajenda ya Maendeleo ya Dunia ya 2030 ina Malengo 17 ya Maendeleo Endelevu (SDGs) na Hali ya Hewa ya Paris.
                             Makubaliano yanatoa msingi wa maendeleo endelevu ya kaboni ya chini na ustahimilivu. Viungo kati ya
                              mabadiliko ya tabianchi na maendeleo endelevu yana nguvu.
@@ -42,7 +42,8 @@
                        lengo (Lengo la 13), lakini pia limeunganishwa katika takriban SDGs nyingine zote.
 
                    Tume ya Sayansi na Teknolojia ya Maendeleo Endelevu Kusini (COMSATS) imeamua kuunda
-                       mtandao wa Kituo cha COMSATS cha Hali ya Hewa na Uendelevu (CCCS). COMSATS ni shirika baina ya serikali
+                       mtandao wa Kituo cha COMSATS cha Hali ya Hewa na Uendelevu (CCCS).<br><br>
+                       COMSATS ni shirika baina ya serikali
                        ya nchi 27 zinazoendelea kama wanachama walioko Islamabad, Pakistan. Ina Mtandao wa 22 International S&T
                        Vituo vya Ubora. Shirika la Utafiti na Maendeleo ya Viwanda Tanzania (TIRDO) ni Kituo cha
                        Ubora wa COMSATS. Taarifa kuhusu COMSATS inaweza kupatikana kwenye www.comsats.org.

@@ -28,7 +28,7 @@
                             <p class="about_hub">
 
                                 On 10th October 2018 approval was accorded to establish COMSATS Centre for Climate and Sustainability
-                                (CCCS) in Tanzania at TIRDO.
+                                (CCCS) in Tanzania at TIRDO. <br><br>
                        The 2030 Global Development Agenda contains 17 Sustainable Development Goals (SDGs) and the Paris Climate
                             Agreement provides the foundation for sustainable low carbon and resilient development. The links between
                              climate change and sustainable development are strong.
@@ -41,7 +41,8 @@
                        target (Goal 13), but it is also integrated into almost all of the other SDGs.
 
                    The Commission on Science and Technology for Sustainable Development in the South (COMSATS) has decided to create
-                       a network of COMSATS Centre for Climate and Sustainability (CCCS). COMSATS is an intergovernmental organization
+                       a network of COMSATS Centre for Climate and Sustainability (CCCS).<br><br>
+                       COMSATS is an intergovernmental organization
                        of 27 developing countries as members based in Islamabad, Pakistan. It has a Network of 22 International S&T
                        Centres of Excellence. The Tanzania Industrial Research and Development Organization (TIRDO) is a Centre of
                        Excellence of COMSATS. Information about COMSATS can be accessed on www.comsats.org.

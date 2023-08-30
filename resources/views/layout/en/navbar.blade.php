@@ -182,8 +182,8 @@
                                 <ul class='dropdown-menu'>
                                     <li><a class='dropdown-item' href="{{ route('research', ['language' => $current_language]) }}">Research</a></li>
                                     <li><a class='dropdown-item' href="{{ route('feasibility', ['language' => $current_language]) }}">Feasibility Studies</a></li>
-                                    <li><a class='dropdown-item' href="{{ route('industrialaudits', ['language' => $current_language]) }}">Industrial Technical Audits</a></li>
                                     <li><a class='dropdown-item' href="{{ route('consultancysupport', ['language' => $current_language]) }}">Consultancy & Technical Services</a></li>
+                                    <li><a class='dropdown-item' href="{{ route('industrialaudits', ['language' => $current_language]) }}">Industrial Technical Audits</a></li>
                                     <li><a class='dropdown-item' href="{{ route('lan', ['language' => $current_language]) }}">LAN Installation and Configuration</a></li>
                                     <li><a class='dropdown-item' href="{{ route('cyber', ['language' => $current_language]) }}">Cybersecurity and Software Development</a></li>
                                     <li><a class='dropdown-item' href="#">Laboratory analytical Services <i class="fas fa-lock"></i></a></li>
@@ -200,7 +200,7 @@
                                 <li><a class='dropdown-item' href="{{ route('thubservices', ['language' => $current_language]) }}">T-Hub Services</a></li>
                                 <li><a class='dropdown-item' href="{{ route('whythub', ['language' => $current_language]) }}">Why T-Hub</a></li>
                                 <li class="nav-item dropdown-submenu">
-                                    <a class='dropdown-item dropdown-toggle ml-2' data-toggle='dropdown' href='#'>Companies under T-hub</a>
+                                    <a class='dropdown-item dropdown-toggle mr-2' data-toggle='dropdown' href='#'>Companies under T-hub</a>
                                     <ul class='dropdown-menu'>
                                         <li><a class='dropdown-item' href="{{ route('innovasie', ['language' => $current_language]) }}">Innovasie</a></li>
                                         <li><a class='dropdown-item' href="{{ route('awamupay', ['language' => $current_language]) }}">Ammacom</a>

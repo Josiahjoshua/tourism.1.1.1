@@ -34,11 +34,11 @@
                             <small><i>   </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Head of Instrumentation Technology Section</p>
+                            <p>Head of Electronics and Instrumentation Technology Section</p>
                           </div>
                         </div>
                       </div>
-                        <h4>Instrumentation Technology</h4>
+                        <h4 class="mt-3">ELEACTRONICS AND INSTRUMENTATION TECHNOLOGIES</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p class="about_hub">

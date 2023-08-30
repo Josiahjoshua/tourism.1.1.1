@@ -73,6 +73,7 @@
                                         Meet the Founder:
                                         </h5>
                                     <img src="{{asset('static/uploads/bivatek/biva.png')}}" alt="Picha" style="width: 100%;">
+                                    <h5 class="title mt-3 text-center">Mr. Biva Francis</h5>
                                 </div>
                             </div>
                             <br>

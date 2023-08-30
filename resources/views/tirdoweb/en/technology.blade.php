@@ -34,11 +34,11 @@
                             <small><i>   </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Head of Technology Transfer and  Pilot Plants Section</p>
+                            <p>Head of Technology Transfer and Pilot Plants Section</p>
                           </div>
                         </div>
                       </div>
-                        <h4>Technology Transfer and  Pilot Plants Division</h4>
+                        <h4 class="mt-3">TECHNOLOGY TRANSFER AND PILOT PLANTS DIVISION</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p class="about_hub">
