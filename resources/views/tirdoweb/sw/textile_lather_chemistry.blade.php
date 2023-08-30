@@ -34,7 +34,7 @@
                             <small><i>   </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Mkuu wa Sehemu ya nguo na ngozi</p>
+                            <p>Mkuu wa Kitengo cha nguo na ngozi</p>
                             </div>
                           </div>
                         </div>

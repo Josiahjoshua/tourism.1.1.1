@@ -11,7 +11,7 @@
     <meta name="theme-color" content="#2d4a84">
     <meta name="apple-mobile-web-app-status-bar-style" content="#2d4a84">
 
-    <title> TIRDO | Nyumbani
+    <title> TIRDO | Mwanzo
     </title>
 
     <!-- favicons -->
@@ -51,10 +51,10 @@
 
     <input type="hidden" id="base_url" value="/">
     <script src="{{asset('static/asset/js/jquery.min.js')}}"></script>
-    
+
     <script src="{{asset('static/asset/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('static/asset/js/slick.min.js')}}"></script>
-    
+
     <script src="{{asset('static/asset/js/datatables.min.js')}}"></script>
     <script src="{{asset('static/asset/js/magnific-popup.min.js')}}"></script>
     <script src="{{asset('static/asset/js/custom.min.js')}}"></script>

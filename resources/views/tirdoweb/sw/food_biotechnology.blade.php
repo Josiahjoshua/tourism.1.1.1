@@ -35,7 +35,7 @@
                                 <small><i>   </i></small>
                               </div>
                               <div class="col-12 px-0 my-2">
-                                <p>Mkuu wa Sehemu ya Chakula na Bio-Teknolojia</p>
+                                <p>Mkuu wa Kitengo cha Chakula na Bio-Teknolojia</p>
                               </div>
                             </div>
                           </div>

@@ -13,7 +13,7 @@
                             <ol class="breadcrumb px-0">
 															<li class="breadcrumb-item "><a href="{{ route('home', ['language' => $current_language]) }}"><span class="fas fa-home"></span></a></li>
                               <li class="breadcrumb-item list-inline-item font-weight-bold">Kampuni iliyo chini ya T-Hub</li>
-                              <li class="breadcrumb-item list-inline-item active">Aalbetus technologies</li>
+                              <li class="breadcrumb-item list-inline-item active">Albetus technologies</li>
                             </ol>
                         </nav>
                     </div>
@@ -38,16 +38,16 @@
                                 mahitaji yanayozidi kuwa magumu ya mashirika, ili
                                 ili kuongeza tija ya shughuli na kuongeza
                                 thamani kwa wateja wetu
-                            </p> 
+                            </p>
 <br>
                             <h5>
                             Maadili ya Kampuni
-                            </ h5>
+                            </h5>
                             <p>Albetus Technologies inaamini katika ukuaji endelevu
                             kupitia uvumbuzi, ubunifu na umahiri. Sisi pia
                             tunaamini katika kuwatendea wateja wetu kwa heshima. Sisi
                             thamini uaminifu, uadilifu na mazoea ya kimaadili ya biashara.
-                            </ p>
+                            </p>
                             <div style="display: flex; flex-direction: row-reverse;">
                                 <div style="flex: 1;">
                                 <ul>
@@ -62,7 +62,7 @@
                                     </li><p>Tunapenda, maamuzi kwa wakati yanapelekea
                                         vitendo kwa wakati vinavyopelekea kuhama
                                         biashara mbele.
-                                        </ p>
+                                        </p>
                                     <li>
                                     Shauku
                                     </li>
@@ -86,29 +86,29 @@
                             <br>
                             <h5>
                             Misheni
-                            </ h5>
+                            </h5>
                             <p>Ili kusaidia shughuli za biashara kupitia
                                 teknolojia ya kuaminika na Ubunifu
                                 ufumbuzi.
-                            </ p>
+                            </p>
 
                             <h5>
                             Maono
-                            </ h5>
+                            </h5>
                             <p>Kutofautishwa kama mtu anayetegemewa na
                                 Teknolojia ya Kibunifu ya Pan-Afrika
                                 mtoa huduma.
-                            </ p>
+                            </p>
 
                             <h5>
                             Kusudi
-                            </ h5>
+                            </h5>
                             <p>kuboresha uwezo wa watu kufanya kazi zao na
                                 ubora wa maisha kupitia uvumbuzi wenye maana
-                            </ p><br>
+                            </p><br>
                             <h5>
                             Huduma zetu:
-                            </ h5>
+                            </h5>
                             <p>
                                BIVATEK AFRICA inatoa huduma mbalimbali zinazolenga kuendesha uvumbuzi, kutatua changamoto, na kukuza ukuaji:
                                 <ul>
@@ -138,7 +138,7 @@
                                     Leseni. Programu ya kuzuia virusi,
                                     Programu za Uhasibu, Autocad,
                                     Archicad nk)
-                                    
+
                             <p>
                                 <h5>Wasiliana Nasi: </h5>
                                 <br>
@@ -166,7 +166,7 @@
                  </div>
                 </div>
                 </div>
-        
+
             </div>
-        
+
 @endsection

@@ -24,21 +24,7 @@ class PublicationController extends Controller
     }
 
 
-    // public function articledetail(NewsArticle $article, $language) {
-    //     $templateName = 'product_detail';
-    //     $templatePath = $this->getTemplatePath($language, $templateName);
-
-    //     $data = [
-    //         'current_language' => $language,
-    //         'resources_products' => ResourcesProduct::all(),
-    //         'news_product' => NewsArticle::all(),
-    //     ];
-
-    //     return view($templatePath, compact('product'), $data, );
-
-    // }
-
-    public function publication($language) {
+    public function publications($language) {
         $templateName = 'all_publish';
         $templatePath = $this->getTemplatePath($language, $templateName);
         $publications = Publications::all();

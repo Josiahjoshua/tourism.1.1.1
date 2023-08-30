@@ -59,7 +59,7 @@
                                 </div>
                                 <div style="flex: 1;">
                                 <img src="{{ asset('static/uploads/innovasie/shirton.jpg')}}" alt="shirton image" style="width: 100%;">
-                                    <!-- <img src="{{ asset('static/asset/images/logo.jpg')}}" alt="TIRDO Logo" class="img-fluid client-logo"> -->
+                                    {{-- <!-- <img src="{{ asset('static/asset/images/logo.jpg')}}" alt="TIRDO Logo" class="img-fluid client-logo"> --> --}}
                                 </div>
                             </div>
                             <br>

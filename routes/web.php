@@ -147,8 +147,8 @@ Route::get('/{language}/home', [TirdoController::class, 'home'])
     Route::get('/{language}/partners', [TirdoController::class, 'partners'])
     ->name('partners');
 
-    Route::get('publication/{language}/publication', [PublicationController::class, 'publication'])
-    ->name('publication');
+    Route::get('/{language}/publications', [PublicationController::class, 'publications'])
+    ->name('publications');
 
     Route::get('/{language}/research', [TirdoController::class, 'research'])
     ->name('research');
@@ -175,7 +175,7 @@ Route::get('/{language}/home', [TirdoController::class, 'home'])
     ->name('whythub');
 
     Route::get('/{language}/albetus', [TirdoController::class, 'albetus'])
-    ->name(' albetus');
+    ->name('albetus');
 
     Route::get('/{language}/bivatekafrica', [TirdoController::class, 'bivatekafrica'])
     ->name('bivatekafrica');

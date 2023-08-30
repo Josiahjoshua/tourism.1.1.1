@@ -34,7 +34,7 @@
                             <small><i> </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Mkuu wa Sehemu ya Uhawilishaji Teknolojia na Mimea ya Majaribio</p>
+                            <p>Mkuu wa Kitengo cha Uhawilishaji Teknolojia na Mimea ya Majaribio</p>
                           </div>
                         </div>
                       </div>

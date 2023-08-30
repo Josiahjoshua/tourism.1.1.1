@@ -35,7 +35,7 @@
                             <small><i>   </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Mkuu wa Sehemu ya Kemia ya Viwanda</p>
+                            <p>Mkuu wa Kitengo cha Kemia ya Viwanda</p>
                           </div>
                         </div>
                       </div>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
 
-                    
+
                     @include('tirdoweb.sw.newsection')
 
                 </div>

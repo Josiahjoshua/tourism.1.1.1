@@ -143,10 +143,10 @@
                                     </ul>
                                 </li>
                                 <li class='nav-item dropdown-submenu'>
-                                    <a class='dropdown-item dropdown-toggle' data-toggle='dropdown' href='#'>Maendeleo ya TEHAMA na Teknolojia</a>
+                                    <a class='dropdown-item dropdown-toggle mr-2' data-toggle='dropdown' href='#'>Maendeleo ya TEHAMA na Teknolojia </a>
                                     <ul class='dropdown-menu'>
                                         <li><a class='dropdown-item' href="{{ route('ict', ['language' => $current_language]) }}">TEHAMA</a></li>
-                                        <li><a class='dropdown-item' href="{{ route('instrumentation', ['language' => $current_language]) }}">Instrumentation</a></li>
+                                        <li><a class='dropdown-item' href="{{ route('instrumentation', ['language' => $current_language]) }}">Teknolojia ya Ala</a></li>
                                         <li><a class='dropdown-item' href="{{ route('technology', ['language' => $current_language]) }}">Uhalishaji Teknolojia</a></li>
                                     </ul>
                                 </li>
@@ -202,7 +202,7 @@
                                 <ul class='dropdown-menu'>
                                     <li><a class='dropdown-item' href="{{ route('innovasie', ['language' => $current_language]) }}">Innovasie</a></li>
                                     <li><a class='dropdown-item' href="{{ route('awamupay', ['language' => $current_language]) }}">AwamuPay</a></li>
-                                    {{-- <li><a class='dropdown-item' href="{{ route('albetus', ['language' => $current_language]) }}">Albetus Technologies</a></li> --}}
+                                    <li><a class='dropdown-item' href="{{ route('albetus', ['language' => $current_language]) }}">Albetus Technologies</a></li>
                                     <li><a class='dropdown-item' href="{{ route('bivatekafrica', ['language' => $current_language]) }}">Bivatek Africa</a></li>
                                 </ul>
                             </li>
@@ -221,17 +221,17 @@
                     <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
                         data-toggle='dropdown'>Huduma za kielektroniki</a>
                         <ul class='dropdown-menu'>
-                            <li><a class='dropdown-item' href='https://eoffice.gov.go.tz/users/login'>Ofisi ya mtandaoni</a></li>
-                            <li><a class='dropdown-item' href='https://mail.tirdo.or.tz'>Barua za Wafanyakazi</a></li>
-                            <li><a class='dropdown-item' href='https://emrejesho.gov.go.tz/tenganisha_aina_za_walalamikaji?PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ&to_this_inst=415$PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ'>e-Mrejesho</a></li>
-                            <li><a class='dropdown-item' href='https://safari.gov.go.tz/index.php/user/auth/login'>e-Vibali</a></li>
+                            <li><a class='dropdown-item' href='https://eoffice.gov.go.tz/users/login' target="_blank">Ofisi ya mtandaoni</a></li>
+                            <li><a class='dropdown-item' href='https://mail.tirdo.or.tz'  target="_blank">Barua za Wafanyakazi</a></li>
+                            <li><a class='dropdown-item' href='https://emrejesho.gov.go.tz/tenganisha_aina_za_walalamikaji?PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ&to_this_inst=415$PQI70xlXGIGpQajIcg16EMX74XYFJZf9NV6nrjnzNiHgtt6Iqhlm6VYeXW2vhplQ' target="_blank">e-Mrejesho</a></li>
+                            <li><a class='dropdown-item' href='https://safari.gov.go.tz/index.php/user/auth/login' target="_blank">e-Vibali</a></li>
                         </ul>
                     </li>
 
                     <li class='nav-item dropdown'><a href='#' class='nav-link dropdown-toggle'
                         data-toggle='dropdown'>Nyaraka</a>
                         <ul class='dropdown-menu'>
-                            <li><a class="dropdown-item" href="{{ route('publication', ['language' => $current_language]) }}">Machapisho</a></li>
+                            <li><a class="dropdown-item" href="{{ route('publications', ['language' => $current_language]) }}">Machapisho</a></li>
                         </ul>
                     </li>
 
