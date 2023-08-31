@@ -243,7 +243,7 @@
                 </div>
 
                 <div class="post-content">
-                    <div class="category">HEAD OF CORPORATIVE SERVICES</div>
+                    <div class="category">HEAD OF ORGANIZATION SERVICES UNIT</div>
                     <h6 class="sub_title">
                         <p class="card-text fw-medium">Mr. David Nyenga Langa</p>
                     </h6>

@@ -232,7 +232,7 @@
                     <img class="w-100 bg-white" src="/uploads/administration/david nyanga.png" alt="Mr. David Nyenga Langa">
                 </div>
 
-                <div class="post-content"><div class="category">MKUU WA HUDUMA ZA USHIRIKA</div>
+                <div class="post-content"><div class="category">MKUU WA KITENGO CHA HUDUMA ZA USHIRIKA</div>
                     <h6 class="sub_title">
                         <p class="card-text fw-medium">Bwn. David Nyenga Langa</p>
                     </h6>
