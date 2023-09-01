@@ -25,7 +25,7 @@
                 @foreach($news_articles as $article)
                     <div class="post-slide7 col-xs-6 col-sm-4 col-md-3 my-2">
                       <div class="post-img">
-                        <img src="{{ 'static/'.$article->img }}" alt="" class="w-100">
+                        <img src="{{ 'storage/'.$article->img }}" alt="" class="w-100">
                       </div>
                       <div class="post-review">
                         <ul class="post-bar">

@@ -39,7 +39,7 @@
                           </div>
                           <hr>
                           <div class="news-img">
-                              <img  src="{{ 'static/'.$article->img }}" alt="Article Image" class="w-100">
+                              <img  src="{{ 'storage/'.$article->img }}" alt="Article Image" class="w-100">
                           </div>
                           <div class="news-content">
                               <p>{!! $article->preview_desc !!}</p>
