@@ -78,7 +78,7 @@
                                     <td class="text-center">
                                         <button class="btn btn-primary btn-sm" wire:click="prepareViewNews('{{$news->id}}')"><i class="uil-eye"></i></button>
                                         <button class="btn btn-warning btn-sm" wire:click="prepareEditNews('{{$news->id}}')"><i class="uil-edit"></i></button>
-                                        <button class="btn btn-danger btn-sm" wire:click="delete('{{$news->id}}')"><i class="uil-trash"></i></button>
+                                        <button class="btn btn-danger btn-sm" wire:click="showDeleteModal('{{$news->id}}')"><i class="uil-trash"></i></button>
                                     </td>
                                 </tr>
                             @empty
@@ -96,7 +96,7 @@
         </div>
     </div>
 
-    <div id="news_activation" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
+    <div id="delete_article_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header modal-colored-header bg-info">
@@ -104,11 +104,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                 </div>
                 <div class="modal-body">
-                    <h4 style="color: red">Are you sure you want to perform this action?</h4>
+                    <h4 style="color: red">Are you sure you want to delete this article?</h4>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-info" wire:click="activation">Yes, Submit</button>
+                    <button type="button" class="btn btn-danger" wire:click="deleteArticle">Yes, Delete</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -117,11 +117,11 @@
 
 <script>
     document.addEventListener('livewire:load', function () {
-        livewire.on('showNewsActivationModel', () => {
-            $('#news_activation').modal('show')
+        livewire.on('showDeleteModel', () => {
+            $('#delete_article_modal').modal('show')
         });
-        livewire.on('closeNewsActivationModel', () => {
-            $('#news_activation').modal('hide')
+        livewire.on('closeDeleteModel', () => {
+            $('#delete_article_modal').modal('hide')
         });
     });
 
