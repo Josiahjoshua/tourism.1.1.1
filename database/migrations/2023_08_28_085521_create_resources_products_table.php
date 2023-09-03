@@ -15,11 +15,16 @@ class CreateResourcesProductsTable extends Migration
     {
         Schema::create('resources_products', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('created_by');
             $table->string('name');
-            $table->date('date');
             $table->text('preview_desc');
             $table->string('img');
             $table->timestamps();
+
+            $table->foreign('created_by')
+                ->references('id')
+                ->on('users')
+                ->cascadeOnDelete();
         });
     }
 

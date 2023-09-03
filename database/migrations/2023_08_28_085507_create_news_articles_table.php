@@ -15,11 +15,16 @@ class CreateNewsArticlesTable extends Migration
     {
         Schema::create('news_articles', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('created_by');
             $table->string('name');
-            $table->date('date');
             $table->text('preview_desc');
             $table->string('img'); // VARCHAR for image path
             $table->timestamps();
+
+            $table->foreign('created_by')
+                ->references('id')
+                ->on('users')
+                ->cascadeOnDelete();
         });
     }
 

@@ -15,9 +15,16 @@ class CreateCarouselItemsTable extends Migration
     {
         Schema::create('carousel_items', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('created_by');
             $table->string('image');
             $table->string('text');
             $table->timestamps();
+
+            $table->foreign('created_by')
+                ->references('id')
+                ->on('users')
+                ->cascadeOnDelete();
+
         });
     }
 
