@@ -19,6 +19,7 @@ class CreateNewsArticlesTable extends Migration
             $table->string('name');
             $table->text('preview_desc');
             $table->string('img'); // VARCHAR for image path
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
 
             $table->foreign('created_by')

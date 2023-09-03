@@ -40,7 +40,7 @@ class NewsArticleList extends Component
         if ($this->isEditMode){
 
             if (!empty($file_path)){
-                $file_path = ((new FileUploadService())->upload("article", $this->file));
+                $file_path = ((new FileUploadService())->upload("news", $this->file));
                 $this->article->img = $file_path;
             }
             $this->article->save();
@@ -48,7 +48,7 @@ class NewsArticleList extends Component
             $this->dispatchBrowserEvent('success_alert', 'Article updated.');
 
         }else{
-            $file_path = ((new FileUploadService())->upload("article", $this->file));
+            $file_path = ((new FileUploadService())->upload("news", $this->file));
 
             $this->article->created_by = Auth::user()->id;
             $this->article->img = $file_path;
@@ -80,4 +80,37 @@ class NewsArticleList extends Component
         })->paginate('15');
         return view('livewire.news-article-list', ['articles' => $articles]);
     }
+
+
+    public function activation()
+    {
+        $this->news->is_active = !$this->news->is_active;
+        $this->news->save();
+        $this->emit('closeNewsActivationModel');
+        $this->dispatchBrowserEvent('success_alert', 'Successful.');
+        $this->news = new NewsArticle();
+    }
+
+    public function showActivationModal(NewsArticle $news)
+    {
+        $this->news = $news;
+        $this->emit('showStaffActivationModel');
+    }
+
+    public function prepareViewNews($id)
+    {
+        $this->viewForm = true;
+        $this->article = NewsArticle::find($id);
+
+    }
+
+    public function prepareEditNews($id)
+    {
+        $this->viewForm = true;
+        $this->article = NewsArticle::find($id);
+
+    }
+
 }
+
+

@@ -15,8 +15,8 @@
                             @error('article.name') <span class="error">{{ $message }}</span> @enderror
                         </div>
                         <div class="mb-2">
-                            <label for="name" class="form-label font-12">Image <span class="required">*</span></label>
-                            <input type="file" wire:model="file" id="name" class="form-control form-control-sm">
+                            <label for="image" class="form-label font-12">Image <span class="required">*</span></label>
+                            <input type="file" wire:model="file" id="image" accept="image/*" class="form-control form-control-sm">
                             @error('file') <span class="error">{{ $message }}</span> @enderror
                         </div>
                         <div class="mb-2">
@@ -52,7 +52,8 @@
                                 <th>#</th>
                                 <th>Image</th>
                                 <th>Title</th>
-                                <th>Description </th>
+                                <th>Description</th>
+                                <th>Status</th>
                                 <th>Created At</th>
                                 <th class="text-center">Action</th>
                             </tr>
@@ -62,23 +63,66 @@
                                 <tr>
                                     <td>{{ $key+1 }}</td>
                                     <td class="">
-                                        <img src="{{ asset("storage/" . $news->img) }}" alt="News image" class="img" width="30px;" height="30px" srcset="">
+                                        <img src="{{ asset('storage/' . $news->img) }}" alt="News image" class="img" width="30px;" height="30px" srcset="">
                                     </td>
                                     <td>{{ $news->name }}</td>
                                     <td>{{ $news->preview_desc }}</td>
+                                    <td>
+                                        @if($news->is_active)
+                                            <span class="badge badge-success-lighten">Active</span>
+                                        @else
+                                            <span class="badge badge-danger-lighten">In Active</span>
+                                        @endif
+                                    </td>
                                     <td>{{ $news->created_at }}</td>
-                                    <td>Action</td>
+                                    <td class="text-center">
+                                        <button class="btn btn-primary btn-sm" wire:click="prepareViewNews('{{$news->id}}')"><i class="uil-eye"></i></button>
+                                        <button class="btn btn-warning btn-sm" wire:click="prepareEditNews('{{$news->id}}')"><i class="uil-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" wire:click="delete('{{$news->id}}')"><i class="uil-trash"></i></button>
+                                    </td>
                                 </tr>
                             @empty
                                 <tr>
-                                    <td colspan="6">No news</td>
+                                    <td colspan="6" class="text-center my-2">No news</td>
                                 </tr>
                             @endforelse
                             </tbody>
                         </table>
                     </div>
+                    <br>
+                    {{ $articles->links() }}
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="news_activation" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-colored-header bg-info">
+                    <h4 class="modal-title" id="danger-header-modalLabel">Confirmation</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 style="color: red">Are you sure you want to perform this action?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info" wire:click="activation">Yes, Submit</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
 </div>
+
+<script>
+    document.addEventListener('livewire:load', function () {
+        livewire.on('showNewsActivationModel', () => {
+            $('#news_activation').modal('show')
+        });
+        livewire.on('closeNewsActivationModel', () => {
+            $('#news_activation').modal('hide')
+        });
+    });
+
+</script>

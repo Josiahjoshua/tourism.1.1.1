@@ -74,9 +74,9 @@
                                         @endif
                                     </td>
                                     <td>{{$user->created_at->format('d M Y h:i')}}</td>
-                                    <td>
-                                        <button class="btn btn-warning btn-sm" wire:click="prepareEditStaff('{{$user->id}}')"><i class="uil-edit"></i></button>
-                                        <button class="btn btn-danger btn-sm" wire:click="showActivationModal('{{$user->id}}')"><i class="uil-power"></i></button>
+                                    <td class="text-center">
+                                        <button class="btn btn-primary btn-sm" wire:click="prepareEditStaff('{{$user->id}}')"><i class="uil-edit"></i></button>
+                                        <button class="btn btn-warning btn-sm" wire:click="showActivationModal('{{$user->id}}')"><i class="uil-power"></i></button>
                                     </td>
                                 </tr>
                             @empty
