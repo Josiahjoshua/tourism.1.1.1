@@ -40,7 +40,7 @@ class NewsArticleList extends Component
         if ($this->isEditMode){
 
             if (!empty($file_path)){
-                $file_path = ((new FileUploadService())->upload("news", $this->file));
+                $file_path = ((new FileUploadService())->upload("article", $this->file));
                 $this->article->img = $file_path;
             }
             $this->article->save();
@@ -48,7 +48,7 @@ class NewsArticleList extends Component
             $this->dispatchBrowserEvent('success_alert', 'Article updated.');
 
         }else{
-            $file_path = ((new FileUploadService())->upload("news", $this->file));
+            $file_path = ((new FileUploadService())->upload("article", $this->file));
 
             $this->article->created_by = Auth::user()->id;
             $this->article->img = $file_path;
