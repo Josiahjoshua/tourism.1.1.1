@@ -40,7 +40,8 @@ class NewsArticleList extends Component
         if ($this->isEditMode){
 
             if (!empty($this->file)){
-                $file_path = ((new FileUploadService())->upload("news", $this->file));
+                $file_path = ((new FileUploadService())->upload("article", $this->file));
+
             if (!empty($file_path)){
                 $file_path = ((new FileUploadService())->upload("article", $this->file));
                 $this->article->img = $file_path;
@@ -61,6 +62,7 @@ class NewsArticleList extends Component
         }
 
         $this->closeForm();
+      }
     }
 
     public function showForm()
