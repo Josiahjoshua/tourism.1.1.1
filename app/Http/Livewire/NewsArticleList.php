@@ -25,7 +25,7 @@ class NewsArticleList extends Component
     public $rules = [
         'article.name' => ['required'],
         'article.preview_desc' => ['required'],
-        'file' => ['required', 'image']
+        'file' => ['nullable','required_if,isEditMode=false', 'image', ]
     ];
 
     public function mount()
@@ -39,7 +39,7 @@ class NewsArticleList extends Component
 
         if ($this->isEditMode){
 
-            if (!empty($file_path)){
+            if (!empty($this->file)){
                 $file_path = ((new FileUploadService())->upload("news", $this->file));
                 $this->article->img = $file_path;
             }
@@ -65,12 +65,15 @@ class NewsArticleList extends Component
     {
         $this->viewForm = true;
         $this->article = new NewsArticle();
+        $this->isEditMode = false;
         $this->file = "";
     }
 
     public function closeForm()
     {
         $this->viewForm = false;
+        $this->isEditMode = false;
+        $this->article = new NewsArticle();
     }
     public function render()
     {
@@ -82,19 +85,18 @@ class NewsArticleList extends Component
     }
 
 
-    public function activation()
+    public function deleteArticle()
     {
-        $this->news->is_active = !$this->news->is_active;
-        $this->news->save();
-        $this->emit('closeNewsActivationModel');
+        $this->article->delete();
+        $this->emit('closeDeleteModel');
         $this->dispatchBrowserEvent('success_alert', 'Successful.');
-        $this->news = new NewsArticle();
+        $this->article = new NewsArticle();
     }
 
-    public function showActivationModal(NewsArticle $news)
+    public function showDeleteModal(NewsArticle $news)
     {
-        $this->news = $news;
-        $this->emit('showStaffActivationModel');
+        $this->article = $news;
+        $this->emit('showDeleteModel');
     }
 
     public function prepareViewNews($id)
@@ -107,6 +109,7 @@ class NewsArticleList extends Component
     public function prepareEditNews($id)
     {
         $this->viewForm = true;
+        $this->isEditMode = true;
         $this->article = NewsArticle::find($id);
 
     }
