@@ -228,6 +228,8 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('users', [UserController::class, 'user'])->name('admin.users');
 
         Route::get('news/articles', [AdminPanelController::class, 'news_article'])->name('admin.news_articles');
+
+        Route::get('publish/publications', [AdminPanelController::class, 'publication'])->name('admin.publication_list');
     });
 //    Voyager::routes();
 });

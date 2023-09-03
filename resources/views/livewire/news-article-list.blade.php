@@ -10,7 +10,7 @@
                     </div>
                     <div class="card-body">
                         <div class="mb-2">
-                            <label for="name" class="form-label font-12">Full Name <span class="required">*</span></label>
+                            <label for="name" class="form-label font-12">Article Name <span class="required">*</span></label>
                             <input type="text" wire:model="article.name" id="name" class="form-control form-control-sm">
                             @error('article.name') <span class="error">{{ $message }}</span> @enderror
                         </div>
@@ -37,7 +37,7 @@
             <div class="card">
                 <div class="card-header ">
                      News
-                    <button class="btn btn-primary btn-sm  float-end" wire:click="showForm"><i class="uil-plus"></i> Add Staff</button>
+                    <button class="btn btn-primary btn-sm  float-end" wire:click="showForm"><i class="uil-plus"></i> Add News</button>
                 </div>
                 <div class="card-body">
                     <div class="row">

@@ -10,4 +10,9 @@ class AdminPanelController extends Controller
     {
         return view('admin_panel.news_article_list');
     }
+
+    public function publication()
+    {
+        return view('admin_panel.publication_list');
+    }
 }

@@ -41,7 +41,8 @@
         <!-- LOGO -->
         <a href="{{route('home')}}" class="logo text-center logo-light">
                     <span class="logo-lg">
-                        {{config('app.name')}}
+                        {{-- {{config('app.name')}} --}}
+                        TIRDO
 {{--                        <img src="{{asset('assets/images/logo.jpeg')}}" alt="">--}}
                     </span>
             <span class="logo-sm">
@@ -83,6 +84,12 @@
                     <a href="{{route('admin.news_articles')}}" class="side-nav-link">
                         <i class="uil-newspaper"></i>
                         <span> News Articles </span>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a href="{{route('admin.publication_list')}}" class="side-nav-link">
+                        <i class="uil-newspaper"></i>
+                        <span> Publications </span>
                     </a>
                 </li>
 

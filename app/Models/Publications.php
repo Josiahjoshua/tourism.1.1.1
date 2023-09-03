@@ -11,7 +11,11 @@ class Publications extends Model
     protected $table = 'publications';
     protected  $primaryKey='id_publication' ;
 
-    protected $fillable = ['file', 'name', 'date'];
+    protected $fillable = [
+        'name',
+        'file',
+        'created_by'
+    ];
 
     public function __toString()
     {
