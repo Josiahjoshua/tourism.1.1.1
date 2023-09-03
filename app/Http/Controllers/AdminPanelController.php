@@ -15,4 +15,14 @@ class AdminPanelController extends Controller
     {
         return view('admin_panel.publication_list');
     }
+
+    public function carousel_item()
+    {
+        return view('admin_panel.carousel_items_list');
+    }
+
+    public function resource_products()
+    {
+        return view('admin_panel.resource_products_list');
+    }
 }

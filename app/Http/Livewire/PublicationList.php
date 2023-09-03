@@ -48,7 +48,7 @@ class PublicationList extends Component
             }
             $this->publication->save();
 
-            $this->dispatchBrowserEvent('success_alert', 'Article updated.');
+            $this->dispatchBrowserEvent('success_alert', 'Publication updated.');
 
         }else{
             $file_path = ((new FileUploadService())->upload("publications", $this->file));
@@ -58,7 +58,7 @@ class PublicationList extends Component
 
             $this->publication->save();
 
-            $this->dispatchBrowserEvent('success_alert', 'Article saved.');
+            $this->dispatchBrowserEvent('success_alert', 'Publication saved.');
         }
 
         $this->closeForm();

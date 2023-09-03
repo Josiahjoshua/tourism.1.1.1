@@ -70,7 +70,7 @@
 
                 <li class="side-nav-item">
                     <a href="{{ route('home') }}" class="side-nav-link">
-                        <i class="uil-home"></i>
+                        <i class="uil-dashboard"></i>
                         <span> Dashboard </span>
                     </a>
                 </li>
@@ -81,6 +81,12 @@
                     </a>
                 </li>
                 <li class="side-nav-item">
+                    <a href="{{route('admin.carousel_items_list')}}" class="side-nav-link">
+                        <i class="uil-image"></i>
+                        <span> Carousel Items </span>
+                    </a>
+                </li>
+                <li class="side-nav-item">
                     <a href="{{route('admin.news_articles')}}" class="side-nav-link">
                         <i class="uil-newspaper"></i>
                         <span> News Articles </span>
@@ -88,8 +94,14 @@
                 </li>
                 <li class="side-nav-item">
                     <a href="{{route('admin.publication_list')}}" class="side-nav-link">
-                        <i class="uil-newspaper"></i>
+                        <i class="uil-book"></i>
                         <span> Publications </span>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a href="{{route('admin.resource_products_list')}}" class="side-nav-link">
+                        <i class="uil-coins"></i>
+                        <span> Pesource Products </span>
                     </a>
                 </li>
 

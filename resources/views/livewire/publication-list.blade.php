@@ -88,7 +88,7 @@
             </div>
         </div>
 
-        <div id="delete_article_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
+        <div id="delete_publication_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header modal-colored-header bg-info">
@@ -96,7 +96,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                     </div>
                     <div class="modal-body">
-                        <h4 style="color: red">Are you sure you want to delete this article?</h4>
+                        <h4 style="color: red">Are you sure you want to delete this Publication?</h4>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
@@ -110,10 +110,10 @@
     <script>
         document.addEventListener('livewire:load', function () {
             livewire.on('showDeleteModel', () => {
-                $('#delete_article_modal').modal('show')
+                $('#delete_publication_modal').modal('show')
             });
             livewire.on('closeDeleteModel', () => {
-                $('#delete_article_modal').modal('hide')
+                $('#delete_publication_modal').modal('hide')
             });
         });
 

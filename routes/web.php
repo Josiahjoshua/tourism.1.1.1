@@ -230,6 +230,11 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('news/articles', [AdminPanelController::class, 'news_article'])->name('admin.news_articles');
 
         Route::get('publish/publications', [AdminPanelController::class, 'publication'])->name('admin.publication_list');
+
+        Route::get('carousel/items', [AdminPanelController::class, 'carousel_item'])->name('admin.carousel_items_list');
+
+        Route::get('resouce/products', [AdminPanelController::class, 'resource_products'])->name('admin.resource_products_list');
+
     });
 //    Voyager::routes();
 });
