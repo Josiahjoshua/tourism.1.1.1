@@ -68,9 +68,21 @@
                 <li class="side-nav-title side-nav-item">Navigation</li>
 
                 <li class="side-nav-item">
-                    <a href="#" class="side-nav-link">
+                    <a href="{{ route('home') }}" class="side-nav-link">
                         <i class="uil-home"></i>
                         <span> Dashboard </span>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a href="{{route('admin.users')}}" class="side-nav-link">
+                        <i class="uil-user"></i>
+                        <span> Staff </span>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a href="{{route('admin.news_articles')}}" class="side-nav-link">
+                        <i class="uil-newspaper"></i>
+                        <span> News Articles </span>
                     </a>
                 </li>
 
@@ -103,7 +115,7 @@
                                     </span>
                             <span>
                                         <span class="account-user-name">{{Auth::user()->name}}</span>
-{{--                                        <span class="account-position">{{Auth::user()->getRoleNames()[0]}}</span>--}}
+                                        <span class="account-position">Staff</span>
                                     </span>
                         </a>
                         <div

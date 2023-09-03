@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class NewsArticle extends Model
 {
-    use HasFactory;    
-    
+    use HasFactory;
+
     protected $fillable = [
         'name',
-        'date',
+        'created_by',
         'preview_desc',
         'img',
     ];

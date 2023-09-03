@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AdminPanelController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TirdoController;
 use App\Http\Controllers\NewsController;
@@ -222,6 +224,10 @@ Route::group(['prefix' => 'admin'], function () {
 
         Route::post('reset_password', [HomeController::class, 'change_password'])->name('reset_password');
         Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+        Route::get('users', [UserController::class, 'user'])->name('admin.users');
+
+        Route::get('news/articles', [AdminPanelController::class, 'news_article'])->name('admin.news_articles');
     });
 //    Voyager::routes();
 });

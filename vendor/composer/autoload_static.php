@@ -43,6 +43,10 @@ class ComposerStaticInit1e183094e409ed0c5d8155c236223bdc
         array (
             'voku\\' => 5,
         ),
+        'Z' => 
+        array (
+            'ZxcvbnPhp\\' => 10,
+        ),
         'W' => 
         array (
             'Whoops\\' => 7,
@@ -192,6 +196,10 @@ class ComposerStaticInit1e183094e409ed0c5d8155c236223bdc
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'ZxcvbnPhp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src',
         ),
         'Whoops\\' => 
         array (
@@ -582,13 +590,24 @@ class ComposerStaticInit1e183094e409ed0c5d8155c236223bdc
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AdminPanelController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminPanelController.php',
+        'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
+        'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
+        'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\CarouselController' => __DIR__ . '/../..' . '/app/Http/Controllers/CarouselController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\NewsController' => __DIR__ . '/../..' . '/app/Http/Controllers/NewsController.php',
         'App\\Http\\Controllers\\PublicationController' => __DIR__ . '/../..' . '/app/Http/Controllers/PublicationController.php',
         'App\\Http\\Controllers\\ResourcesController' => __DIR__ . '/../..' . '/app/Http/Controllers/ResourcesController.php',
         'App\\Http\\Controllers\\TirdoController' => __DIR__ . '/../..' . '/app/Http/Controllers/TirdoController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'App\\Http\\Livewire\\NewsArticleList' => __DIR__ . '/../..' . '/app/Http/Livewire/NewsArticleList.php',
+        'App\\Http\\Livewire\\UserList' => __DIR__ . '/../..' . '/app/Http/Livewire/UserList.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
@@ -607,6 +626,7 @@ class ComposerStaticInit1e183094e409ed0c5d8155c236223bdc
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Service\\FileUploadService' => __DIR__ . '/../..' . '/app/Service/FileUploadService.php',
         'Arrilot\\Widgets\\AbstractWidget' => __DIR__ . '/..' . '/arrilot/laravel-widgets/src/AbstractWidget.php',
         'Arrilot\\Widgets\\AsyncFacade' => __DIR__ . '/..' . '/arrilot/laravel-widgets/src/AsyncFacade.php',
         'Arrilot\\Widgets\\Console\\WidgetMakeCommand' => __DIR__ . '/..' . '/arrilot/laravel-widgets/src/Console/WidgetMakeCommand.php',
@@ -6717,6 +6737,29 @@ class ComposerStaticInit1e183094e409ed0c5d8155c236223bdc
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+        'ZxcvbnPhp\\Feedback' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Feedback.php',
+        'ZxcvbnPhp\\Matcher' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Matcher.php',
+        'ZxcvbnPhp\\Matchers\\BaseMatch' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Matchers/BaseMatch.php',
+        'ZxcvbnPhp\\Matchers\\Bruteforce' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Matchers/Bruteforce.php',
+        'ZxcvbnPhp\\Matchers\\DateMatch' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Matchers/DateMatch.php',
+        'ZxcvbnPhp\\Matchers\\DictionaryMatch' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Matchers/DictionaryMatch.php',
+        'ZxcvbnPhp\\Matchers\\L33tMatch' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Matchers/L33tMatch.php',
+        'ZxcvbnPhp\\Matchers\\MatchInterface' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Matchers/MatchInterface.php',
+        'ZxcvbnPhp\\Matchers\\RepeatMatch' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Matchers/RepeatMatch.php',
+        'ZxcvbnPhp\\Matchers\\ReverseDictionaryMatch' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Matchers/ReverseDictionaryMatch.php',
+        'ZxcvbnPhp\\Matchers\\SequenceMatch' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Matchers/SequenceMatch.php',
+        'ZxcvbnPhp\\Matchers\\SpatialMatch' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Matchers/SpatialMatch.php',
+        'ZxcvbnPhp\\Matchers\\YearMatch' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Matchers/YearMatch.php',
+        'ZxcvbnPhp\\Math\\Binomial' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Math/Binomial.php',
+        'ZxcvbnPhp\\Math\\BinomialProvider' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Math/BinomialProvider.php',
+        'ZxcvbnPhp\\Math\\Impl\\AbstractBinomialProvider' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Math/Impl/AbstractBinomialProvider.php',
+        'ZxcvbnPhp\\Math\\Impl\\AbstractBinomialProviderWithFallback' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Math/Impl/AbstractBinomialProviderWithFallback.php',
+        'ZxcvbnPhp\\Math\\Impl\\BinomialProviderFloat64' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Math/Impl/BinomialProviderFloat64.php',
+        'ZxcvbnPhp\\Math\\Impl\\BinomialProviderInt64' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Math/Impl/BinomialProviderInt64.php',
+        'ZxcvbnPhp\\Math\\Impl\\BinomialProviderPhp73Gmp' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Math/Impl/BinomialProviderPhp73Gmp.php',
+        'ZxcvbnPhp\\Scorer' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Scorer.php',
+        'ZxcvbnPhp\\TimeEstimator' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/TimeEstimator.php',
+        'ZxcvbnPhp\\Zxcvbn' => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src/Zxcvbn.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 
