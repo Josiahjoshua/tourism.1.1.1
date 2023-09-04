@@ -181,7 +181,7 @@
                                 data-toggle='dropdown'>Huduma</a>
                             <ul class='dropdown-menu'>
                                 <li><a class='dropdown-item' href="{{ route('research', ['language' => $current_language]) }}">Utafiti</a></li>
-                                <li><a class='dropdown-item' href="{{ route('Energyauditing', ['language' => $current_language]) }}">Ukaguzi wa Nishati</a></li>
+                                <li><a class='dropdown-item' href="{{ route('energyauditing', ['language' => $current_language]) }}">Ukaguzi wa Nishati</a></li>
                                 <li><a class='dropdown-item' href="{{ route('feasibility', ['language' => $current_language]) }}">Upembuzi Yakinifu</a></li>
                                 <li><a class='dropdown-item' href="{{ route('consultancysupport', ['language' => $current_language]) }}">Ushauri na Huduma za Kiufundi</a></li>
                                 <li><a class='dropdown-item' href="{{ route('industrialaudits', ['language' => $current_language]) }}">Ukaguzi wa Kiufundi wa Kiwanda</a></li>
