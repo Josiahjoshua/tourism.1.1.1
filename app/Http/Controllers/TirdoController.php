@@ -602,6 +602,19 @@ public function research($language) {
     return view($templatePath, $data);
 }
 
+public function energyauditing($language) {
+    $templateName = 'energyauditing';
+    $templatePath = $this->getTemplatePath($language, $templateName);
+
+    $data = [
+        'current_language' => $language,
+        'resources_products' => ResourcesProduct::all(),
+        'news_articles' => NewsArticle::all(),
+    ];
+
+    return view($templatePath, $data);
+}
+
 public function searchresults($language) {
     $templateName = 'searchresults';
     $templatePath = $this->getTemplatePath($language, $templateName);

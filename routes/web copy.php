@@ -163,6 +163,9 @@ Route::get('/{language}/publications', [PublicationController::class, 'publicati
 Route::get('/{language}/research', [TirdoController::class, 'research'])
     ->name('research');
 
+Route::get('/{language}/energyauditing', [TirdoController::class, 'Energyauditing'])
+    ->name('Energyauditing');
+
 Route::get('/{language}/searchresults', [TirdoController::class, 'searchresults'])
     ->name('searchresults');
 

@@ -371,7 +371,7 @@
         <div class="container mb-5">
             <div class="col-md-10 mt-5 mb-3">
 
-                <h5 class="my-xs-2 text-center text-xs-center section-title"><b>Washirika wetu</b></h5>
+                <h5 class="my-xs-2 text-center text-xs-center section-title"><b>Washiriki Wetu</b></h5>
 
                 <div class="row mt-4 slick-slide1">
                     <a class="col-md-2 justify-content-center text-center slick-slide" href=""
@@ -413,10 +413,23 @@
                         <img src="/uploads/patners/partners-pic10.jpg"
                             class="w-50" alt="Confederation of Tanzania Industries">
                     </a>
+
                     <a class="col-md-2 justify-content-center text-center slick-slide" href="https://waitro.org/"
-                        target="_blank">
-                        <img src="/uploads/patners/partners-pic8.jpg"
-                            class="w-50" alt="World Association of Industrial and Technological Research Organizations (WAITRO)">
+                    target="_blank">
+                    <img src="/uploads/patners/partners-pic8.jpg"
+                        class="w-50" alt="World Association of Industrial and Technological Research Organizations (WAITRO)">
+                    </a>
+
+                    <a class="col-md-2 justify-content-center text-center slick-slide" href="https://www.undp.org"
+                    target="_blank">
+                    <img src="/uploads/patners/partners-pic12.png"
+                        class="w-50" alt="UNDP">
+                    </a>
+
+                    <a class="col-md-2 justify-content-center text-center slick-slide" href="https://www.european-union.europa.eu/"
+                    target="_blank">
+                    <img src="/uploads/patners/partners-pic11.jpg"
+                        class="w-50" alt="european union">
                     </a>
                     <a class="col-md-2 justify-content-center text-center slick-slide" href="https://www.iaea.org/"
                         target="_blank">
@@ -476,7 +489,6 @@
 
         </div>
     </div>
-
 
     <!-- /contents -->
 @endsection

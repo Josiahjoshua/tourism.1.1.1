@@ -408,10 +408,23 @@
                         <img src="/uploads/patners/partners-pic10.jpg"
                             class="w-50" alt="Confederation of Tanzania Industries">
                     </a>
+
                     <a class="col-md-2 justify-content-center text-center slick-slide" href="https://waitro.org/"
-                        target="_blank">
-                        <img src="/uploads/patners/partners-pic8.jpg"
-                            class="w-50" alt="World Association of Industrial and Technological Research Organizations (WAITRO)">
+                    target="_blank">
+                    <img src="/uploads/patners/partners-pic8.jpg"
+                        class="w-50" alt="World Association of Industrial and Technological Research Organizations (WAITRO)">
+                    </a>
+
+                    <a class="col-md-2 justify-content-center text-center slick-slide" href="https://www.undp.org"
+                    target="_blank">
+                    <img src="/uploads/patners/partners-pic12.png"
+                        class="w-50" alt="UNDP">
+                    </a>
+
+                    <a class="col-md-2 justify-content-center text-center slick-slide" href="https://www.european-union.europa.eu/"
+                    target="_blank">
+                    <img src="/uploads/patners/partners-pic11.jpg"
+                        class="w-50" alt="european union">
                     </a>
                     <a class="col-md-2 justify-content-center text-center slick-slide" href="https://www.iaea.org/"
                         target="_blank">

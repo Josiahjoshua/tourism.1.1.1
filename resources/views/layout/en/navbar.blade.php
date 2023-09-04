@@ -1,10 +1,11 @@
 <div class="container max-1920 px-0 rangi-nyuma" >
 
     <!-- HEADER -->
-    <header class="col-12 px-0 bg-img">
+    <header class="col-12 px-0" style="color: #fff">
+        {{-- <header class="col-12 px-0 bg-img" style="color: #c9c9c9"> --}}
 
         <!-- top navbar -->
-        <div class="col-12 bg-white">
+        <div class="col-12 bg-dark" style="padding: 15px; height: 60px;">
             <div class="container-fluid px-0">
                 <div class="row top_nav px-0">
                     <div class="col-5 sm-hide pl-0 pl-xs-2">
@@ -24,13 +25,13 @@
                             <li class="list-inline-item sm-hide pr-2">
                                 <div class="footer-media">
                                     <a href="https://www.facebook.com/tirdotz" target="_blank"><img
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjVJREFUSEvdlU1IFHEYxn/vjLFGkZc6CEYW2miURARB4e5CIRRBH6QUQoc6RImwG1EURXvPnC0wuoQIXrp4CAIJwd0VL1LQF7a7QZIRRRJhIZS688YUbrkfoyt48X+c932f3zzvzDwjLPORZdZnhQEami6tefmkY8prbTV72teVlZs3FTkMbAZmgK5Kqbj2wfleucrQI8mY3QWoq/NvRc3NpvWl6rUoLcmE/aoYxPKHBxD2F6iPAxtV5VQ60flwrp4F1AVD1aoyBkxg6LHUYHQ4V6S+MbTLMeSZh8OnKsQV7X0biz6f56A6GCn36eQPoOyPgPDAyOiNN0PRT3OClj/UikivB2BKlLZkwu7Jc+BesAJh96735ggMieijjKMjhpg7Qe94ALpTcfvM//XsirYFL6x1ZLWljtMPrF/i93ErFbcvFwTUBNurTC17D3wFNiwFoNCWjtv3CgIgYliByXfApqWIuzMqRn06djtZBAB1/tBxFXFfsb8PurQzlorbW3JH8qLC8odbEK4DO0rSF86nYvb9BQFb/RcPiejjksRh3JyoqB0djUwvCHAb6gKhHkVOLxIyqw770kP2SKH+ImkaMazGb9vFMK4qnPQAuXlzNhW3u4v15AHcwJueyexWhyvAQQ/xn6LamkxE+7ycZgG1wfABQ+kAGuaFYOHpfnM2c250+K4bcJ5nngM3ik2feQKRo0AT4AN+AZ+BjwIDjiF96cHOFwsJz9VX2B9tsbZL6Vv2Ff0GpDGuGbbFsMYAAAAASUVORK5CYII=" /></a>
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjVJREFUSEvdlU1IFHEYxn/vjLFGkZc6CEYW2miURARB4e5CIRRBH6QUQoc6RImwG1EURXvPnC0wuoQIXrp4CAIJwd0VL1LQF7a7QZIRRRJhIZS688YUbrkfoyt48X+c932f3zzvzDwjLPORZdZnhQEami6tefmkY8prbTV72teVlZs3FTkMbAZmgK5Kqbj2wfleucrQI8mY3QWoq/NvRc3NpvWl6rUoLcmE/aoYxPKHBxD2F6iPAxtV5VQ60flwrp4F1AVD1aoyBkxg6LHUYHQ4V6S+MbTLMeSZh8OnKsQV7X0biz6f56A6GCn36eQPoOyPgPDAyOiNN0PRT3OClj/UikivB2BKlLZkwu7Jc+BesAJh96735ggMieijjKMjhpg7Qe94ALpTcfvM//XsirYFL6x1ZLWljtMPrF/i93ErFbcvFwTUBNurTC17D3wFNiwFoNCWjtv3CgIgYliByXfApqWIuzMqRn06djtZBAB1/tBxFXFfsb8PurQzlorbW3JH8qLC8odbEK4DO0rSF86nYvb9BQFb/RcPiejjksRh3JyoqB0djUwvCHAb6gKhHkVOLxIyqw770kP2SKH+ImkaMazGb9vFMK4qnPQAuXlzNhW3u4v15AHcwJueyexWhyvAQQ/xn6LamkxE+7ycZgG1wfABQ+kAGuaFYOHpfnM2c250+K4bcJ5nngM3ik2feQKRo0AT4AN+AZ+BjwIDjiF96cHOFwsJz9VX2B9tsbZL6Vv2Ff0GpDGuGbbFsMYAAAAASUVORK5CYII=" style="filter: brightness(0) invert(1);"/></a>
 
                                     <a href="https://www.instagram.com/tirdo_official" target="_blank"><img
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAodJREFUSEvFlT1oFEEUx/9v9+4kREQJIljYGG/VGD+4WMa9CJZKiigIsbGwSIg6CYqFSMRCMHC70VjZRoxFkFiJhcncIYg2MUjM5KMICIJpDIkgd3vzZNU79jZ7kkOOTLfzPn77f+/NDKHOi+qcH1sDaD59Y79Z9PoBtAM4AlT9EQbwCUDO4KL7OftwIVyRDQqStughwAUQr7F8BQb1zsvMk2BcBeBgx0CKtX4PwKgxecndY4Pa5iczH0sbFQDL7n8BcGcNyb95BbPVjHnniWjkdxxjXGWdrioAsQxgXwTgCwP3DeJZkNEEzRYDtwBaVjLTaqVFGxgf/sTxkpJuczXAOoDGEOA1vHiXevtgrbm9b7dvW8w9WjncIVqKGq8A/GBgJwF7/satKensiAAMGpa9WgwlXynEEwcS+UILE7oJbGuACZAEHtVkmsQ6F4rxlHTKA1LuQSp1Jb6+vTEfch5S0rlp2eIxgJ6K6WCMzGWdPssWLwGcDdiKSjqxDQrS6cHYV14thACXY3lMeAmWAPnnIbB4Rkn3WNIWdwi4GzBoJR0zqgdk2UJXpAB643mMeQlMAjgagk8r6Zyw0uI2GPeCNiWdcmVCYyr8kxlco0o6lyxbDAO4WimAXZV1hWVfnwDoXMAW3QPfwbI3ADQxjmtGAxFdBPEp389vsoZ+Bopti2jyTyWdhlrGdFkTdy5MudNBBUlbtBN4DKC9IdXflXR2RQKStlggoHxIgo0DeJzImNWam0BsEehMKHHpc05J51A1Bc8BXKgSuLltoqdqKtNdRcG1kwTj3f9cdtA6pXLDM5EAf7Ou13WJGnpwWv9Rm/KDUzRjmcU3Q0th3615MjfXzc151V3BL7dV9RkzbUS1AAAAAElFTkSuQmCC" /></a>
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAodJREFUSEvFlT1oFEEUx/9v9+4kREQJIljYGG/VGD+4WMa9CJZKiigIsbGwSIg6CYqFSMRCMHC70VjZRoxFkFiJhcncIYg2MUjM5KMICIJpDIkgd3vzZNU79jZ7kkOOTLfzPn77f+/NDKHOi+qcH1sDaD59Y79Z9PoBtAM4AlT9EQbwCUDO4KL7OftwIVyRDQqStughwAUQr7F8BQb1zsvMk2BcBeBgx0CKtX4PwKgxecndY4Pa5iczH0sbFQDL7n8BcGcNyb95BbPVjHnniWjkdxxjXGWdrioAsQxgXwTgCwP3DeJZkNEEzRYDtwBaVjLTaqVFGxgf/sTxkpJuczXAOoDGEOA1vHiXevtgrbm9b7dvW8w9WjncIVqKGq8A/GBgJwF7/satKensiAAMGpa9WgwlXynEEwcS+UILE7oJbGuACZAEHtVkmsQ6F4rxlHTKA1LuQSp1Jb6+vTEfch5S0rlp2eIxgJ6K6WCMzGWdPssWLwGcDdiKSjqxDQrS6cHYV14thACXY3lMeAmWAPnnIbB4Rkn3WNIWdwi4GzBoJR0zqgdk2UJXpAB643mMeQlMAjgagk8r6Zyw0uI2GPeCNiWdcmVCYyr8kxlco0o6lyxbDAO4WimAXZV1hWVfnwDoXMAW3QPfwbI3ADQxjmtGAxFdBPEp389vsoZ+Bopti2jyTyWdhlrGdFkTdy5MudNBBUlbtBN4DKC9IdXflXR2RQKStlggoHxIgo0DeJzImNWam0BsEehMKHHpc05J51A1Bc8BXKgSuLltoqdqKtNdRcG1kwTj3f9cdtA6pXLDM5EAf7Ou13WJGnpwWv9Rm/KDUzRjmcU3Q0th3615MjfXzc151V3BL7dV9RkzbUS1AAAAAElFTkSuQmCC" style="filter: brightness(0) invert(1);"/></a>
 
                                     <a href="https://www.twitter.com/tirdo_official" target="_blank"><img
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjVJREFUSEvdlU1IFHEYxn/vjLFGkZc6CEYW2miURARB4e5CIRRBH6QUQoc6RImwG1EURXvPnC0wuoQIXrp4CAIJwd0VL1LQF7a7QZIRRRJhIZS688YUbrkfoyt48X+c932f3zzvzDwjLPORZdZnhQEami6tefmkY8prbTV72teVlZs3FTkMbAZmgK5Kqbj2wfleucrQI8mY3QWoq/NvRc3NpvWl6rUoLcmE/aoYxPKHBxD2F6iPAxtV5VQ60flwrp4F1AVD1aoyBkxg6LHUYHQ4V6S+MbTLMeSZh8OnKsQV7X0biz6f56A6GCn36eQPoOyPgPDAyOiNN0PRT3OClj/UikivB2BKlLZkwu7Jc+BesAJh96735ggMieijjKMjhpg7Qe94ALpTcfvM//XsirYFL6x1ZLWljtMPrF/i93ErFbcvFwTUBNurTC17D3wFNiwFoNCWjtv3CgIgYliByXfApqWIuzMqRn06djtZBAB1/tBxFXFfsb8PurQzlorbW3JH8qLC8odbEK4DO0rSF86nYvb9BQFb/RcPiejjksRh3JyoqB0djUwvCHAb6gKhHkVOLxIyqw770kP2SKH+ImkaMazGb9vFMK4qnPQAuXlzNhW3u4v15AHcwJueyexWhyvAQQ/xn6LamkxE+7ycZgG1wfABQ+kAGuaFYOHpfnM2c250+K4bcJ5nngM3ik2feQKRo0AT4AN+AZ+BjwIDjiF96cHOFwsJz9VX2B9tsbZL6Vv2Ff0GpDGuGbbFsMYAAAAASUVORK5CYII=" /></a>
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjVJREFUSEvdlU1IFHEYxn/vjLFGkZc6CEYW2miURARB4e5CIRRBH6QUQoc6RImwG1EURXvPnC0wuoQIXrp4CAIJwd0VL1LQF7a7QZIRRRJhIZS688YUbrkfoyt48X+c932f3zzvzDwjLPORZdZnhQEami6tefmkY8prbTV72teVlZs3FTkMbAZmgK5Kqbj2wfleucrQI8mY3QWoq/NvRc3NpvWl6rUoLcmE/aoYxPKHBxD2F6iPAxtV5VQ60flwrp4F1AVD1aoyBkxg6LHUYHQ4V6S+MbTLMeSZh8OnKsQV7X0biz6f56A6GCn36eQPoOyPgPDAyOiNN0PRT3OClj/UikivB2BKlLZkwu7Jc+BesAJh96735ggMieijjKMjhpg7Qe94ALpTcfvM//XsirYFL6x1ZLWljtMPrF/i93ErFbcvFwTUBNurTC17D3wFNiwFoNCWjtv3CgIgYliByXfApqWIuzMqRn06djtZBAB1/tBxFXFfsb8PurQzlorbW3JH8qLC8odbEK4DO0rSF86nYvb9BQFb/RcPiejjksRh3JyoqB0djUwvCHAb6gKhHkVOLxIyqw770kP2SKH+ImkaMazGb9vFMK4qnPQAuXlzNhW3u4v15AHcwJueyexWhyvAQQ/xn6LamkxE+7ycZgG1wfABQ+kAGuaFYOHpfnM2c250+K4bcJ5nngM3ik2feQKRo0AT4AN+AZ+BjwIDjiF96cHOFwsJz9VX2B9tsbZL6Vv2Ff0GpDGuGbbFsMYAAAAASUVORK5CYII=" style="filter: brightness(0) invert(1);"/></a>
                                 </div>
                             </li>
                         </ul>
@@ -38,27 +39,27 @@
                     <div class="col-7 sm-hide px-0">
                         <ul class="list-inline mx-auto justify-content-end">
                             <li class="list-inline-item">
-                                <a id="english-link" title="Switch Language to English" href="{% url 'home' 'en' %}">
+                                <a id="english-link" title="Switch Language to English" href="{% url 'home' 'en' %}" style="color: white">
                                     <object data="{{asset('static/asset/images/Flag_of_the_United_Kingdom.svg')}}" type="image/svg+xml" width="20px"></object>
                                     English
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a id="swahili-link" title="Switch Language to Swahili" href="{% url 'home' 'sw' %}">
+                                <a id="swahili-link" title="Switch Language to Swahili" href="{% url 'home' 'sw' %}" style="color: white">
                                     <object data="{{asset('static/asset/images/Flag_of_Tanzania.svg')}}" type="image/svg+xml" width="18px"></object>
                                     Kiswahili
                                 </a>
                             </li>
 
                             <li class='nav-item'><a class='nav-link' target='_black'
-                                    href='https://mail.tirdo.or.tz'>Staff Mail</a></li>
+                                    href='https://mail.tirdo.or.tz' style="color: white">Staff Mail</a></li>
                             </li>
                             <li class='nav-item'><a class='nav-link' target='_black'
-                                    href='https://eoffice.gov.go.tz/users/login'>e-Office</a></li>
+                                    href='https://eoffice.gov.go.tz/users/login' style="color: white">e-Office</a></li>
                             </li>
-                            <li class='nav-item'><a class='nav-link' href="{% url 'faq' current_language %}">FAQs</a></li>
+                            <li class='nav-item'><a class='nav-link' href="{% url 'faq' current_language %}" style="color: white">FAQs</a></li>
                             </li>
-                            <li class='nav-item'><a class='nav-link' href='#'>help@tirdo.or.tz</a></li>
+                            <li class='nav-item'><a class='nav-link' href='#' style="color: white">help@tirdo.or.tz</a></li>
                             </li>
                         </ul>
                     </div>
@@ -72,13 +73,15 @@
             <div class="container-fluid px-0">
                 <div class="row ">
                     <div class="col-md-2 col-sm-2 col-xs-2 float-left text-left pt-1 logo-container">
-                        <a href="#"><img src="https://www.ega.go.tz/site/images/emblem.png" alt="emblem"
-                                class="mx-auto img-fluid emblem"></a>
+                        {{-- <a href="#"><img src="https://www.ega.go.tz/site/images/emblem.png" alt="emblem"
+                                class="mx-auto img-fluid emblem"></a> --}}
+                                <a href="#"><img src="https://www.ega.go.tz/site/images/emblem.png" alt="emblem"
+                                    class="mx-auto img-fluid emblem"></a>
                     </div>
 
-                    <div class="col-md-8 col-sm-8 col-xs-8 text-center pt-3 pt-xs-0">
-                        <h2 class="mb-0 title title-main">TANZANIA INDUSTRIAL RESEARCH AND DEVELOPMENT ORGANIZATION </h2>
-                        <h6 class="title-desc pt-2"><b><i>TIRDO for sustainable industrial development</i></b></h6>
+                    <div class="col-md-8 col-sm-8 col-xs-8 text-center pt-4 pt-xs-0">
+                        <h2 class="mb-0 title title-main" style="color: #1e4594">TANZANIA INDUSTRIAL RESEARCH AND DEVELOPMENT ORGANIZATION </h2>
+                        <h6 class="title-desc pt-2" style="color: black"><b><i>TIRDO for sustainable industrial development</i></b></h6>
                     </div>
 
                     <div class="col-md-2 col-sm-2 col-xs-2 text-right pt-1 pr-0 logo-container"><img
@@ -181,6 +184,7 @@
                                     data-toggle='dropdown'>Services</a>
                                 <ul class='dropdown-menu'>
                                     <li><a class='dropdown-item' href="{{ route('research', ['language' => $current_language]) }}">Research</a></li>
+                                    <li><a class='dropdown-item' href="{{ route('Energyauditing', ['language' => $current_language]) }}">Energy Auditing</a></li>
                                     <li><a class='dropdown-item' href="{{ route('feasibility', ['language' => $current_language]) }}">Feasibility Studies</a></li>
                                     <li><a class='dropdown-item' href="{{ route('consultancysupport', ['language' => $current_language]) }}">Consultancy & Technical Services</a></li>
                                     <li><a class='dropdown-item' href="{{ route('industrialaudits', ['language' => $current_language]) }}">Industrial Technical Audits</a></li>

@@ -234,7 +234,7 @@
 
                 <div class="post-content"><div class="category">MKUU WA KITENGO CHA HUDUMA ZA USHIRIKA</div>
                     <h6 class="sub_title">
-                        <p class="card-text fw-medium">Bwn. David Nyenga Langa</p>
+                        <p class="card-text fw-medium">Bwn. David Nyange Langa</p>
                     </h6>
                 </div>
 
