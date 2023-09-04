@@ -6701,6 +6701,10 @@ button.bg-dark:hover {
     background-color: #fff !important
 }
 
+.bg-blue {
+    background-color: #fff !important
+}
+
 .bg-transparent {
     background-color: transparent !important
 }
@@ -20773,7 +20777,7 @@ header .top_nav .top_menu:after {
 }
 
 header .top-middle {
-    background: rgba(0,111,139,.25);
+background-color: #f7f7f7;
     border-top: 2px solid #2d4a84
 }
 
