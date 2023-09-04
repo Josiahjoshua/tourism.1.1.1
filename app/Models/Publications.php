@@ -9,7 +9,7 @@ class Publications extends Model
 {
     use HasFactory;
     protected $table = 'publications';
-    protected  $primaryKey='id_publication' ;
+    // protected  $primaryKey='id_publication' ;
 
     protected $fillable = [
         'name',

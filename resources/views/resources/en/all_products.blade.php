@@ -25,7 +25,7 @@
                   @foreach($resources_products as $product)
                     <div class="post-slide7 col-xs-6 col-sm-4 col-md-3 my-2">
                       <div class="post-img">
-                        <img src="{{ asset($product->img) }}" alt="" class="w-100">
+                        <img src="{{ asset('storage/' . $product->img) }}" alt="" class="w-100">
                       </div>
                       <div class="post-review">
                         <ul class="post-bar">

@@ -1,5 +1,5 @@
 @extends('layout.admin')
-@section('title', 'News Articles')
+@section('title', 'Publications')
 @section('content')
     <livewire:publication-list />
 @endsection

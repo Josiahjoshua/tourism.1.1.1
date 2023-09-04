@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\NewsArticle;
+use App\Models\User;
 use App\Service\FileUploadService;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
@@ -18,6 +19,8 @@ class NewsArticleList extends Component
 
     public $keywords;
     public $article;
+    public $user;
+
     public $file;
 
     public $isEditMode = false;
@@ -41,9 +44,6 @@ class NewsArticleList extends Component
 
             if (!empty($this->file)){
                 $file_path = ((new FileUploadService())->upload("news", $this->file));
-
-            if (!empty($file_path)){
-                $file_path = ((new FileUploadService())->upload("news", $this->file));
                 $this->article->img = $file_path;
             }
             $this->article->save();
@@ -62,7 +62,7 @@ class NewsArticleList extends Component
         }
 
         $this->closeForm();
-      }
+
     }
 
     public function showForm()
@@ -84,31 +84,41 @@ class NewsArticleList extends Component
         $articles = NewsArticle::when(!empty($this->keywords), function ($query){
             $query->where('name', 'like', '%'. $this->keywords . '%')
                 ->orWhere('preview_desc', 'like', '%'. $this->keywords . '%');
-        })->paginate('15');
+        })->latest()->paginate('15');
         return view('livewire.news-article-list', ['articles' => $articles]);
     }
 
+    public function showViewModal(NewsArticle $news)
+    {
+        $this->article = $news;
+        $created_by = $this->article->created_by;
+        $this->user = User::find($created_by);
+        $this->article->created_by = $this->user->name;
+        $this->emit('showViewModal');
+    }
 
     public function deleteArticle()
     {
         $this->article->delete();
-        $this->emit('closeDeleteModel');
+        $this->emit('closeDeleteModal');
         $this->dispatchBrowserEvent('success_alert', 'Successful.');
         $this->article = new NewsArticle();
     }
 
+
+
     public function showDeleteModal(NewsArticle $news)
     {
         $this->article = $news;
-        $this->emit('showDeleteModel');
+        $this->emit('showDeleteModal');
     }
 
-    public function prepareViewNews($id)
-    {
-        $this->viewForm = true;
-        $this->article = NewsArticle::find($id);
+    // public function prepareViewNews($id)
+    // {
+    //     $this->viewForm = true;
+    //     $this->article = NewsArticle::find($id);
 
-    }
+    // }
 
     public function prepareEditNews($id)
     {

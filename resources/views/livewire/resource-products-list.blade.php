@@ -64,25 +64,25 @@
                                     <td class="">
                                         <img src="{{ asset('storage/' . $product->img) }}" alt="PDF" class="img" width="30px;" height="30px" srcset="">
                                     </td>
-                                    <td>{{ $product->name }}</td>
-                                    <td>{{ $product->preview_desc}}</td>
-                                    <td>
+                                    <td>{{ Str::limit($product->name, 20) }}</td>
+                                    <td>{{ Str::limit($product->preview_desc, 20) }}</td>
+                                    {{-- <td>
                                         @if($product->is_active)
                                             <span class="badge badge-success-lighten">Active</span>
                                         @else
                                             <span class="badge badge-danger-lighten">In Active</span>
                                         @endif
-                                    </td>
-                                    <td>{{ $nproduct->created_at }}</td>
+                                    </td> --}}
+                                    <td>{{ $product->created_at }}</td>
                                     <td class="text-center">
-                                        <button class="btn btn-primary btn-sm" wire:click="prepareViewProduct('{{$product->id}}')"><i class="uil-eye"></i></button>
+                                        <button class="btn btn-primary btn-sm" wire:click="showViewModal('{{$product->id}}')"><i class="uil-eye"></i></button>
                                         <button class="btn btn-warning btn-sm" wire:click="prepareEditProduct('{{$product->id}}')"><i class="uil-edit"></i></button>
                                         <button class="btn btn-danger btn-sm" wire:click="showDeleteModal('{{$product->id}}')"><i class="uil-trash"></i></button>
                                     </td>
                                 </tr>
                             @empty
                                 <tr>
-                                    <td colspan="5" class="text-center my-2">No news</td>
+                                    <td colspan="5" class="text-center my-2">No Resource Products</td>
                                 </tr>
                             @endforelse
                             </tbody>
@@ -93,6 +93,50 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="view_product_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-colored-header bg-info">
+                    <h4 class="modal-title" id="danger-header-modalLabel">Resource Product</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <p class="font-14">{{ $product->created_at }}</p>
+                                </div>
+                                <div class="col-12">
+                                    <h2 class="font-16">{{ $product->name }}</h2>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-5">
+                        <div class="row">
+                            <div class="col">
+                                <img src="{{ asset('storage/' . $product->img ) }}" alt="Article image" srcset="" width="180px">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-2">
+                        <p>{{ $product->preview_desc }}</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <p class="col">Recorded by:<span class="fw-bold"> {{ $product->created_by }}</span></p>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
     </div>
 
     <div id="delete_product_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
@@ -115,11 +159,22 @@
 </div>
 
 <script>
+    // view Modal
     document.addEventListener('livewire:load', function () {
-        livewire.on('showDeleteModel', () => {
+        livewire.on('showViewModal', () => {
+            $('#view_product_modal').modal('show')
+        });
+        livewire.on('closeDeleteModal', () => {
+            $('#view_product_modal').modal('hide')
+        });
+    });
+
+    // Delete modal
+    document.addEventListener('livewire:load', function () {
+        livewire.on('showDeleteModal', () => {
             $('#delete_product_modal').modal('show')
         });
-        livewire.on('closeDeleteModel', () => {
+        livewire.on('closeDeleteModal', () => {
             $('#delete_product_modal').modal('hide')
         });
     });

@@ -65,8 +65,8 @@
                                     <td class="">
                                         <img src="{{ asset('storage/' . $news->img) }}" alt="News image" class="img" width="30px;" height="30px" srcset="">
                                     </td>
-                                    <td>{{ $news->name }}</td>
-                                    <td>{{ $news->preview_desc }}</td>
+                                    <td>{{ Str::limit($news->name, 20) }}</td>
+                                    <td>{{ Str::limit($news->preview_desc, 20) }}</td>
                                     <td>
                                         @if($news->is_active)
                                             <span class="badge badge-success-lighten">Active</span>
@@ -76,14 +76,14 @@
                                     </td>
                                     <td>{{ $news->created_at }}</td>
                                     <td class="text-center">
-                                        <button class="btn btn-primary btn-sm" wire:click="prepareViewNews('{{$news->id}}')"><i class="uil-eye"></i></button>
+                                        <button class="btn btn-primary btn-sm" wire:click="showViewModal('{{$news->id}}')"><i class="uil-eye"></i></button>
                                         <button class="btn btn-warning btn-sm" wire:click="prepareEditNews('{{$news->id}}')"><i class="uil-edit"></i></button>
                                         <button class="btn btn-danger btn-sm" wire:click="showDeleteModal('{{$news->id}}')"><i class="uil-trash"></i></button>
                                     </td>
                                 </tr>
                             @empty
                                 <tr>
-                                    <td colspan="6" class="text-center my-2">No news</td>
+                                    <td colspan="6" class="text-center my-2">No News Articles</td>
                                 </tr>
                             @endforelse
                             </tbody>
@@ -94,6 +94,49 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="view_article_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-colored-header bg-info">
+                    <h4 class="modal-title" id="danger-header-modalLabel">News Article</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <p class="font-14">{{ $article->created_at }}</p>
+                                </div>
+                                <div class="col-12">
+                                    <h2 class="font-16">{{ $article->name }}</h2>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-5">
+                        <div class="row">
+                            <div class="col">
+                                <img src="{{ asset('storage/' . $article->img ) }}" alt="Article image" srcset="" width="180px">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <p>{{ $article->preview_desc }}</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <p class="col ">Recorded by:<span class="fw-bold"> {{ $article->created_by }}</span></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
     </div>
 
     <div id="delete_article_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
@@ -116,11 +159,22 @@
 </div>
 
 <script>
+    // View modal
     document.addEventListener('livewire:load', function () {
-        livewire.on('showDeleteModel', () => {
+        livewire.on('showViewModal', () => {
+            $('#view_article_modal').modal('show')
+        });
+        livewire.on('closeDeleteModal', () => {
+            $('#view_article_modal').modal('hide')
+        });
+    });
+
+    // Delete modal
+    document.addEventListener('livewire:load', function () {
+        livewire.on('showDeleteModal', () => {
             $('#delete_article_modal').modal('show')
         });
-        livewire.on('closeDeleteModel', () => {
+        livewire.on('closeDeleteModal', () => {
             $('#delete_article_modal').modal('hide')
         });
     });

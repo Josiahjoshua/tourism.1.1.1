@@ -39,7 +39,7 @@
     <div class="leftside-menu">
 
         <!-- LOGO -->
-        <a href="{{route('home')}}" class="logo text-center logo-light">
+        <a href="{{route('admin.dashboard')}}" class="logo text-center logo-light">
                     <span class="logo-lg">
                         {{-- {{config('app.name')}} --}}
                         TIRDO
@@ -51,10 +51,10 @@
         </a>
 
         <!-- LOGO -->
-        <a href="{{route('home')}}" class="logo text-center logo-dark">
+        <a href="{{route('admin.dashboard')}}" class="logo text-center logo-dark">
                     <span class="logo-lg">
-                        {{config('app.name')}}
-{{--                        <img src="{{asset('assets/images/logo.jpeg')}}" alt="">--}}
+                       <img src="{{ asset('static/asset/images/logo.jpg') }}" alt="TIRDO Logo" class="image mr-4 rounded-3" width="25">
+                        TIRDO
                     </span>
             <span class="logo-sm">
                         TIRDO
@@ -69,7 +69,7 @@
                 <li class="side-nav-title side-nav-item">Navigation</li>
 
                 <li class="side-nav-item">
-                    <a href="{{ route('home') }}" class="side-nav-link">
+                    <a href="{{ route('admin.dashboard') }}" class="side-nav-link">
                         <i class="uil-dashboard"></i>
                         <span> Dashboard </span>
                     </a>
@@ -101,7 +101,7 @@
                 <li class="side-nav-item">
                     <a href="{{route('admin.resource_products_list')}}" class="side-nav-link">
                         <i class="uil-coins"></i>
-                        <span> Pesource Products </span>
+                        <span> Resource Products </span>
                     </a>
                 </li>
 
@@ -197,7 +197,7 @@
         <footer class="footer">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 text-center">
                         <script>document.write(new Date().getFullYear())</script>
                         © Tirdo
                     </div>

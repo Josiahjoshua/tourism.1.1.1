@@ -22,12 +22,9 @@ use App\Http\Controllers\PublicationController;
 */
 
 
-
 Route::get('/', function () {
     return redirect()->route('home', ['language' => 'sw']);
 })->name('root');
-
-
 
 $language = 'sw';
 
@@ -214,7 +211,7 @@ Route::get('resources/{language}/product_details/{product_id}', [ResourcesContro
 
 Route::group(['prefix' => 'admin'], function () {
 
-    Route::get('/', [LoginController::class, 'show_login'])->name('welcome');
+    Route::get('/admin', [LoginController::class, 'show_login'])->name('admin.login');
     Route::get('login', [LoginController::class, 'show_login'])->name('login');
     Route::post('authenticate', [LoginController::class, 'authenticate'])->name('authenticate');
 
@@ -223,7 +220,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
         Route::post('reset_password', [HomeController::class, 'change_password'])->name('reset_password');
-        Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+        Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.dashboard');
 
         Route::get('users', [UserController::class, 'user'])->name('admin.users');
 

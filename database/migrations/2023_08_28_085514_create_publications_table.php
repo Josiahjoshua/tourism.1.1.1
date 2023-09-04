@@ -16,7 +16,7 @@ class CreatePublicationsTable extends Migration
         Schema::create('publications', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('created_by');
-            $table->binary('file'); // Use the appropriate data type for your use case
+            $table->string('file'); // Use the appropriate data type for your use case
             $table->string('name');
             $table->timestamps();
 

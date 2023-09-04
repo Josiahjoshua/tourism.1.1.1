@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\CarouselItem;
+use App\Models\User;
 use App\Service\FileUploadService;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
@@ -18,6 +19,8 @@ class CarouselItemsList extends Component
 
     public $keywords;
     public $carouselItem;
+    public $user;
+    
     public $file;
 
     public $isEditMode = false;
@@ -38,11 +41,8 @@ class CarouselItemsList extends Component
 
         if ($this->isEditMode){
 
-            if (!empty($this->file)){
-                $file_path = ((new FileUploadService())->upload("news", $this->file));
-
             if (!empty($file_path)){
-                $file_path = ((new FileUploadService())->upload("news", $this->file));
+                $file_path = ((new FileUploadService())->upload("carousel-items", $this->file));
                 $this->carouselItem->image = $file_path;
             }
             $this->carouselItem->save();
@@ -50,7 +50,7 @@ class CarouselItemsList extends Component
             $this->dispatchBrowserEvent('success_alert', 'Carousel Item  updated.');
 
         }else{
-            $file_path = ((new FileUploadService())->upload("news", $this->file));
+            $file_path = ((new FileUploadService())->upload("carousel-items", $this->file));
 
             $this->carouselItem->created_by = Auth::user()->id;
             $this->carouselItem->image = $file_path;
@@ -61,8 +61,8 @@ class CarouselItemsList extends Component
         }
 
         $this->closeForm();
+
       }
-    }
 
     public function showForm()
     {
@@ -83,14 +83,23 @@ class CarouselItemsList extends Component
     {
         $carouselItems = CarouselItem::when(!empty($this->keywords), function ($query){
             $query->where('text', 'like', '%'. $this->keywords . '%');
-        })->paginate('15');
+        })->latest()->paginate('15');
         return view('livewire.carousel-items-list', ['carouselItems' => $carouselItems]);
+    }
+
+    public function showViewModal(CarouselItem $item)
+    {
+        $this->carouselItem = $item;
+        $created_by = $this->carouselItem->created_by;
+        $this->user = User::find($created_by);
+        $this->carouselItem->created_by = $this->user->name;
+        $this->emit('showViewModal');
     }
 
     public function deleteCarouselItem()
     {
         $this->carouselItem->delete();
-        $this->emit('closeDeleteModel');
+        $this->emit('closeDeleteModal');
         $this->dispatchBrowserEvent('success_alert', 'Successful.');
         $this->carouselItem = new CarouselItem();
     }
@@ -98,14 +107,7 @@ class CarouselItemsList extends Component
     public function showDeleteModal(CarouselItem $item)
     {
         $this->carouselItem = $item;
-        $this->emit('showDeleteModel');
-    }
-
-    public function prepareViewCarouselItem($id)
-    {
-        $this->viewForm = true;
-        $this->carouselItem = CarouselItem::find($id);
-
+        $this->emit('showDeleteModal');
     }
 
     public function prepareEditCarouselItem($id)

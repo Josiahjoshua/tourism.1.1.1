@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\ResourcesProduct;
+use App\Models\User;
 use App\Service\FileUploadService;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
@@ -18,6 +19,7 @@ class ResourceProductsList extends Component
 
     public $keywords;
     public $product;
+    public $user;
     public $file;
 
     public $isEditMode = false;
@@ -39,9 +41,6 @@ class ResourceProductsList extends Component
 
         if ($this->isEditMode){
 
-            if (!empty($this->file)){
-                $file_path = ((new FileUploadService())->upload("resources", $this->file));
-
             if (!empty($file_path)){
                 $file_path = ((new FileUploadService())->upload("resources", $this->file));
                 $this->product->img = $file_path;
@@ -62,7 +61,7 @@ class ResourceProductsList extends Component
         }
 
         $this->closeForm();
-      }
+
     }
 
     public function showForm()
@@ -84,15 +83,23 @@ class ResourceProductsList extends Component
         $products = ResourcesProduct::when(!empty($this->keywords), function ($query){
             $query->where('name', 'like', '%'. $this->keywords . '%')
                 ->orWhere('preview_desc', 'like', '%'. $this->keywords . '%');
-        })->paginate('15');
+        })->latest()->paginate('15');
         return view('livewire.resource-products-list', ['products' => $products]);
     }
 
+    public function showViewModal(ResourcesProduct $product)
+    {
+        $this->product = $product;
+        $created_by = $this->product->created_by;
+        $this->user = User::find($created_by);
+        $this->product->created_by = $this->user->name;
+        $this->emit('showViewModal');
+    }
 
     public function deleteProduct()
     {
         $this->product->delete();
-        $this->emit('closeDeleteModel');
+        $this->emit('closeDeleteModal');
         $this->dispatchBrowserEvent('success_alert', 'Successful.');
         $this->product = new ResourcesProduct();
     }
@@ -100,14 +107,7 @@ class ResourceProductsList extends Component
     public function showDeleteModal(ResourcesProduct $product)
     {
         $this->product = $product;
-        $this->emit('showDeleteModel');
-    }
-
-    public function prepareViewProduct($id)
-    {
-        $this->viewForm = true;
-        $this->product = ResourcesProduct::find($id);
-
+        $this->emit('showDeleteModal');
     }
 
     public function prepareEditProduct($id)

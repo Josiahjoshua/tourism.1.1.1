@@ -45,37 +45,37 @@
                                 <thead class="table-dark">
                                 <tr>
                                     <th>#</th>
-                                    <th>PDF</th>
+                                    {{-- <th>PDF</th> --}}
                                     <th>Name</th>
                                     <th>Created At</th>
                                     <th class="text-center">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @forelse($publications as $key => $publication)
+                                @forelse($publications as $key => $publc)
                                     <tr>
                                         <td>{{ $key+1 }}</td>
-                                        <td class="">
-                                            <object src="{{ asset('storage/' . $publication->file) }}" alt="PDF" class="img" width="30px;" height="30px" srcset=""></object>
-                                        </td>
-                                        <td>{{ $publication->name }}</td>
-                                        <td>
-                                            @if($publication->is_active)
+                                        {{-- <td class="">
+                                            <iframe src="{{ asset('storage/' . $publc->file) }}" alt="PDF" class="img" width="30px;" height="30px" srcset=""></iframe>
+                                        </td> --}}
+                                        <td>{{ Str::limit($publc->name, 20) }}</td>
+                                        {{-- <td>
+                                            @if($publc->is_active)
                                                 <span class="badge badge-success-lighten">Active</span>
                                             @else
                                                 <span class="badge badge-danger-lighten">In Active</span>
                                             @endif
-                                        </td>
-                                        <td>{{ $npublication->created_at }}</td>
+                                        </td> --}}
+                                        <td>{{ $publc->created_at }}</td>
                                         <td class="text-center">
-                                            <button class="btn btn-primary btn-sm" wire:click="prepareViewPublication('{{$publication->id}}')"><i class="uil-eye"></i></button>
-                                            <button class="btn btn-warning btn-sm" wire:click="prepareEditPublication('{{$publication->id}}')"><i class="uil-edit"></i></button>
-                                            <button class="btn btn-danger btn-sm" wire:click="showDeleteModal('{{$publication->id}}')"><i class="uil-trash"></i></button>
+                                            <button class="btn btn-primary btn-sm" wire:click="showViewModal('{{$publc->id}}')"><i class="uil-eye"></i></button>
+                                            <button class="btn btn-warning btn-sm" wire:click="prepareEditPublication('{{$publc->id}}')"><i class="uil-edit"></i></button>
+                                            <button class="btn btn-danger btn-sm" wire:click="showDeleteModal('{{$publc->id}}')"><i class="uil-trash"></i></button>
                                         </td>
                                     </tr>
                                 @empty
                                     <tr>
-                                        <td colspan="5" class="text-center my-2">No news</td>
+                                        <td colspan="5" class="text-center my-2">No Publications</td>
                                     </tr>
                                 @endforelse
                                 </tbody>
@@ -86,6 +86,39 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div id="view_publication_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal-colored-header bg-info">
+                        <h4 class="modal-title" id="danger-header-modalLabel">Publication</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <h2 class="font-16">{{ $publication->name }}</h2>
+                            </div>
+                            <div class="col-5">
+                                <p class="font-14">{{ $publication->created_at }}</h2>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row my-2">
+                            <iframe src="{{ asset('storage/' . $publication->file ) }}" alt="Published PDF" height="300px"></iframe>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <p class="col ">Recorded by:<span class="fw-bold"> {{ $publication->created_by }}</span></p>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
         </div>
 
         <div id="delete_publication_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
@@ -108,11 +141,22 @@
     </div>
 
     <script>
+         // View modal
         document.addEventListener('livewire:load', function () {
-            livewire.on('showDeleteModel', () => {
-                $('#delete_publication_modal').modal('show')
+            livewire.on('showViewModal', () => {
+                $('#view_publication_modal').modal('show')
             });
             livewire.on('closeDeleteModel', () => {
+                $('#view_publication_modal').modal('hide')
+            });
+        });
+
+         // Delete modal
+        document.addEventListener('livewire:load', function () {
+            livewire.on('showDeleteModal', () => {
+                $('#delete_publication_modal').modal('show')
+            });
+            livewire.on('closeDeleteModal', () => {
                 $('#delete_publication_modal').modal('hide')
             });
         });

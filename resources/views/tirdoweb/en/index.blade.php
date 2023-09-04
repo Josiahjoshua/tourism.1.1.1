@@ -13,7 +13,7 @@
                     <div class="carousel-inner">
                         @foreach($carousel_items as $key => $item)
                         <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                            <img class="d-block w-100" alt="{{ $item->text }}" src="{{ asset('storage/'.$item->image) }}">
+                            <img class="d-block w-100" alt="{{ $item->text }}" src="{{ asset('storage/' . $item->image) }}">
                             <div class="mask flex-center">
                                     <div class="container">
                                         <div class="row align-items-center">
@@ -186,7 +186,7 @@
                                         <p class="text-justify mb-2">
                                             <b><h6 class="article-h2">{{ $product->name }}</h6></b>
                                             <i class="fa fa-calendar blue-icon"></i> {{ $product->created_at }}
-                                            <p>{!! Str::limit($product->preview_desc, 20) !!}</p>
+                                            <p>{!! Str::limit($product->preview_desc, 40) !!}</p>
                                             <a href="{{ route('product.product_detail', ['language' => $current_language, 'product_id' => $product->id]) }}">Read More</a>
                                         </p>
                                     </div>
@@ -213,7 +213,7 @@
                                                 <b><h6 class="article-h2">{{ $article->name }}</h6></b>
                                             </p>
                                             <p><i class="fa fa-calendar"></i> {{ $article->created_at }}</p>
-                                            <p>{!! Str::limit($article->preview_desc, 20)  !!}
+                                            <p>{!! Str::limit($article->preview_desc, 40)  !!}
                                             </p>
                                             <a href="{{ route('news.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}" class="read ml-2">Read more</a>
                                         </div>
