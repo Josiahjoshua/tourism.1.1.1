@@ -214,7 +214,7 @@ Route::get('resources/{language}/product_details/{product_id}', [ResourcesContro
 
 Route::group(['prefix' => 'admin'], function () {
 
-    Route::get('/admin', [LoginController::class, 'show_login'])->name('admin.login');
+    Route::get('/', [LoginController::class, 'show_login'])->name('admin.login');
     Route::get('login', [LoginController::class, 'show_login'])->name('login');
     Route::post('authenticate', [LoginController::class, 'authenticate'])->name('authenticate');
 
@@ -236,7 +236,6 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('resouce/products', [AdminPanelController::class, 'resource_products'])->name('admin.resource_products_list');
 
     });
-//    Voyager::routes();
 });
 
 //Auth::routes();

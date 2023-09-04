@@ -13,8 +13,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^4.2",
-        "livewire/livewire": "^2.10",
-        "tcg/voyager": "^1.6"
+        "livewire/livewire": "^2.10"
     },
     "require-dev": {
         "spatie/laravel-ignition": "^1.0",
