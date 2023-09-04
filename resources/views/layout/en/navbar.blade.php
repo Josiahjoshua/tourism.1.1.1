@@ -184,7 +184,7 @@
                                     data-toggle='dropdown'>Services</a>
                                 <ul class='dropdown-menu'>
                                     <li><a class='dropdown-item' href="{{ route('research', ['language' => $current_language]) }}">Research</a></li>
-                                    <li><a class='dropdown-item' href="{{ route('Energyauditing', ['language' => $current_language]) }}">Energy Auditing</a></li>
+                                    <li><a class='dropdown-item' href="{{ route('energyauditing', ['language' => $current_language]) }}">Energy Auditing</a></li>
                                     <li><a class='dropdown-item' href="{{ route('feasibility', ['language' => $current_language]) }}">Feasibility Studies</a></li>
                                     <li><a class='dropdown-item' href="{{ route('consultancysupport', ['language' => $current_language]) }}">Consultancy & Technical Services</a></li>
                                     <li><a class='dropdown-item' href="{{ route('industrialaudits', ['language' => $current_language]) }}">Industrial Technical Audits</a></li>
