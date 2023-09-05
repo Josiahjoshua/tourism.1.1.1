@@ -65,4 +65,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 Recommendation
- -To ensure consistency images uploaded should have same size for depending on category eg. news articles, carousel items
+ -To ensure consistency images uploaded should have same size eg. (1200 x 630)px depending on category eg. news articles, carousel items
