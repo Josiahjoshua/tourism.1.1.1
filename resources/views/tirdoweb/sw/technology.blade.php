@@ -24,7 +24,7 @@
                       <div class="row">
                         <div class="col-md-4 col-xs-12">
                           <div class="text-center img-frame custom-img-frame">
-                                  <img src="/uploads/administration/unknown.png" alt="Departmental Head" class="img-fluid">
+                                  <img src="/uploads/administration/martha.png" alt="Departmental Head" class="img-fluid">
                           </div>
                         </div>
 

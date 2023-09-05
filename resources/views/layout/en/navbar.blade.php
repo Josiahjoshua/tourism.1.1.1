@@ -143,7 +143,7 @@
                                         <ul class='dropdown-menu'>
                                             <li><a class='dropdown-item' href="{{ route('energy', ['language' => $current_language]) }}">Energy</a></li>
                                             <li><a class='dropdown-item' href="{{ route('materialsciencetech', ['language' => $current_language]) }}">Material Science & Technology</a></li>
-                                            <li><a class='dropdown-item' href="{{ route('textilelatherchemistry', ['language' => $current_language]) }}">Textile & Leather Chemistry</a></li>
+                                            <li><a class='dropdown-item' href="{{ route('textilelatherchemistry', ['language' => $current_language]) }}">Textile & Leather Technologies</a></li>
                                         </ul>
                                     </li>
                                     <li class='nav-item dropdown-submenu'>

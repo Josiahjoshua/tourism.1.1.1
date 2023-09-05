@@ -140,7 +140,7 @@
                                     <ul class='dropdown-menu'>
                                         <li><a class='dropdown-item' href="{{ route('energy', ['language' => $current_language]) }}">Nishati</a></li>
                                         <li><a class='dropdown-item' href="{{ route('materialsciencetech', ['language' => $current_language]) }}">Sayansi ya Nyenzo na Teknolojia</a></li>
-                                        <li><a class='dropdown-item' href="{{ route('textilelatherchemistry', ['language' => $current_language]) }}">Kemia ya Nguo na Ngozi</a></li>
+                                        <li><a class='dropdown-item' href="{{ route('textilelatherchemistry', ['language' => $current_language]) }}">Teknolojia za Nguo na Ngozi</a></li>
                                     </ul>
                                 </li>
                                 <li class='nav-item dropdown-submenu'>

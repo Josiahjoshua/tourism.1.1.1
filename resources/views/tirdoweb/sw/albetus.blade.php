@@ -22,11 +22,11 @@
                 <div class="row">
 
                     <div class="col-md-9 bg-white py-3 page-content">
-                        <img src="/uploads/icon/innovasi.png" alt="innovasive">
+                        <img src="/uploads/innovasie/albetus.png" alt="innovasive">
                         <p>Kuimarisha Uchumi wa Dijitali</p>
                         <div class="col-12 px-0 mt-4 justify-content-center align-items-center">
                         <h5>KAMPUNI YETU</h5>
-                            <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                            <p style="text-align:justify;">
                                  Albetus Technologies ni huduma kamili ya ICT, suluhisho na
                                 mtoa bidhaa. Ni mtendaji kwa pamoja wana zaidi ya a
                                 uzoefu wa muongo katika tasnia ya teknolojia na wako
@@ -79,10 +79,11 @@
                                         </p>
                                 </ul>
                             </div>
-                                <div style="flex: 1;">
-                                    <img src="/uploads/innovasie/shirton.JPG" alt="Picha" style="width: 100%;">
-                                </div>
-                            </div>
+                            {{-- <div style="flex: 1;"> --}}
+                                {{-- <img src="/uploads/innovasie/shirton.JPG" alt="Picha" style="width: 100%;"> --}}
+                            {{-- </div> --}}
+                        </div>
+
                             <br>
                             <h5>
                             Misheni
@@ -107,11 +108,10 @@
                                 ubora wa maisha kupitia uvumbuzi wenye maana
                             </p><br>
                             <h5>
-                            Huduma zetu:
+                                huduma zinazosimamiwa:
                             </h5>
                             <p>
-                               BIVATEK AFRICA inatoa huduma mbalimbali zinazolenga kuendesha uvumbuzi, kutatua changamoto, na kukuza ukuaji:
-                                <ul>
+                               <ul>
                                     <li>
                                     1. Upangaji na usanifu wa miundombinu
                                     </li>
@@ -138,10 +138,61 @@
                                     Leseni. Programu ya kuzuia virusi,
                                     Programu za Uhasibu, Autocad,
                                     Archicad nk)
-
+                                    <h5>
+                                    <br>
+                                        Huduma zetu:
+                                    </h5>
+                                     <p>
+                                     <ul>
+                                     <li>Miundombinu ya LAN</li>
+                                     Teknolojia ya Albetus
+                                     '
+                                     mwenye uzoefu
+                                     wataalamu wanaweza kutoa ufanisi
+                                     Miundombinu ya mtandao kulingana na yako
+                                     mazingira na mahitaji ya biashara.
+                                     Usanifu wa Mtandao na Ufungaji
+                                        <li>Ukuzaji Programu</li>
+                                        Pamoja na timu ya maendeleo yenye ujuzi ya Albetus IT sisi pia
+                                        utaalam katika kutengeneza masuluhisho ya programu muhimu sana Tengeneza yaliyolengwa kulingana na mahitaji yako.
+                                        <li>Suluhisho la Miundombinu ya Wingu</li>
+                                            Biashara zinaweza kuokoa pesa na kupunguza
+                                            uendeshaji wa kiutawala kwa kutumia Hifadhi ya Wingu kwa
+                                            badilisha seva za faili zilizopo. Hifadhi iliyopo na NAS
+                                            vifaa pamoja na programu ya Hifadhi ya Wingu
+                                            kutoa uwezo wa kuhifadhi wa ndani ambao ni rahisi zaidi
+                                            kupeleka na kudumisha. Kawaida gharama za faili
+                                            programu ya seva, matengenezo, na rasilimali watu
+                                            ni takriban mara tano ya maunzi asili
+                                            gharama
+                                            <li>Bidhaa za IT</li>
+                                            Ufumbuzi wa programu na
+                                            huduma,
+                                            Bidhaa za usalama wa mtandao na data,
+                                            Bidhaa za Biashara,
+                                            Katika Albetus tutakuwa chanzo kila wakati,
+                                            juu ya bidhaa mbalimbali kwa ajili yako
+                                            biashara, bora na zaidi
+                                            bei nafuu.
+                                            Maombi ya uzalishaji wa ofisi,
+                                            Mifumo ya uendeshaji ya kompyuta na mtandao,
+                                            Seva, rafu, vifaa vya umeme na mtandao
+                                            hifadhi,
+                                            Programu ya usimamizi wa biashara,
+                                            Kompyuta za mezani, kompyuta ndogo na vifuasi
+                                            Printers, scanners, na projectors,
+                                            Vipanga njia, swichi na sehemu za ufikiaji zisizo na waya
+                                            Dhamana ya vifaa na programu na
+                                            usajili,
+                                            <li>Mifumo ya usalama</li>
+                                            Tunaweka, kudumisha na kutoa huduma kwa mifumo ya usalama
+                                            kama vile kamera za CCTV, mifumo ya udhibiti wa ufikiaji,
+                                            intruder Kengele, kengele za moto, Ufuatiliaji wa Magari
+                                            mifumo, na Uzio wa Umeme.
+                                             </ul>
+                                         </p>
                             <p>
                                 <h5>Wasiliana Nasi: </h5>
-                                <br>
                                 Timu yetu inaweza kuhusishwa kama vile kujitolea kwetu
                                 kuridhika kwa wateja kama ujuzi wetu wa kiufundi.
                             <!-- </br>
@@ -157,7 +208,7 @@
                             </p>
                         </div>
                         <div class="col-12 mt-4 text-center">
-                            <img src="/uploads/innovasie/innovasie.png" alt="Innovasie" style="max-width: 100%;">
+                            <img src="/uploads/innovasie/albetus.png" alt="Innovasie" style="max-width: 100%;">
                         </div>
                     </div>
 

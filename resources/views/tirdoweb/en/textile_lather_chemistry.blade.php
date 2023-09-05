@@ -34,7 +34,7 @@
                             <small><i>   </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Head of textile and leather Section</p>
+                            <p>Head of Textile and Leather Technologies Division</p>
                           </div>
                         </div>
                       </div>
@@ -53,6 +53,8 @@
                                       b) Leather and textiles product development.<br>
                                       c) Non-woven fabrics production technologies.<br>
                                       d) Woven fabric Structure Designing.<br>
+                                      e) Development of Organic Materials for Textile and Leather Industries<br>
+                                     f)Production optimization for Textile and Leather Industries<br>
 
                             </p>
                             <p class="about_hub">
@@ -61,10 +63,11 @@
                                     For consultancies we are dealing with:-</strong><br>
                                  a) Yarn, fabrics and leather quality assurance.<br>
                                  b) Laboratory services for textile and leather materials.<br>
-                                 c) Maintenance of weaving textiles machines.<br>
+                                 c) Research on latest Textile Machines Technologies.<br>
                                  d) Training in leather, spinning and weaving production.<br>
                                  e) Training in use of semi leather recycling cam.<br>
                                 f) Hand loom production.<br>
+                                g)Turn-Key Consaltuncy for textile and Leather Industries,example <b>Karanga Leather Industries</b>
                           </p>
                           <p>
                             <img src="/uploads/icon/leather1.png" style="padding:7px;float:left;">

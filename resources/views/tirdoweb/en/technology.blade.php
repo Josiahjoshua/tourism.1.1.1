@@ -24,7 +24,7 @@
                       <div class="row">
                         <div class="col-md-4 col-xs-12">
                           <div class="text-center img-frame custom-img-frame">
-                                  <img src="/uploads/administration/unknown.png" alt="Departmental Head" class="img-fluid">
+                                  <img src="/uploads/administration/martha.png" alt="Departmental Head" class="img-fluid">
                           </div>
                         </div>
 
@@ -43,34 +43,21 @@
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
                             <p class="about_hub">
 
-                                   <strong class="about_hub">
-                                    Objectives</strong><br>
-                                    To provide expertise and services on application of ICT to the Organization and  also, to provide technical
-                                    advisory and support to industries and other stakeholders on ICT issues.
-                          </p>
-                          <p class="about_hub">
-                                This division will perform the following actvities:<br><br>
-                                 <strong class="about_hub">
-                                    1. Research and development</strong><br>
-                                 <ul class="about_hub">
-                                  <li>Cyber security and Forensics</li>
-                                 <li>Sensor applications  </li>
-                                  <li>Mobile applications</li>
-                                  <li>E-waste management</li>
+                                The Technology Transfer and Pilot Plant Unit at TIRDO plays a crucial role in bridging the gap between research and practical application.<br>
+                                The Unit aims to ensure that TIRDO-developed innovations, knowledge, and technologies are made available and shared with potential users,
+                                 particularly industries so that they can be used to address issues limiting industrial productivity.<br>
+                                The functions of the Technology Transfer and Pilot Plant Unit are as follows;<br>
+                                1.	Manage, and monitor all the technologies, innovations, and inventions developed at TIRDO.<br>
+                                2.	Assess the commercial potential of inventions, technologies, and research findings developed at TIRDO.<br>
+                                3.	Identify potential markets, industries, and applications for developed technology, and inventions.<br>
+                                4.	Intellectual Property Management: Identify and protect intellectual property (IP) generated from research activities, including patents, copyrights, and trademarks.<br>
+                                5.	Research and Development: Conduct market research to determine the feasibility and potential demand for new technologies.<br>
+                                6.	Start-up Incubation: Assist in the formation of start-up companies by providing guidance, mentorship, and resources to researchers looking to spin off their innovations into new ventures.<br>
+                                7.	Industry Collaboration: Foster collaboration between researchers and industry partners.<br>
+                                8.	Intellectual Property Education: Coordinate for education and training of researchers on topics related to intellectual property, technology transfer, and commercialization processes.<br>
+                                9.	Networking and Outreach: Establish relationships with potential partners, investors, and industry stakeholders to promote collaboration and increase the visibility of the institution's innovations.<br>
 
-                                 </ul>
-                          </p>
-                          <p class="about_hub">
-                             <strong class="about_hub">
-                                2. Consultancies</strong><br>
-                             <ul class="about_hub">
-                                <li>Industrial research, Innovations and tech database</li>
-                                <li>Use of ICT in SMEs operations </li>
-                                <li>Advanced computer applications in teaching</li>
-                                <li>Ideation portal</li>
 
-                             </ul>
-                      </p>
                         </div>
                     </div>
 
