@@ -22,11 +22,11 @@
                 <div class="row">
 
                     <div class="col-md-9 bg-white py-3 page-content">
-                        <img src="/uploads/icon/innovasi.png" alt="innovasive">
+                        <img src="/uploads/innovasie/albetus.png" alt="innovasive">
                         <p>Powering the digital Economy</p>
                         <div class="col-12 px-0 mt-4 justify-content-center align-items-center">
                             <h5>OUR COMPANY</h5>
-                            <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                            <p style="text-align:justify;">
                                  Albetus Technologies is an ICT full-service, solution and
                                 products provider. It's executive collectively have over a
                                 decade experience in the tech industry and they are
@@ -80,9 +80,9 @@
                                         </p>
                                 </ul>
                             </div>
-                                <div style="flex: 1;">
-                                    <img src="/uploads/innovasie/shirton.JPG" alt="Picha" style="width: 100%;">
-                                </div>
+                                {{-- <div style="flex: 1;"> --}}
+                                    {{-- <img src="/uploads/innovasie/shirton.JPG" alt="Picha" style="width: 100%;"> --}}
+                                {{-- </div> --}}
                             </div>
                             <br>
                             <h5>
@@ -111,10 +111,10 @@
 
                             <br>
                             <h5>
-                            Our Services:
+                            Managed Services:
                             </h5>
                             <p>
-                               BIVATEK AFRICA offers a range of services aimed at driving innovation, solving challenges, and promoting growth:
+
                                 <ul>
                                     <li>
                                     1.	Infrastructure planning & design
@@ -144,9 +144,69 @@
                                     Accounting Softwares, Autocad,
                                     Archicad etc)
 
-                            <p>
+                                    Albetus Technologies
+                                    '
+                                    s experienced
+                                    professionals can deliver an effective
+                                    Network infrastructure based on your
+                                    environment and business needs.
+                                    Network Design and Installation             <p>
+                                <h5>
+                                   Our Services:
+                                    </h5>
+                                <p>
+                                <ul>
+                                <li>LAN Infrastructure</li>
+                                Albetus Technologies
+                                '
+                                s experienced
+                                professionals can deliver an effective
+                                Network infrastructure based on your
+                                environment and business needs.
+                                Network Design and Installation
+<li>Software Development</li>
+With Albetus IT’s skilled development team we also
+specialise in developing invaluable software solutions Deve tailored to your needs.
+<li>Cloud Infrastructure Solution</li>
+    Businesses can save money and reduce
+    administrative overhead by utilizing Cloud Storage to
+    replace existing file servers. Existing storage and NAS
+    devices combined with Cloud Storage software
+    provide a local storage capacity that is easier to
+    deploy and maintain. Typically expenses for file
+    server software, maintenance, and human resources
+    are approximately five times the original hardware
+    expense
+<li>IT Products</li>
+Software solutions and
+services,
+Network and data security products,
+Business Products,
+At Albetus we will always source,
+top of the range products for your
+business, at the best and most
+affordable price.
+Office productivity applications,
+Computer and network operating systems,
+Servers, racks, power supplies, and network
+storage,
+Business management software,
+Desktop computers, laptops, and accessories
+Printers, scanners, and projectors,
+Routers, switches, and wireless access points
+Hardware and software warranties and
+subscriptions,
+<li>Security systems</li>
+We install, maintain and service security systems
+such as CCTV cameras, Access control systems,
+intruder Alarms, fire Alarms, Car Tracking
+systems, and Electric Fences.
+                                </ul>
+
+                                </p>
+
                                 <h5>Contact Us: </h5>
-                                <br>
+
                                 Our team can be attributed as much to our dedication to
                                 customer satisfaction as our technical skills.
                             <!-- </br>
@@ -162,7 +222,7 @@
                             </p>
                         </div>
                         <div class="col-12 mt-4 text-center">
-                            <img src="/uploads/innovasie/innovasie.png" alt="Innovasie" style="max-width: 100%;">
+                            <img src="/uploads/innovasie/albetus.png" alt="Innovasie" style="max-width: 100%;">
                         </div>
                     </div>
                     @include('tirdoweb.en.newsection')

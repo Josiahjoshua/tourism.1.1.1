@@ -39,39 +39,56 @@
                           </div>
                         </div>
                       </div>
-                        <h4 class="mt-3">TEKNOLOJIA YA ELEACTRONICS NA INSTRUMENTATION</h4>
+                        <h4 class="mt-3">TEKNOLOJIA YA ELECTRONICS NA INSTRUMENTATION</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
-                            <p class="about_hub">
+                            <p>
 
-                                <strong class="about_hub">
-                                    Malengo</strong><br>
-                                    Kutoa utaalam na huduma juu ya matumizi ya TEHAMA kwa Shirika na pia, kutoa kiufundi
-                                    ushauri na usaidizi kwa viwanda na wadau wengine kuhusu masuala ya Tehama.
-                          </p>
-                          <p class="about_hub">
-                                Kitengo hiki kitafanya shughuli zifuatazo:<br><br>
-                                 <strong class="about_hub">
-                                    1. Utafiti na waendelezaji</strong><br>
-                                 <ul class="about_hub">
-                                  <li>Usalama wa Mtandao na Uchunguzi wa Uchunguzi</li>
-                                 <li>Programu za vitambuzi </li>
-                                  <li>Programu za rununu</li>
-                                  <li>Udhibiti wa taka za mtandaoni</li>
+                                <h5>Malengo</h5>
+                                  Maendeleo, udhibiti na uhamisho wa utaalamu wa kiufundi katika uwanja wa umeme na vyombo
+                                  ili kukidhi mahitaji yanayobadilika ya sekta ya viwanda, ikijumuisha kubuni saketi za kielektroniki, majaribio ya kuiga
+                                  urekebishaji na matengenezo ya vifaa vya kielektroniki vilivyopo.
+                        </p>
 
-                                 </ul>
-                          </p>
-                          <p class="about_hub">
-                             <strong class="about_hub">
-                                2. Ushauri</strong><br>
-                             <ul class="about_hub">
-                                <li>Utafiti wa viwanda, Ubunifu na hifadhidata ya teknolojia</li>
-                                <li>Matumizi ya Tehama katika shughuli za SME </li>
-                                <li>Matumizi ya kina ya kompyuta katika ufundishaji</li>
-                                <li>Lango la wazo</li>
+                       <h5>Misheni</h5>
+                      <p>Ili kuhakikisha kuwa vipimo vilivyochukuliwa na kifaa ni sahihi na vinategemewa</p>
 
-                             </ul>
-                      </p>
+                      <h5>Maono</h5>
+                      <p>Kuwa kitovu cha ubora katika nyanja ya zana na Elektroniki kwa utafiti katika sekta ya viwanda.</p>
+
+                      <p>Kitengo hiki kitafanya shughuli zifuatazo:
+                      <br>
+                        <b>I. Kubuni</b>
+                        <br>
+                      Ubunifu wa mzunguko wa kielektroniki unahusisha uteuzi na uunganisho wa vifaa vya kimwili katika aina mbalimbali
+                      ya topolojia ili kukidhi vipimo vya utendaji, mahitaji ya mazingira, na vipimo vingine
+                      ili kuleta mabadiliko ya kidijitali
+                     <br><br>
+                      <b>II. Urekebishaji</b>
+                      <br>
+                      Usanidi wa chombo ili kutoa matokeo ya kiufundi ndani ya masafa yanayokubalika. Kuondoa au
+                      kupunguza mambo ambayo yanaweza kusababisha vipimo visivyo sahihi kwa maendeleo ya viwanda mahususi
+                      eneo la
+                     <br>
+                     <ul>
+                     <li>Urekebishaji wa mitambo</li>
+                     <li>Urekebishaji wa umeme</li>
+                     <li>Urekebishaji wa Pipette</li>
+                     <li>Urekebishaji wa Mtiririko</li>
+                     <li>Urekebishaji wa Halijoto</li>
+                     <li>Urekebishaji wa Shinikizo</li>
+                     </ul>
+                     <br><b>III. Ufungaji na Matengenezo</b>
+                     <br>
+                     Sehemu inayohusika na ufungaji, matengenezo na ukarabati wa vifaa vya elektroniki, pamoja na
+                     saketi, vijenzi na vifaa vinavyohusiana vinavyotumika katika mifumo ya mawasiliano ya kielektroniki,
+                     telemetering, mifumo ya nguvu, vifaa vya kupima mita, na vifaa vya udhibiti wa kijijini ili Kudumisha,
+                     Kuzuia, Kuboresha na Kusimamia michakato ya maabara na viwanda. Vyombo hivyo ni pamoja na:-
+                     <ul><li>Vyombo vya uchanganuzi, HPLC, GCs,</li>
+                     <li>Ala za myeyusho, UV-VIS</li>
+                     <li>Spectrophotometers,</li>
+                     <li>Wachanganuzi wa TOC</li></ul>
+                         </p>
                         </div>
                     </div>
 

@@ -34,7 +34,7 @@
                             <small><i>   </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Head of Textile and Leather Section</p>
+                            <p>Head of Textile and Leather Technologies Division</p>
                           </div>
                         </div>
                       </div>

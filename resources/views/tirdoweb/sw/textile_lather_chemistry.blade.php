@@ -34,7 +34,7 @@
                             <small><i>   </i></small>
                           </div>
                           <div class="col-12 px-0 my-2">
-                            <p>Mkuu wa Kitengo cha nguo na ngozi</p>
+                            <p>Mkuu wa Kitengo cha Teknolojia za Nguo na Ngozi</p>
                             </div>
                           </div>
                         </div>
@@ -53,6 +53,8 @@
                                         b) Ukuzaji wa bidhaa za ngozi na nguo.<br>
                                         c) Teknolojia za utengenezaji wa vitambaa visivyo na kusuka.<br>
                                         d) Usanifu wa Muundo wa Kitambaa kilichofumwa.<br>
+                                        e) Maendeleo ya Vifaa vya kikaboni kwa Viwanda vya Nguo na Leather<br>
+                                        f) Uboreshaji wa uzalishaji kwa Viwanda vya Nguo na Leather<br>
                             </p>
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
 
@@ -60,10 +62,11 @@
                                     Kwa ushauri tunashughulika na:-</strong><br>
                                     a) Uzi, vitambaa na uhakikisho wa ubora wa ngozi.<br>
                                     b) Huduma za maabara kwa vifaa vya nguo na ngozi.<br>
-                                    c) Matengenezo ya mashine za kufuma nguo.<br>
+                                   c) Utafiti juu ya Teknolojia ya Mashine za Nguo za hivi karibuni. <br>
                                     d) Mafunzo ya uzalishaji wa ngozi, kusokota na kusuka.<br>
                                     e) Mafunzo ya utumiaji wa kamera ya kuchakata tena ngozi.<br>
                                    f) Uzalishaji wa kitanzi cha mkono.<br>
+                                   g) Kugeuka-Key Consaltuncy kwa viwanda vya nguo na ngozi, mfano <b>Karanga Leather Industries</b><br>
                              </p>
                              <p>
                               <img src="/uploads/icon/leather1.png" style="padding:7px;float:left;">

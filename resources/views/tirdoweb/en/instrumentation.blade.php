@@ -38,39 +38,57 @@
                           </div>
                         </div>
                       </div>
-                        <h4 class="mt-3">ELEACTRONICS AND INSTRUMENTATION TECHNOLOGIES</h4>
+                        <h4 class="mt-3">ELECTRONICS AND INSTRUMENTATION TECHNOLOGIES</h4>
 
                         <div class="col-12 px-0 mt-4  justify-content-center align-items-center">
-                            <p class="about_hub">
+                            <p>
 
-                                   <strong class="about_hub">
-                                    Objectives</strong><br>
-                                    To provide expertise and services on application of ICT to the Organization and  also, to provide technical
-                                    advisory and support to industries and other stakeholders on ICT issues.
+                                  <h5>Objectives</h5>
+                                    Development, control and transfer of technical expertise in the field of electronics and instrumentation
+                                    to meet the changing needs of industrial sector,involving electronic circuit designing, simulation testing
+                                    calibration and maintenance of existing electronic devices.
                           </p>
-                          <p class="about_hub">
-                                This division will perform the following actvities:<br><br>
-                                 <strong class="about_hub">
-                                    1. Research and development</strong><br>
-                                 <ul class="about_hub">
-                                  <li>Cyber security and Forensics</li>
-                                 <li>Sensor applications  </li>
-                                  <li>Mobile applications</li>
-                                  <li>E-waste management</li>
 
-                                 </ul>
-                          </p>
-                          <p class="about_hub">
-                             <strong class="about_hub">
-                                2. Consultancies</strong><br>
-                             <ul class="about_hub">
-                                <li>Industrial research, Innovations and tech database</li>
-                                <li>Use of ICT in SMEs operations </li>
-                                <li>Advanced computer applications in teaching</li>
-                                <li>Ideation portal</li>
+                         <h5>Mission</h5>
+                        <p>To ensure measurements taken by the instrument are accurate and reliable</p>
 
-                             </ul>
-                      </p>
+                          <h5>Vision</h5>
+                          <p>To become centre of excellence in the field of instrumentation and Electronics for research in industrial sector.</p>
+
+                          <p>This division will perform the following activities:
+                         <br>
+                            <b>I.	Designing</b>
+                            <br>
+                          Electronics circuit design involves the selection and interconnection of physical devices in a variety
+                          of topologies to meet performance specifications, environmental requirements, and other specification
+                          in order to realize digital transformation
+                         <br><br>
+                          <b>II.	Calibration</b>
+                          <br>
+                          Configuration of instrument to provide a technical result within an acceptable range. Eliminating or
+                          minimizing factors that may lead to inaccurate measurements for industrial development in specific
+                          area of
+                         <br>
+                         <ul>
+                         <li>Mechanical calibration</li>
+                         <li>Electrical calibration</li>
+                         <li>Pipette Calibration</li>
+                         <li>Flow Calibration</li>
+                         <li>Temperature Calibration</li>
+                         <li>Pressure Calibration</li>
+                         </ul>
+                         <br>
+                          <b>III.	Installation and Maintenance</b>
+                          <br>
+                          The section responsible for installation, maintenance and repair of electronic equipment, including
+                          the circuits, components, and related equipment used in electronic communications systems,
+                          telemetering, power systems, metering equipment, and remote-control equipment in order to Maintain,
+                          Prevent, Improve and Manage laboratory and industrial processes. These instruments include: -
+                          <ul><li>Analytical instruments, HPLCs, GCs,</li>
+                          <li>Dissolution instrumentation, UV-VIS</li>
+                          <li>Spectrophotometers,</li>
+                          <li>TOC Analysers</li></ul>
+                         </p>
                         </div>
                     </div>
 
