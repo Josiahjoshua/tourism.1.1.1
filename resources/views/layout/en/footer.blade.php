@@ -127,7 +127,7 @@
                                     <br> -->
                                 </ul>
                                 <div class="row justify-content-center mt-2">
-                                    <a href="{% url 'partners' current_language %}" class="link-no-underline"> <i>Tazama Wote <i class="far fa-arrow-alt-circle-right"></i></i></a>
+                                    <a href="{{route('partners', ['language' => $current_language])}}" class="link-no-underline"> <i>See all <i class="far fa-arrow-alt-circle-right"></i></i></a>
                                 </div>
                             </div>
 

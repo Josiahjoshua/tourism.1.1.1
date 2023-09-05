@@ -86,18 +86,18 @@ public function awamupay($language) {
     return view($templatePath, $data);
 }
 
-// public function albetus($language) {
-//     $templateName = 'Albetus';
-//     $templatePath = $this->getTemplatePath($language, $templateName);
+public function partners($language) {
+    $templateName = 'partners';
+    $templatePath = $this->getTemplatePath($language, $templateName);
 
-//     $data = [
-//         'current_language' => $language,
-//         'resources_products' => ResourcesProduct::all(),
-//         'news_articles' => NewsArticle::all(),
-//     ];
+    $data = [
+        'current_language' => $language,
+        'resources_products' => ResourcesProduct::all(),
+        'news_articles' => NewsArticle::all(),
+    ];
 
-//     return view($templatePath, $data);
-// }
+    return view($templatePath, $data);
+}
 
 public function bivatekafrica($language) {
     $templateName = 'bivatekafrica';
