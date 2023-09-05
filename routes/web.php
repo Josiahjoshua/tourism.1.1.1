@@ -211,6 +211,7 @@ Route::get('resources/{language}/product_details/{product_id}', [ResourcesContro
     ->name('product.product_detail');
 
 
+Route::get('login', [LoginController::class, 'show_login']);
 
 Route::group(['prefix' => 'admin'], function () {
 

@@ -47,7 +47,6 @@ class UserList extends Component
                 $this->dispatchBrowserEvent('failure_alert', "This email already exists.");
             }else{
                 $this->validate([
-
                     'user_password' => ['required', Password::min(8)
                         ->letters()
                         ->mixedCase()
@@ -58,6 +57,8 @@ class UserList extends Component
 
                 $this->user->password = bcrypt($this->user_password);
                 $this->user->save();
+
+                $this->reset('passwordStrength');
                 $this->dispatchBrowserEvent('success_alert', 'Staff saved.');
             }
 
