@@ -180,7 +180,24 @@
                         <div class="row mt-4">
                         @foreach($resources_products as $product)
                             <div class="col-md-6 pb-3 mb-3">
-                                <img src="{{ asset('storage/'.$product->img) }}" class="w-100" alt="Thumbnail">
+                                <style>
+                                    .image-wrapper {
+                                        max-width: 1200px; 
+                                        /* Adjust the maximum width as needed */
+                                        max-height: 650px; 
+                                        /* Adjust the maximum height as needed */
+                                        text-align: center;
+                                        /* margin: 10px; */
+                                    }
+
+                                    img {
+                                        max-width: 100%;
+                                        height: auto;
+                                    }
+                                </style>
+                                <div class="image-wrapper">
+                                    <img src="{{ asset('storage/'.$product->img) }}" class="w-100" alt="Thumbnail">
+                                </div>
                                 <div class="col-12 bg-light px-xs-2 p-3">
                                     <div>
                                         <p class="text-justify mb-2">
