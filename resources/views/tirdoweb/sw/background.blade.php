@@ -29,12 +29,13 @@
                             <p style="text-align:justify; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
 
                                 Tarehe 10 Oktoba 2018, idhini ilitolewa ili kuanzisha Kituo cha COMSATS cha Hali ya Hewa na Uendelevu.
-                                (CCCS) nchini Tanzania katika TIRDO.<br><br>
+                                (CCCS) nchini Tanzania katika TIRDO.
                        Ajenda ya Maendeleo ya Dunia ya 2030 ina Malengo 17 ya Maendeleo Endelevu (SDGs) na Hali ya Hewa ya Paris.
                             Makubaliano yanatoa msingi wa maendeleo endelevu ya kaboni ya chini na ustahimilivu. Viungo kati ya
                              mabadiliko ya tabianchi na maendeleo endelevu yana nguvu.
 
-                   Mabadiliko ya hali ya hewa ni tishio kubwa kwa maendeleo endelevu. Ajenda ya Maendeleo ya 2030 inabainisha hali ya hewa
+                   Mabadiliko ya hali ya hewa ni tishio kubwa kwa maendeleo endelevu. <br><br>
+                   Ajenda ya Maendeleo ya 2030 inabainisha hali ya hewa
                         mabadiliko kama "moja ya changamoto kubwa ya wakati wetu" na inasema kwamba "athari zake mbaya hudhoofisha uwezo wa nchi zote kupata maendeleo endelevu".
 
                    Kusimamia na kukabiliana na hatari ya hali ya hewa ya muda mrefu ni muhimu kwa maendeleo endelevu. Kwa hivyo mazingira

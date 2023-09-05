@@ -23,10 +23,10 @@ use App\Http\Controllers\PublicationController;
 
 
 Route::get('/', function () {
-    return redirect()->route('home', ['language' => 'sw']);
+    return redirect()->route('home', ['language' => 'en']);
 })->name('root');
 
-$language = 'sw';
+$language = 'en';
 
 // Route::get('/admin', [TirdoController::class, 'admin'])
 // ->name('admin');

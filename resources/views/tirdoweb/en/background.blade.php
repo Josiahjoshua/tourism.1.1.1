@@ -28,12 +28,12 @@
                             <p class="about_hub">
 
                                 On 10th October 2018 approval was accorded to establish COMSATS Centre for Climate and Sustainability
-                                (CCCS) in Tanzania at TIRDO. <br><br>
                        The 2030 Global Development Agenda contains 17 Sustainable Development Goals (SDGs) and the Paris Climate
                             Agreement provides the foundation for sustainable low carbon and resilient development. The links between
                              climate change and sustainable development are strong.
 
-                   Climate change presents a serious threat to sustainable development. The 2030 Development Agenda identifies climate
+                   Climate change presents a serious threat to sustainable development. <br><br>
+                   The 2030 Development Agenda identifies climate
                         change as “one of the greatest challenges of our time” and states that “its adverse impacts undermine the ability of all countries to achieve sustainable development”.
 
                    Managing and adapting to long term climate risk is critical for sustainable development. Hence environmental

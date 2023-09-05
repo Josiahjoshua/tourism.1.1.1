@@ -21,7 +21,7 @@ class TirdoController extends Controller
 //     return view('login');
 // }
 
-public function home($language = 'sw')
+public function home($language = 'en')
 {
     $templateName = 'index';
     $templatePath = $this->getTemplatePath($language, $templateName);
