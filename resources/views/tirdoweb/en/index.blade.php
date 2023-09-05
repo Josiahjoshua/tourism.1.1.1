@@ -184,7 +184,7 @@
                                     .image-wrapper {
                                         max-width: 1200px; 
                                         /* Adjust the maximum width as needed */
-                                        max-height: 650px; 
+                                        max-height: 638px; 
                                         /* Adjust the maximum height as needed */
                                         text-align: center;
                                         /* margin: 10px; */
