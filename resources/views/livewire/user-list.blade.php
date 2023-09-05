@@ -22,13 +22,15 @@
                             <input type="password" wire:model="user_password" id="user_password" class="form-control form-control-sm" placeholder="******">
                             @error('user_password') <span class="error">{{ $message }}</span> @enderror
                         </div>
-                        <span>Password strength: <strong style="color: red">{{$passwordStrengthLevels[$passwordStrength] ?? 'Week'}}</strong></span>
-                        <div class="progress mb-3">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="{{$passwordStrength}}" style="width: {{ $passwordStrength/4 * 100 }}%" aria-valuemin="0" aria-valuemax="4"></div>
-                        </div>
+                        @if($user_password)
+                            <span>Password strength: <strong style="color: red">{{$passwordStrengthLevels[$passwordStrength] ?? 'Week'}}</strong></span>
+                            <div class="progress mb-3">
+                                <div class="progress-bar {{ $passwordStrength == 4 ? 'bg-success' : 'bg-warning'  }}" role="progressbar" aria-valuenow="{{$passwordStrength}}" style="width: {{ $passwordStrength/4 * 100 }}%" aria-valuemin="0" aria-valuemax="4"></div>
+                            </div>
+                        @endif
                     @endif
 
-                    <button type="button" class="btn btn-success" wire:click="save" wire:loading.attr="disabled">
+                    <button type="button" class="btn btn-primary float-end" wire:click="save" wire:loading.attr="disabled">
                         <span wire:loading.remove>Save</span>
                         <span wire:loading>Saving...</span>
                     </button>

@@ -104,6 +104,18 @@
                         <span> Resource Products </span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"
+                       class="side-nav-link">
+                        <i class="mdi mdi-logout me-1"></i>
+                        <span class="text-danger">Logout</span>
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </li>
 
             </ul>
 
