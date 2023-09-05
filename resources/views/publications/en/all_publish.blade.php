@@ -24,14 +24,14 @@
             <h5 class="article-h2"><span class="icon"><i class="fas fa-file-pdf"></i></span>
                 {{ $publication->name }}</h5>
             <p class="mt-2">
-                <i class="fa fa-calendar"></i> {{ $publication->created_at }}
+                <i class="fa fa-calendar" style="color: #006f8b;"></i> {{ $publication->created_at }}
             </p>
             
          
 
                 <div class="row align-content-center mt-3">
-                    <a href="{{ asset('storage/' . $publication->file) }}" class="ml-3 link-no-underline" target="_blank"><i class="fa fa-eye"></i> View</a>
-                    <a href="{{ asset('storage/' . $publication->file ) }}" class="ml-5 link-no-underline" ><i class="fa fa-download"></i> Download</a>
+                    <a href="{{ asset('storage/' . $publication->file) }}" class="ml-3 link-no-underline" target="_blank"><i class="fa fa-eye" style="color: #006f8b;"></i> View</a>
+                    <a href="{{ asset('storage/' . $publication->file ) }}" class="ml-5 link-no-underline" ><i class="fa fa-download" style="color: #006f8b;" onclick="window.location.href='{{ asset('storage/' . $publication->file ) }}'"></i> Download</a>
                 </div>
 
         </div>

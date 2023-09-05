@@ -20,7 +20,7 @@
         <div class="col-md-12 page-content">
             <h4>T-Products</h4>
 
-              <div class="row mt-4">
+              <div class="row mt-4 mb-4">
 
                   @foreach($resources_products as $product)
                     <div class="post-slide7 col-xs-6 col-sm-4 col-md-3 my-2">
@@ -29,10 +29,10 @@
                       </div>
                       <div class="post-review">
                         <ul class="post-bar">
-                          <li><i class="fa fa-calendar"></i>{{ $product->created_at }}</li>
+                          <li><i class="fa fa-calendar" style="color: #006f8b;"></i>{{ $product->created_at }}</li>
                         </ul>
                         <p class="post-description">
-                        {{ Str::limit($product->preview_desc, 20) }}
+                        {{ Str::limit($product->preview_desc, 60) }}
                         </p>
                         <a href="{{ route('product.product_detail', ['language' => $current_language, 'product_id' => $product->id]) }}" class="read">Read more<i class="fa fa-angle-right"></i></a>
                       </div>

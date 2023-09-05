@@ -10,7 +10,7 @@ class ResourcesController extends Controller
 {
     public function home()
     {
-        $resources_products = ResourcesProduct::all();
+        $resources_products = ResourcesProduct::latest()->limit(4)->get();
 
         return view('index', compact('resources_products'));
     }
@@ -28,8 +28,8 @@ class ResourcesController extends Controller
 
         $data = [
             'current_language' => $language,
-            'news_articles' => NewsArticle::all(),
-            'resources_products' => ResourcesProduct::all()
+            'resources_products' => ResourcesProduct::latest()->get(),
+            // 'news_articles' => NewsArticle::latest()->limit(4)->get()
         ];
 
         return view($templatePath, $data);
@@ -43,8 +43,8 @@ class ResourcesController extends Controller
 
         $data = [
             'current_language' => $language,
-            'news_articles' => NewsArticle::all(),
-            'resources_products' => ResourcesProduct::all()
+            'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+            'news_articles' => NewsArticle::latest()->limit(4)->get()
         ];
 
         return view($templatePath, compact('product'), $data);

@@ -20,7 +20,7 @@
         <div class="col-md-12 page-content">
             <h4>T-Articles</h4>
 
-              <div class="row mt-4">
+              <div class="row my-4">
 
                 @foreach($news_articles as $article)
                     <div class="post-slide7 col-xs-6 col-sm-4 col-md-3 my-2">
@@ -29,10 +29,10 @@
                       </div>
                       <div class="post-review">
                         <ul class="post-bar">
-                          <li><i class="fa fa-calendar"></i>{{ $article->created_at }}</li>
+                          <li><i class="fa fa-calendar" style="color: #006f8b;"></i>{{ $article->created_at }}</li>
                         </ul>
                         <p class="post-description">
-                          {{ Str::limit($article->preview_desc, 20) }}
+                          {{ Str::limit($article->preview_desc, 60) }}
                         </p>
                         <a href="{{ route('news.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}" class="read">Read More<i class="fa fa-angle-right"></i></a>
                       </div>

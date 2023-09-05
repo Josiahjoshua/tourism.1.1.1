@@ -188,14 +188,18 @@
                                     <div>
                                         <p class="text-justify mb-2">
                                             <b><h6 class="article-h2">{{ $product->name }}</h6></b>
-                                            <i class="fa fa-calendar blue-icon"></i> {{ $product->created_at }}
-                                            <p>{!! Str::limit($product->preview_desc, 20) !!}</p>
+                                            <i class="fa fa-calendar" style="color: #006f8b;"></i> {{ $product->created_at }}
+                                            <p class="mt-2">{!! Str::limit($product->preview_desc, 100) !!}</p>
                                             <a href="{{ route('product.product_detail', ['language' => $current_language, 'product_id' => $product->id]) }}" class="read ml-2">Soma zaidi<i class="fa fa-angle-right"></i></a>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             @endforeach
+                            
+                        </div>
+                        <div class="row justify-content-center mt-3">
+                            <a href="{{ route('product.all_products', ['language' => $current_language]) }}"class="link-no-underline"><i>Tazama zote <i class="far fa-arrow-alt-circle-right"></i></i></a>
                         </div>
 
                     </div>
@@ -216,8 +220,8 @@
                                             <p class="text-justify mb-2">
                                                 <b><h6 class="article-h2">{{ $article->name }}</h6></b>
                                             </p>
-                                            <p><i class="fa fa-calendar"></i> {{ $article->created_at }}</p>
-                                            <p>{!! Str::limit($article->preview_desc, 20)  !!}
+                                            <p><i class="fa fa-calendar" style="color: #006f8b;"></i> {{ $article->created_at }}</p>
+                                            <p>{!! Str::limit($article->preview_desc, 60)  !!}
                                             </p>
                                             <a href="{{ route('news.article_detail', ['language' => $current_language, 'article_id' => $article->id]) }}" class="read ml-2">Soma zaidi<i class="fa fa-angle-right"></i></a>
                                         </div>
@@ -225,7 +229,10 @@
                                 </div>
                                 <hr class="hr">
                                 @endforeach
-                                <br>
+                                 <!-- Add a link for "Tazama Zote" -->
+                                 <div class="row justify-content-center mt-3">
+                                    <a href="{{ route('news.all_articles', ['language' => $current_language]) }}" class="link-no-underline"><i>Tazama zote <i class="far fa-arrow-alt-circle-right"></i></i></a>
+                                </div>
                             </div>
 
                             </div>

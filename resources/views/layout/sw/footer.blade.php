@@ -57,6 +57,9 @@
                                         <li class="list-inline-item pr-1 py-2">
                                             <a href="https://www.pmo.go.tz/" target="_blank">Prime Ministers Office
                                                 (PMO)</a>
+                                        </li>
+                                        <li class="list-inline-item pr-1 py-2">
+                                            <a href="https://www.viwanda.go.tz/" target="_blank">Ministry of Industry and Trade</a>
                                         </li> <br>
                                         <li class="list-inline-item pr-1 py-2">
                                             <a href="https://business.go.tz/" target="_blank">Business Portal</a>

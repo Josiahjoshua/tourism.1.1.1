@@ -22,7 +22,7 @@
 
                   <div class="col-md-9 bg-white py-3 page-content">
                       <h4>Habari</h4>
-                      <div class="col-12 px-0 mb-2">
+                      <div class="col-12 px-0 mb-2 mt-2">
 
                           <div class="news-title">
                               <h2 class="article-h2">{{ $article->name }}</h2>
@@ -41,7 +41,7 @@
                           <div class="news-img">
                               <img  src="{{ asset('storage/'.$article->img) }}" alt="Picha ya makala" class="w-100">
                           </div>
-                          <div class="news-content">
+                          <div class="news-content mt-3">
                               <p>{!! $article->preview_desc !!}</p>
                           </div>
 

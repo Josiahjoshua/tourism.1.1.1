@@ -22,7 +22,7 @@
 
                   <div class="col-md-9 bg-white py-3 page-content">
                       <h4>News</h4>
-                      <div class="col-12 px-0 mb-2">
+                      <div class="col-12 px-0 mb-2 mt-2">
 
                           <div class="news-title">
                               <h2 class="article-h2">{{ $article->name }}</h2>
@@ -32,7 +32,7 @@
 
                                   <li class="list-inline-item">
                                       <i class="fa fa-folder-o text-danger"></i>
-                                      <div><small><i class="fa fa-calendar"></i> {{ $article->created_at }}</small></div>
+                                      <div><small><i class="fa fa-calendar" style="color: #006f8b;"></i> {{ $article->created_at }}</small></div>
                                   </li>
 
                               </ul>
@@ -41,7 +41,7 @@
                           <div class="news-img">
                               <img  src="{{ asset('storage/'.$article->img) }}" alt="Article Image" class="w-100">
                           </div>
-                          <div class="news-content">
+                          <div class="news-content mt-3">
                               <p>{!! $article->preview_desc !!}</p>
                           </div>
 

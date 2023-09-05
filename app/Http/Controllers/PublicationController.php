@@ -12,7 +12,7 @@ class PublicationController extends Controller
 {
     public function home()
     {
-        $publication_items = Publications::all();
+        $publication_items = Publications::latest()->limit(4)->get();
 
         return view('publication', ['publication_items' => $publication_items]);
     }
@@ -32,9 +32,9 @@ class PublicationController extends Controller
 
         $data = [
             'current_language' => $language,
-            'resources_products' => ResourcesProduct::all(),
-            'news_articles' => NewsArticle::all(),
-            'publications' => Publications::all()
+            'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+            'news_articles' => NewsArticle::latest()->limit(4)->get(),
+            'publications' => Publications::latest()->get()
         ];
 
         // return $publications;

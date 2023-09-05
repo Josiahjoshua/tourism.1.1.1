@@ -23,8 +23,9 @@ class NewsController extends Controller
 
         $data = [
             'current_language' => $language,
-            'resources_products' => ResourcesProduct::all(),
-            'news_articles' => NewsArticle::all(),
+            // 'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+            'news_articles' => NewsArticle::latest()->get(),
+
         ];
 
         return view($templatePath, $data);
@@ -38,8 +39,8 @@ class NewsController extends Controller
 
         $data = [
             'current_language' => $language,
-            'news_articles' => NewsArticle::all(),
-            'resources_products' => ResourcesProduct::all()
+            'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+            'news_articles' => NewsArticle::latest()->limit(4)->get()
         ];
 
         return view($templatePath, compact('article'), $data, );

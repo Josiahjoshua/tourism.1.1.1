@@ -29,8 +29,8 @@ public function home($language = 'sw')
     $data = [
         'current_language' => $language,
         'carousel_items' => CarouselItem::all(),
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -41,8 +41,8 @@ public function AboutThub($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -52,8 +52,8 @@ public function aboutus($language) {
     $templatePath = $this->getTemplatePath($language, $templateName);
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -65,9 +65,8 @@ public function administration($language) {
 
     $data = [
         'current_language' => $language,
-        // 'carousel_items' => CarouselItem::all(),
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -79,8 +78,8 @@ public function awamupay($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -92,8 +91,8 @@ public function partners($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -105,8 +104,8 @@ public function bivatekafrica($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -118,8 +117,8 @@ public function albetus($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -132,8 +131,8 @@ public function background($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -145,9 +144,9 @@ public function boarddirectors($language) {
 
     $data = [
         'current_language' => $language,
-        // 'carousel_items' => CarouselItem::all(),
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        // 'carousel_items' => CarouselItem::latest()->limit(4)->get(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -159,8 +158,8 @@ public function centreactivities($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -172,8 +171,8 @@ public function centreobjectives($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -185,8 +184,8 @@ public function coalbriquette($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -197,8 +196,8 @@ public function consultancysupport($language) {
     $templatePath = $this->getTemplatePath($language, $templateName);
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -209,8 +208,8 @@ public function cyber($language) {
     $templatePath = $this->getTemplatePath($language, $templateName);
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -221,8 +220,8 @@ public function energy($language) {
     $templatePath = $this->getTemplatePath($language, $templateName);
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -234,8 +233,8 @@ public function environment($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -247,8 +246,8 @@ public function equipment($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -260,8 +259,8 @@ public function events($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -273,8 +272,8 @@ public function faq($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -286,8 +285,8 @@ public function feasibility($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -298,8 +297,8 @@ public function finance($language) {
     $templatePath = $this->getTemplatePath($language, $templateName);
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -311,8 +310,8 @@ public function foodbiotechnology($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -324,8 +323,8 @@ public function ict($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -337,8 +336,8 @@ public function index($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -350,8 +349,8 @@ public function industrialactivities($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -362,8 +361,8 @@ public function industrialbackground($language) {
     $templatePath = $this->getTemplatePath($language, $templateName);
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -374,8 +373,8 @@ public function industrialchemistry($language) {
     $templatePath = $this->getTemplatePath($language, $templateName);
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -387,8 +386,8 @@ public function industrialenergy($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -400,8 +399,8 @@ public function industrialmapping($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -413,8 +412,8 @@ public function industrialobjectives($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -426,8 +425,8 @@ public function industrialaudits($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -439,8 +438,8 @@ public function innovasie($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -453,8 +452,8 @@ public function amanisolar($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -466,8 +465,8 @@ public function olas($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -478,8 +477,8 @@ public function instrumentation($language) {
     $templatePath = $this->getTemplatePath($language, $templateName);
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -491,8 +490,8 @@ public function lan($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -504,8 +503,8 @@ public function lanalytics($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -516,8 +515,8 @@ public function materialscience($language) {
     $templatePath = $this->getTemplatePath($language, $templateName);
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -530,8 +529,8 @@ public function missionvission($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -543,8 +542,8 @@ public function oilproduction($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -556,8 +555,8 @@ public function ongoingreserach($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);;
@@ -569,8 +568,8 @@ public function organizationstructure($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -581,8 +580,8 @@ public function patrners($language) {
     $templatePath = $this->getTemplatePath($language, $templateName);
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -595,8 +594,8 @@ public function research($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -608,8 +607,8 @@ public function energyauditing($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -621,8 +620,8 @@ public function searchresults($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -634,8 +633,8 @@ public function successstory($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -647,8 +646,8 @@ public function thubservices($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -659,8 +658,8 @@ public function technology($language) {
     $templatePath = $this->getTemplatePath($language, $templateName);
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -672,8 +671,8 @@ public function textilelatherchemistry($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
@@ -685,8 +684,8 @@ public function whythub($language) {
 
     $data = [
         'current_language' => $language,
-        'resources_products' => ResourcesProduct::all(),
-        'news_articles' => NewsArticle::all(),
+        'resources_products' => ResourcesProduct::latest()->limit(4)->get(),
+        'news_articles' => NewsArticle::latest()->limit(4)->get(),
     ];
 
     return view($templatePath, $data);
